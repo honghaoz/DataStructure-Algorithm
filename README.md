@@ -1,4 +1,4 @@
 CrackingTheCode
 ===============
 
-Python version of Cracking the Coding Interview
+Solution in Python for Cracking the Coding Interview
