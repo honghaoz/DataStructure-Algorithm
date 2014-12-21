@@ -59,6 +59,14 @@ class LinkedList:
 			current = current.next
 		return None
 
+	def length(self):
+		current = self.head
+		length = 0
+		while not current == None:
+			length += 1
+			current = current.next
+		return length
+
 	def __str__(self):
 		current = self.head
 		printBuffer = ""
@@ -79,8 +87,11 @@ class LinkedList:
 # 	aList.append(Node(2))
 # 	aList.append(3)
 # 	aList.printOut()
-
+# 	print aList.length()
+	
 # 	aList.delete(2)
 # 	aList.printOut()
+
+# 	print aList.length()
 
 # test()
