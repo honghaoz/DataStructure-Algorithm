@@ -10,6 +10,9 @@ class Node:
 	def __str__(self):
 		return str(self.data)
 
+	def __repr__(self):
+		return str(self.data)
+
 	def append(self, aNode):
 		self.next = aNode
 
@@ -19,16 +22,6 @@ class LinkedList:
 	def __init__(self):
 		self.head = None
 		self.tail = None
-
-	def printOut(self):
-		current = self.head
-		printBuffer = ""
-		while not current == None:
-			if not printBuffer == "":
-				printBuffer += " -> "
-			printBuffer += str(current.data)
-			current = current.next
-		print printBuffer if not len(printBuffer) == 0 else "Empty"
 
 	def append(self, newData):
 		newNode = newData
@@ -65,6 +58,19 @@ class LinkedList:
 			prev = current
 			current = current.next
 		return None
+
+	def __str__(self):
+		current = self.head
+		printBuffer = ""
+		while not current == None:
+			if not printBuffer == "":
+				printBuffer += " -> "
+			printBuffer += str(current.data)
+			current = current.next
+		return printBuffer if not len(printBuffer) == 0 else "Empty"
+
+	def printOut(self):
+		print str(self)
 
 # def test():
 # 	aList = LinkedList()
