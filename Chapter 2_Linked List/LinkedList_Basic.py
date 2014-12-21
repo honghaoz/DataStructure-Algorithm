@@ -34,6 +34,7 @@ class LinkedList:
 		else:
 			self.tail.next = newNode
 			self.tail = newNode
+		return newNode
 
 	def delete(self, targetData):
 		if targetData == None:
