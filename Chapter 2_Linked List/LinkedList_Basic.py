@@ -16,6 +16,16 @@ class Node:
 	def append(self, aNode):
 		self.next = aNode
 
+	def printOut(self):
+		current = self
+		printBuffer = ""
+		while not current == None:
+			if not printBuffer == "":
+				printBuffer += " -> "
+			printBuffer += str(current.data)
+			current = current.next
+		print printBuffer if not len(printBuffer) == 0 else "Empty"
+
 class LinkedList:
 	head = None
 	tail = None
