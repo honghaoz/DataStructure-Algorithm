@@ -23,22 +23,46 @@ def sum_reversed(aList, bList):
 	return sumList	
 
 # Forward order
-
+# Two lists should have same length, padding is not implemented
 def sum_forward(aNode, bNode):
-	pass
+	resultNode, carriedNumber = addTwoListsHelper(aNode, bNode)
+	if not carriedNumber == 0:
+		tensNode = Node(carriedNumber)
+		tensNode.next = resultNode
+		resultNode.prev = tensNode
+		return tensNode
+	else:
+		return resultNode
+
+# Return (Node, carriedNumber)
+def addTwoListsHelper(aNode, bNode):
+	if aNode == None or bNode == None:
+		return None, 0
+	else:
+		summ = aNode.data + bNode.data
+		nextNode, carriedNumber = addTwoListsHelper(aNode.next, bNode.next)
+		summ += carriedNumber
+		unit = summ % 10
+		tens = summ / 10
+		unitNode = Node(unit)
+		unitNode.next = nextNode
+		if not nextNode == None:
+			nextNode.prev = unitNode
+		return unitNode, tens
 
 def test():
+	print "Reversed: "
 	aList = LinkedList()
 	aList.append(7)
 	aList.append(1)
 	aList.append(6)
-	aList.printOut()
+	# aList.printOut()
 	
 	bList = LinkedList()
 	bList.append(5)
 	bList.append(9)
 	bList.append(2)
-	bList.printOut()
+	# bList.printOut()
 
 	expectedList = LinkedList()
 	expectedList.append(2)
@@ -46,7 +70,7 @@ def test():
 	expectedList.append(9)
 
 	resultList = sum_reversed(aList, bList)
-	resultList.printOut()
+	# resultList.printOut()
 
 	print "Passed" if resultList == expectedList else "Failed"
 
@@ -55,13 +79,13 @@ def test():
 	aList.append(1)
 	aList.append(6)
 	aList.append(7)
-	aList.printOut()
+	# aList.printOut()
 	
 	bList = LinkedList()
 	bList.append(5)
 	bList.append(9)
 	bList.append(2)
-	bList.printOut()
+	# bList.printOut()
 
 	expectedList = LinkedList()
 	expectedList.append(2)
@@ -70,8 +94,37 @@ def test():
 	expectedList.append(7)
 
 	resultList = sum_reversed(aList, bList)
-	resultList.printOut()
+	# resultList.printOut()
 
+	print "Passed" if resultList == expectedList else "Failed"
+
+	print "\nForward: "
+
+	aList = LinkedList()
+	aList.append(7)
+	aList.append(1)
+	aList.append(6)
+	# aList.printOut()
+	
+	bList = LinkedList()
+	bList.append(5)
+	bList.append(9)
+	bList.append(8)
+	# bList.printOut()
+
+	expectedList = LinkedList()
+	expectedList.append(1)
+	expectedList.append(3)
+	expectedList.append(1)
+	expectedList.append(4)
+	# expectedList.printOut()
+
+	resultNode = sum_forward(aList.head, bList.head)
+	resultList = LinkedList(resultNode)
+	# resultList.printOut()
+
+	if resultList == expectedList:
+		pass
 	print "Passed" if resultList == expectedList else "Failed"
 
 test()

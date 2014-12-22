@@ -3,9 +3,11 @@
 class Node:
 	data = None
 	next = None
-	def __init__(self, data = None, next = None):
+	prev = None
+	def __init__(self, data = None, next = None, prev = None):
 		self.data = data
 		self.next = next
+		self.prev = prev
 
 	def __str__(self):
 		return str(self.data)
@@ -15,6 +17,13 @@ class Node:
 
 	def append(self, aNode):
 		self.next = aNode
+		aNode.prev = self
+		return self
+
+	def appendBefore(self, aNode):
+		self.prev = aNode
+		aNode.next = self
+		return aNode
 
 	def printOut(self):
 		current = self
@@ -26,17 +35,39 @@ class Node:
 			current = current.next
 		print printBuffer if not len(printBuffer) == 0 else "Empty"
 
+	def printOutReversed(self):
+		current = self
+		printBuffer = ""
+		while not current == None:
+			if not printBuffer == "":
+				printBuffer = " -> " + printBuffer
+			printBuffer = str(current.data) + printBuffer
+			current = current.prev
+		print printBuffer if not len(printBuffer) == 0 else "Empty"
+
 class LinkedList:
 	head = None
 	tail = None
-	def __init__(self):
-		self.head = None
-		self.tail = None
+
+	def __init__(self, node = None):
+		if node == None:
+			self.head = None
+			self.tail = None
+			return
+		if isinstance(node, Node):
+			self.head = node
+			current = self.head
+			if current == None:
+				self.tail = current
+				return
+			while not current.next == None:
+				current = current.next
+			self.tail = current
 
 	def append(self, newData):
 		newNode = newData
 		# If newData is not kind of Node, create new Node
-		if not type(newData) == type(Node(0)):
+		if not isinstance(newData, Node):
 			newNode = Node(newNode)
 		if self.tail == None:
 			self.head = newNode
@@ -112,6 +143,16 @@ class LinkedList:
 		print str(self)
 
 # def test():
+# 	# Node tests
+# 	print "Node Tests:"
+# 	aNode = Node(3)
+# 	aNode.append(Node(4).append(Node(5).append(Node(6))))
+# 	node2 = aNode.appendBefore(Node(2))
+# 	node1 = node2.appendBefore(Node(1))
+# 	node1.printOut()
+# 	aNode.printOutReversed()
+
+# 	print "\nLinkedList Tests:"
 # 	aList = LinkedList()
 # 	aList.printOut()
 # 	aList.append(Node("1"))
