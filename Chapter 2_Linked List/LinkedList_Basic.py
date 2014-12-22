@@ -78,6 +78,26 @@ class LinkedList:
 			current = current.next
 		return length
 
+	def __eq__(self, right):
+		if not isinstance(right, LinkedList):
+			return NotImplemented
+		if not self.length() == right.length():
+			return False
+		currentA = self.head
+		currentB = right.head
+		while not currentA == None:
+			if not currentA.data == currentB.data:
+				return False
+			currentA = currentA.next
+			currentB = currentB.next
+		return True
+
+	def __ne__(self, right):
+		result = self.__eq__(right)
+		if result is NotImplemented:
+			return result
+		return not result
+
 	def __str__(self):
 		current = self.head
 		printBuffer = ""
