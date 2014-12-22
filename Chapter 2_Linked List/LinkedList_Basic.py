@@ -15,6 +15,19 @@ class Node:
 	def __repr__(self):
 		return str(self.data)
 
+	def __eq__(self, right):
+		if not isinstance(right, Node):
+			return NotImplemented
+		else:
+			return (self.data == right.data) and (self.next is right.next) and (self.prev is right.prev)
+
+	def __ne__(self, right):
+		result = self.__eq__(right)
+		if not result == NotImplemented:
+			return not result
+		else:
+			return result
+
 	def append(self, aNode):
 		self.next = aNode
 		aNode.prev = self
