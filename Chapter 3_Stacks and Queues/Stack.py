@@ -22,6 +22,9 @@ class Stack(object):
 		self._privateList.append(newElement)
 		return True
 
+	def isEmpty(self):
+		return len(self._privateList) == 0
+
 	def bottomToTopList(self):
 		return self._privateList
 		
