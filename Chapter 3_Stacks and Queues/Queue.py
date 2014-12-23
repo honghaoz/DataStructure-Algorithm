@@ -1,7 +1,9 @@
 # Linked List implementation
 
 class Queue:
-	_privateList = []
+
+	def __init__(self):
+		self._privateList = []
 
 	def enqueue(self, newElement):
 		self._privateList.append(newElement)
