@@ -2,7 +2,37 @@ from Queue import Queue
 from Stack import Stack
 
 # Added min function for stack
+
 class ExtendedStack(Stack):
+	def __init__(self):
+		super(ExtendedStack, self).__init__()
+		self.minValueStack = [] #  (value, index)
+		self.minValue = None
+		self.minIndex = -1
+
+	def push(self, newElement):
+		if super(ExtendedStack, self).push(newElement):
+			if self.minValue == None or newElement < self.minValue:
+				self.minValue = newElement
+				self.minIndex = len(self._privateList) - 1
+				self.minValueStack.append((self.minValue, self.minIndex))
+
+	def pop(self):
+		popedElement = super(ExtendedStack, self).pop()
+		if not popedElement == None:
+			if len(self._privateList) == self.minIndex:
+				if len(self.minValueStack) == 0:
+					self.minValue = None
+					self.minIndex = -1
+				else:
+					self.minValueStack.pop()
+					self.minValue, self.minIndex = self.minValueStack[-1]
+
+	def min(self):
+		return self.minValue
+
+# Below is a naive solution
+class ExtendedStackNavie(Stack):
 	def __init__(self):
 		super(ExtendedStack, self).__init__()
 		self.minValue = None
