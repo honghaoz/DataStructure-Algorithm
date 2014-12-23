@@ -15,6 +15,11 @@ class Queue:
 		del self._privateList[0]
 		return first
 
+	def peek(self):
+		if len(self._privateList) == 0:
+			return None
+		return self._privateList[0]
+
 # def test():
 # 	q = Queue()
 # 	q.enqueue(1)
