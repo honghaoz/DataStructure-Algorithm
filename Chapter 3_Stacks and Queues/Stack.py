@@ -22,6 +22,12 @@ class Stack(object):
 		self._privateList.append(newElement)
 		return True
 
+	def bottomToTopList(self):
+		return self._privateList
+		
+	def topToBottomList(self):
+		return self._privateList[::-1]
+
 # def test():
 # 	s = Stack()
 # 	s.push(1)
