@@ -3,6 +3,7 @@ from LinkedList_Basic import Node, LinkedList
 from Queue import Queue
 
 # Implement a function to check if a binary tree is a binary search tree
+# General BST definition, left <= root < right
 
 def isBST(root):
 	if root == None:
@@ -10,7 +11,7 @@ def isBST(root):
 	elif root.left == None and root.right == None:
 		return True
 	elif root.left == None:
-		if root.key > root.right.key:
+		if root.key >= root.right.key:
 			return False
 		else:
 			return isBST(root.right)
@@ -19,7 +20,7 @@ def isBST(root):
 			return False
 		else:
 			return isBST(root.left)
-	elif (root.left.key > root.key) or (root.key > root.right.key):
+	elif (root.left.key > root.key) or (root.key >= root.right.key):
 		return False
 	else:
 		return isBST(root.left) and isBST(root.right)
