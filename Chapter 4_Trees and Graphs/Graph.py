@@ -77,26 +77,26 @@ class Graph:
 		printBuffer = printBuffer[:len(printBuffer) - 1]
 		return printBuffer
 
-def test():
-	print "Node"
-	node = GraphNode(1)
-	node.addNeighbor(GraphNode(2))
-	print node
+# def test():
+# 	print "Node"
+# 	node = GraphNode(1)
+# 	node.addNeighbor(GraphNode(2))
+# 	print node
 
-	print "\nGraph"
-	g = Graph()
-	g.addNode(1)
-	g.addNode(2)
-	g.addEdge(1, 2)
-	g.addEdge(4, 5)
-	g.addEdge(4, 2)
-	print g
+# 	print "\nGraph"
+# 	g = Graph()
+# 	g.addNode(1)
+# 	g.addNode(2)
+# 	g.addEdge(1, 2)
+# 	g.addEdge(4, 5)
+# 	g.addEdge(4, 2)
+# 	print g
 
-	print g.nodes
-	print g.getNodeKeys()
+# 	print g.nodes
+# 	print g.getNodeKeys()
 
-	print g.contain(node)
-	g.addNode(node)
-	print g
+# 	print g.contain(node)
+# 	g.addNode(node)
+# 	print g
 
-test()
+# test()
