@@ -6,6 +6,17 @@ from Queue import Queue
 # Design an algorithm to print all paths which sum to a given value. The path does not need to start
 # or end at the root or a leaf, but it must go in a straight line down
 
+def allPossiblePaths(root, targetValue):
+	if root == None:
+		return []
+	possiblePaths = []
+	paths = getPaths(root, targetValue)
+	if len(paths) > 0:
+		possiblePaths.extend(paths)
+	possiblePaths.extend(allPossiblePaths(root.left, targetValue))
+	possiblePaths.extend(allPossiblePaths(root.right, targetValue))
+	return possiblePaths
+
 def getPaths(root, targetValue):
 	if root == None:
 		return []
@@ -45,7 +56,8 @@ def test():
 	node6.addLeftChild(node5)
 	node6.addRightChild(node7)
 	node7.addLeftChild(node8)
+	node5.addRightChild(TreeNode(5))
 
-	print getPaths(root, 9)
+	print allPossiblePaths(root, 9)
 
 test()
