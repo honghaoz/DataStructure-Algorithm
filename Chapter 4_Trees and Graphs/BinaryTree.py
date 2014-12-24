@@ -19,6 +19,21 @@ class TreeNode:
 		self.right = newNode
 		newNode.parent = self
 
+	def isParentOf(self, keyOrNode):
+		if keyOrNode == None:
+			return False
+		targetKey = keyOrNode.key if isinstance(keyOrNode, TreeNode) else keyOrNode
+		if self.key == targetKey:
+			return True
+		if self.left == None and self.right == None:
+			return False
+		elif self.right == None:
+			return self.left.isParentOf(keyOrNode)
+		elif self.left == None:
+			return self.right.isParentOf(keyOrNode)
+		else:
+			return self.left.isParentOf(keyOrNode) or self.right.isParentOf(keyOrNode)
+
 	def preOrderTraverse(self):
 		if self == None:
 			return
