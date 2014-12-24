@@ -4,10 +4,14 @@ from BinaryTree import TreeNode
 # a balanced tree is defined to be a tree such that the heights of the two subtrees of any node
 # never differ by more than one.
 
+# Time complexity is O(N log N)
 def isBalanced(node):
 	if node == None:
+		return True
+	if abs(getHeight(node.left) - getHeight(node.right)) > 1:
 		return False
-	return abs(getHeight(node.left) - getHeight(node.right)) <= 1
+	else:
+		return isBalanced(node.left) and isBalanced(node.right)
 
 def getHeight(node):
 	if node == None:
@@ -17,6 +21,26 @@ def getHeight(node):
 	else:
 		return max(getHeight(node.left), getHeight(node.right)) + 1
 
+def isBalanced_efficient(node):
+	return not checkHeight(node) == -1
+
+def checkHeight(node):
+	if node == None:
+		return 0
+
+	leftHeight = checkHeight(node.left)
+	if leftHeight == -1:
+		return -1
+
+	rightHeight = checkHeight(node.right)
+	if rightHeight == -1:
+		return -1
+
+	if abs(leftHeight - rightHeight) > 1:
+		return -1
+	else:
+		return max(leftHeight, rightHeight) + 1
+
 def test():
 	rootNode = TreeNode(1)
 	node2 = TreeNode(2)
@@ -25,6 +49,7 @@ def test():
 	node2.left = TreeNode(4)
 
 	print "Passed" if isBalanced(rootNode) else "Failed"
+	print "Passed" if isBalanced_efficient(rootNode) else "Failed"
 
 	rootNode = TreeNode(1)
 	node2 = TreeNode(2)
@@ -35,6 +60,7 @@ def test():
 	node4.right = TreeNode(5)
 
 	print "Passed" if not isBalanced(rootNode) else "Failed"
+	print "Passed" if not isBalanced_efficient(rootNode) else "Failed"
 
 
 test()
