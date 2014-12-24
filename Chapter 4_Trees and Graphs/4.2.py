@@ -48,7 +48,6 @@ def isConnectedBFSHelper(graph, node1Key, node2Key):
 			if not eachNode.isChecked:
 				q.enqueue(eachNode)
 
-
 def test():
 	g = Graph()
 	g.isDirected = True

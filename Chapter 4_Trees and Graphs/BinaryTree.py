@@ -9,6 +9,33 @@ class TreeNode:
 		self.right = None
 		self.parent = None
 
+	def preOrderTraverse(self):
+		if self == None:
+			return
+		print self.key
+		if not self.left == None:
+			self.left.preOrderTraverse()
+		if not self.right == None:
+			self.right.preOrderTraverse()
+
+	def inOrderTraverse(self):
+		if self == None:
+			return
+		if not self.left == None:
+			self.left.inOrderTraverse()
+		print self.key
+		if not self.right == None:
+			self.right.inOrderTraverse()
+
+	def postOrderTraverse(self):
+		if self == None:
+			return
+		if not self.left == None:
+			self.left.postOrderTraverse()
+		if not self.right == None:
+			self.right.postOrderTraverse()
+		print self.key
+
 class BinarySearchTree:
 	def __init__(self):
 		self.root = None
