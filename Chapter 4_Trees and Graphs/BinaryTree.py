@@ -1,4 +1,4 @@
-# Linked List implementation
+# BinarySearchTree implementation
 
 # Reference: http://stackoverflow.com/questions/2598437/how-to-implement-a-binary-tree-in-python
 

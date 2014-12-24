@@ -2,6 +2,8 @@ from BinaryTree import TreeNode
 
 # Given a directed graph, design an algorithm to find out whether there is a route between two nodes
 
+# Idea: Just use BFS or DFS to traverse and see whether there is a root
+
 def test():
 	rootNode = TreeNode(1)
 	node2 = TreeNode(2)
