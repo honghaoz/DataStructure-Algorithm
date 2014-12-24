@@ -9,6 +9,16 @@ class TreeNode:
 		self.right = None
 		self.parent = None
 
+	def addLeftChild(self, keyOrNode):
+		newNode = keyOrNode if isinstance(keyOrNode, TreeNode) else TreeNode(keyOrNode)
+		self.left = newNode
+		newNode.parent = self
+
+	def addRightChild(self, keyOrNode):
+		newNode = keyOrNode if isinstance(keyOrNode, TreeNode) else TreeNode(keyOrNode)
+		self.right = newNode
+		newNode.parent = self
+
 	def preOrderTraverse(self):
 		if self == None:
 			return
