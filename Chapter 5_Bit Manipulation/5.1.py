@@ -21,6 +21,19 @@ def merge(M, N, j, i):
 	M = M << restLength
 	return (N | M)
 
+def merge2(M, N, j, i):
+	all1 = ~0;
+	maskBeforeJ = all1 << (j + 1)
+	maskAfterI =  (1 << i) - 1
+	mask = maskBeforeJ | maskAfterI
+	N = N & mask
+
+	lengthM = len(intToBit(M))
+	restLength = j - lengthM + 1
+	M = M << restLength
+
+	return (N | M)
+
 def test():
 	m = bitToInt("10011")
 	n = bitToInt("10000000000")
@@ -29,6 +42,9 @@ def test():
 	print intToBit(m)
 	print intToBit(n)
 	newN = merge(m, n, j, i)
+	print intToBit(newN)
+
+	newN = merge2(m, n, j, i)
 	print intToBit(newN)
 
 test()
