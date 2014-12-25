@@ -56,7 +56,7 @@ def test():
 	print "Passed" if intToBit(a) == "1101" else "Failed"
 
 	a = 5
-	a = clearBitToI(a, 2)
-	print "Passed" if intToBit(a) == "0" else "Failed"
+	a = clearBitToI(a, 1)
+	print "Passed" if intToBit(a) == "100" else "Failed"
 	
-test()
+# test()
