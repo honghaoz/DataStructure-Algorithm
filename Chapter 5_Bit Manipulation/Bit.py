@@ -14,8 +14,8 @@ def hexToInt(hexString):
 	return int(hexString, 16)
 
 def getBit(number, index):
-	return int(intToBit(number >> index)[-1])
-	# return int(number & (1 << index) != 0)
+	# return int(intToBit(number >> index)[-1])
+	return int(number & (1 << index) != 0)
 
 def setBit(number, index):
 	return number | (1 << index)
