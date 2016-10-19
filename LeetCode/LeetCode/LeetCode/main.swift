@@ -8,4 +8,10 @@
 
 import Foundation
 
-Solution().test()
+protocol Solution {
+    func test()
+//    func expect(left: () -> Equatable, right: () -> Equatable)
+}
+
+Num288_SummaryRanges().test()
+Num169_MajorityElement().test()

@@ -6,9 +6,9 @@
 // For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
 //
 
-class Solution {
+class Num288_SummaryRanges {
     // Common way: scan from left to right, build results in progress
-    func summaryRanges(nums: [Int]) -> [String] {
+    func summaryRanges(_ nums: [Int]) -> [String] {
         guard nums.count > 1 else { return nums.map { return "\($0)" } }
         var results: [String] = []
         
@@ -45,7 +45,7 @@ class Solution {
         return results
     }
     
-    func summaryRanges2(nums: [Int]) -> [String] {
+    func summaryRanges2(_ nums: [Int]) -> [String] {
         
         // [1, 2, 4, 5]
         // [1, 1, 2, 1]
@@ -97,28 +97,28 @@ class Solution {
     // [1, 2, 3, 5] -> ["1->3", "5"]
     // [1, 2, 4, 5] -> ["1->2", "4->5"]
     func test() {
-        print(Solution().summaryRanges(nums: []) == [String]())
-        print(Solution().summaryRanges(nums: [1]) == ["1"])
-        print(Solution().summaryRanges(nums: [1, 2]) == ["1->2"])
-        print(Solution().summaryRanges(nums: [1, 3]) == ["1", "3"])
-        print(Solution().summaryRanges(nums: [1, 2, 3]) == ["1->3"])
-        print(Solution().summaryRanges(nums: [1, 2, 4]) == ["1->2", "4"])
-        print(Solution().summaryRanges(nums: [1, 3, 4]) == ["1", "3->4"])
-        print(Solution().summaryRanges(nums: [1, 3, 5]) == ["1", "3", "5"])
-        print(Solution().summaryRanges(nums: [1, 2, 3, 4]) == ["1->4"])
-        print(Solution().summaryRanges(nums: [1, 2, 3, 5]) == ["1->3", "5"])
-        print(Solution().summaryRanges(nums: [1, 2, 4, 5]) == ["1->2", "4->5"])
+        print(summaryRanges([]) == [String]())
+        print(summaryRanges([1]) == ["1"])
+        print(summaryRanges([1, 2]) == ["1->2"])
+        print(summaryRanges([1, 3]) == ["1", "3"])
+        print(summaryRanges([1, 2, 3]) == ["1->3"])
+        print(summaryRanges([1, 2, 4]) == ["1->2", "4"])
+        print(summaryRanges([1, 3, 4]) == ["1", "3->4"])
+        print(summaryRanges([1, 3, 5]) == ["1", "3", "5"])
+        print(summaryRanges([1, 2, 3, 4]) == ["1->4"])
+        print(summaryRanges([1, 2, 3, 5]) == ["1->3", "5"])
+        print(summaryRanges([1, 2, 4, 5]) == ["1->2", "4->5"])
         
-        print(Solution().summaryRanges2(nums: []) == [String]())
-        print(Solution().summaryRanges2(nums: [1]) == ["1"])
-        print(Solution().summaryRanges2(nums: [1, 2]) == ["1->2"])
-        print(Solution().summaryRanges2(nums: [1, 3]) == ["1", "3"])
-        print(Solution().summaryRanges2(nums: [1, 2, 3]) == ["1->3"])
-        print(Solution().summaryRanges2(nums: [1, 2, 4]) == ["1->2", "4"])
-        print(Solution().summaryRanges2(nums: [1, 3, 4]) == ["1", "3->4"])
-        print(Solution().summaryRanges2(nums: [1, 3, 5]) == ["1", "3", "5"])
-        print(Solution().summaryRanges2(nums: [1, 2, 3, 4]) == ["1->4"])
-        print(Solution().summaryRanges2(nums: [1, 2, 3, 5]) == ["1->3", "5"])
-        print(Solution().summaryRanges2(nums: [1, 2, 4, 5]) == ["1->2", "4->5"])
+        print(summaryRanges2([]) == [String]())
+        print(summaryRanges2([1]) == ["1"])
+        print(summaryRanges2([1, 2]) == ["1->2"])
+        print(summaryRanges2([1, 3]) == ["1", "3"])
+        print(summaryRanges2([1, 2, 3]) == ["1->3"])
+        print(summaryRanges2([1, 2, 4]) == ["1->2", "4"])
+        print(summaryRanges2([1, 3, 4]) == ["1", "3->4"])
+        print(summaryRanges2([1, 3, 5]) == ["1", "3", "5"])
+        print(summaryRanges2([1, 2, 3, 4]) == ["1->4"])
+        print(summaryRanges2([1, 2, 3, 5]) == ["1->3", "5"])
+        print(summaryRanges2([1, 2, 4, 5]) == ["1->2", "4->5"])
     }
 }

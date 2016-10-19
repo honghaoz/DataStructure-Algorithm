@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0222747B1DB5BB86002F8547 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0222747A1DB5BB86002F8547 /* main.swift */; };
 		022274861DB5C12C002F8547 /* 288. Summary Ranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022274851DB5C12C002F8547 /* 288. Summary Ranges.swift */; };
+		022274881DB5D473002F8547 /* 169. Majority Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022274871DB5D473002F8547 /* 169. Majority Element.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		0222747A1DB5BB86002F8547 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		022274811DB5BED3002F8547 /* notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = notes.md; sourceTree = "<group>"; };
 		022274851DB5C12C002F8547 /* 288. Summary Ranges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "288. Summary Ranges.swift"; sourceTree = "<group>"; };
+		022274871DB5D473002F8547 /* 169. Majority Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "169. Majority Element.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				022274851DB5C12C002F8547 /* 288. Summary Ranges.swift */,
+				022274871DB5D473002F8547 /* 169. Majority Element.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				022274881DB5D473002F8547 /* 169. Majority Element.swift in Sources */,
 				022274861DB5C12C002F8547 /* 288. Summary Ranges.swift in Sources */,
 				0222747B1DB5BB86002F8547 /* main.swift in Sources */,
 			);
