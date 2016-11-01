@@ -15,3 +15,12 @@ protocol Solution {
 
 Num288_SummaryRanges().test()
 Num169_MajorityElement().test()
+Num349_IntersectionOfTwoArrays().test()
+Num350_IntersectionOfTwoArraysII().test()
+Num217_ContainsDuplicate().test()
+Num219_ContainsDuplicate().test()
+Num26_RemoveDuplicatesFromSortedArray().test()
+Num80_RemoveDuplicatesFromSortedArrayII().test()
+Num283_MoveZeros().test()
+Num15_ThreeSum().test()
+Num16_ThreeSumClosest().test()
