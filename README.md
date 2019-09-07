@@ -1,1 +1,1 @@
-I hate LeetCode.
+💊
