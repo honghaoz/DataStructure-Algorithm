@@ -13,7 +13,7 @@ protocol Solution {
 //    func expect(left: () -> Equatable, right: () -> Equatable)
 }
 
-Num288_SummaryRanges().test()
+Num228_SummaryRanges().test()
 Num169_MajorityElement().test()
 Num349_IntersectionOfTwoArrays().test()
 Num350_IntersectionOfTwoArraysII().test()
