@@ -84,6 +84,6 @@ class Num14_LongestCommonPrefix: Solution {
 	}
 	
 	func test() {
-		
+    
 	}
 }

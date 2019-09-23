@@ -87,6 +87,10 @@
 		02ED4EDF23207CF9003D4364 /* 475_Heaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED4EDE23207CF9003D4364 /* 475_Heaters.swift */; };
 		02F6B7A11DC04DD800FF2A47 /* 16_3Sum Closest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F6B7A01DC04DD800FF2A47 /* 16_3Sum Closest.swift */; };
 		02F6B7A31DC04F3D00FF2A47 /* 18_4Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F6B7A21DC04F3D00FF2A47 /* 18_4Sum.swift */; };
+		02F8CA3423375224003B2BFA /* 45_Jump Game II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8CA3323375224003B2BFA /* 45_Jump Game II.swift */; };
+		02F8CA3623376701003B2BFA /* 674_Longest Continuous Increasing Subsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8CA3523376701003B2BFA /* 674_Longest Continuous Increasing Subsequence.swift */; };
+		02F8CA38233836F6003B2BFA /* 300_Longest Increasing Subsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8CA37233836F6003B2BFA /* 300_Longest Increasing Subsequence.swift */; };
+		02F8CA3A23388936003B2BFA /* 139_Word Break.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F8CA3923388936003B2BFA /* 139_Word Break.swift */; };
 		02FDE0EE2331A2C10063DE3D /* 94_Binary Tree Inorder Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FDE0ED2331A2C10063DE3D /* 94_Binary Tree Inorder Traversal.swift */; };
 		02FDE0F02331A3DE0063DE3D /* 144_Binary Tree Preorder Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FDE0EF2331A3DE0063DE3D /* 144_Binary Tree Preorder Traversal.swift */; };
 		02FDE0F22331AFCA0063DE3D /* 145_ Binary Tree Postorder Traversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FDE0F12331AFCA0063DE3D /* 145_ Binary Tree Postorder Traversal.swift */; };
@@ -126,6 +130,7 @@
 		02FDE13E2337038C0063DE3D /* 198_House Robber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FDE13D2337038C0063DE3D /* 198_House Robber.swift */; };
 		02FDE14023370B980063DE3D /* 303_Range Sum Query - Immutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FDE13F23370B980063DE3D /* 303_Range Sum Query - Immutable.swift */; };
 		02FDE14223370DBD0063DE3D /* 1025_Divisor Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FDE14123370DBD0063DE3D /* 1025_Divisor Game.swift */; };
+		02FDE14423374B850063DE3D /* 55_Jump Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FDE14323374B850063DE3D /* 55_Jump Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -223,6 +228,10 @@
 		02ED4EDE23207CF9003D4364 /* 475_Heaters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 475_Heaters.swift; sourceTree = "<group>"; };
 		02F6B7A01DC04DD800FF2A47 /* 16_3Sum Closest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "16_3Sum Closest.swift"; sourceTree = "<group>"; };
 		02F6B7A21DC04F3D00FF2A47 /* 18_4Sum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 18_4Sum.swift; sourceTree = "<group>"; };
+		02F8CA3323375224003B2BFA /* 45_Jump Game II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "45_Jump Game II.swift"; sourceTree = "<group>"; };
+		02F8CA3523376701003B2BFA /* 674_Longest Continuous Increasing Subsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "674_Longest Continuous Increasing Subsequence.swift"; sourceTree = "<group>"; };
+		02F8CA37233836F6003B2BFA /* 300_Longest Increasing Subsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "300_Longest Increasing Subsequence.swift"; sourceTree = "<group>"; };
+		02F8CA3923388936003B2BFA /* 139_Word Break.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "139_Word Break.swift"; sourceTree = "<group>"; };
 		02FDE0ED2331A2C10063DE3D /* 94_Binary Tree Inorder Traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "94_Binary Tree Inorder Traversal.swift"; sourceTree = "<group>"; };
 		02FDE0EF2331A3DE0063DE3D /* 144_Binary Tree Preorder Traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "144_Binary Tree Preorder Traversal.swift"; sourceTree = "<group>"; };
 		02FDE0F12331AFCA0063DE3D /* 145_ Binary Tree Postorder Traversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "145_ Binary Tree Postorder Traversal.swift"; sourceTree = "<group>"; };
@@ -262,6 +271,7 @@
 		02FDE13D2337038C0063DE3D /* 198_House Robber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "198_House Robber.swift"; sourceTree = "<group>"; };
 		02FDE13F23370B980063DE3D /* 303_Range Sum Query - Immutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "303_Range Sum Query - Immutable.swift"; sourceTree = "<group>"; };
 		02FDE14123370DBD0063DE3D /* 1025_Divisor Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1025_Divisor Game.swift"; sourceTree = "<group>"; };
+		02FDE14323374B850063DE3D /* 55_Jump Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "55_Jump Game.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,6 +381,7 @@
 				02D3EF2E1DD0234F005B73CD /* 20_Valid Parentheses.swift */,
 				02FDE11123358C490063DE3D /* 836_Rectangle Overlap.swift */,
 				02FDE11323358FFF0063DE3D /* 492_Construct the Rectangle.swift */,
+				02F8CA3523376701003B2BFA /* 674_Longest Continuous Increasing Subsequence.swift */,
 				024327A41DC8335900F44384 /* 239_Sliding Window Maximum.swift */,
 				023868E01DCC3A9D00DF7B2B /* 14_Longest Common Prefix.swift */,
 				02828B7323249567009E117D /* 253_Meeting Rooms II.swift */,
@@ -392,6 +403,10 @@
 				02FDE13D2337038C0063DE3D /* 198_House Robber.swift */,
 				02FDE13F23370B980063DE3D /* 303_Range Sum Query - Immutable.swift */,
 				02FDE14123370DBD0063DE3D /* 1025_Divisor Game.swift */,
+				02FDE14323374B850063DE3D /* 55_Jump Game.swift */,
+				02F8CA3323375224003B2BFA /* 45_Jump Game II.swift */,
+				02F8CA37233836F6003B2BFA /* 300_Longest Increasing Subsequence.swift */,
+				02F8CA3923388936003B2BFA /* 139_Word Break.swift */,
 			);
 			path = "Dynamic Programming";
 			sourceTree = "<group>";
@@ -556,9 +571,11 @@
 				02CE3E3D2330807D0080E8FD /* 852_Peak Index in a Mountain Array.swift in Sources */,
 				02CE3E2F233012E30080E8FD /* 35_Search Insert Position.swift in Sources */,
 				02CE3E372330221A0080E8FD /* 744_Find Smallest Letter Greater Than Target.swift in Sources */,
+				02FDE14423374B850063DE3D /* 55_Jump Game.swift in Sources */,
 				02FDE1222336076E0063DE3D /* 62_Unique Paths.swift in Sources */,
 				022274881DB5D473002F8547 /* 169_Majority Element.swift in Sources */,
 				0235B4DC1DC6C1C20097F5F3 /* 59_Spiral Matrix II.swift in Sources */,
+				02F8CA3A23388936003B2BFA /* 139_Word Break.swift in Sources */,
 				02828B72232491D0009E117D /* 876_Middle of the Linked List.swift in Sources */,
 				02FDE124233611170063DE3D /* 70_Climbing Stairs.swift in Sources */,
 				02FDE1202335FA7E0063DE3D /* 64_Minimum Path Sum.swift in Sources */,
@@ -606,6 +623,7 @@
 				02AA304B231CEF9300DBB596 /* 929_Unique Email Addresses.swift in Sources */,
 				02CE3E25232EF9610080E8FD /* 704_Binary Search.swift in Sources */,
 				02828B7423249567009E117D /* 253_Meeting Rooms II.swift in Sources */,
+				02F8CA38233836F6003B2BFA /* 300_Longest Increasing Subsequence.swift in Sources */,
 				023D1BEC1DB9AEA30027A912 /* 26_Remove Duplicates from Sorted Array.swift in Sources */,
 				023D1EB11DBEF5790027A912 /* 283_Move Zeroes.swift in Sources */,
 				02FDE1292336A1000063DE3D /* 965_Univalued Binary Tree.swift in Sources */,
@@ -614,6 +632,7 @@
 				02828B6423247D9F009E117D /* 445_Add Two Numbers II.swift in Sources */,
 				023868DF1DCC230E00DF7B2B /* 383_Ransom Note.swift in Sources */,
 				02828B6A23248C16009E117D /* 141_Linked List Cycle.swift in Sources */,
+				02F8CA3623376701003B2BFA /* 674_Longest Continuous Increasing Subsequence.swift in Sources */,
 				023D1EB71DBEFEAC0027A912 /* 15_3Sum.swift in Sources */,
 				02828B68232487E1009E117D /* 92_Reverse Linked List II.swift in Sources */,
 				02247B242320D1CE00262D79 /* 686_Repeated String Match.swift in Sources */,
@@ -634,6 +653,7 @@
 				02CE3E1F232EF3330080E8FD /* 69_Sqrt(x).swift in Sources */,
 				02A8A8D11DCAD4A900CA3EBF /* 28_Implement strStr().swift in Sources */,
 				02CE3E3B23307CEC0080E8FD /* 1150_Check If a Number Is Majority Element in a Sorted Array.swift in Sources */,
+				02F8CA3423375224003B2BFA /* 45_Jump Game II.swift in Sources */,
 				02FDE127233698DD0063DE3D /* 617_Merge Two Binary Trees.swift in Sources */,
 				02CE3E392330254C0080E8FD /* 392_Is Subsequence.swift in Sources */,
 				0243788B2320E91600916F49 /* 771_Jewels and Stones.swift in Sources */,
