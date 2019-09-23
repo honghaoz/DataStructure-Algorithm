@@ -86,4 +86,16 @@ class Num139 {
     cache[start] = false
     return false
   }
+
+  /// BFS, this is a iterative way for the recursive above.
+  func wordBreak_iterative(_ s: String, _ wordDict: [String]) -> Bool {
+    // stores the start index (or break point)
+    var queue: [Int] = [0]
+    while !queue.isEmpty {
+      let start = queue.removeFirst()
+      for end in (start + 1)...s.count {
+        
+      }
+    }
+  }
 }
