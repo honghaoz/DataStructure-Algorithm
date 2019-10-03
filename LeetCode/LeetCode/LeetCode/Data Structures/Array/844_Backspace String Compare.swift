@@ -109,9 +109,3 @@ class Num844 {
     return c
   }
 }
-
-extension String {
-  subscript(_ index: Int) -> Character {
-    return self[self.index(startIndex, offsetBy: index)]
-  }
-}

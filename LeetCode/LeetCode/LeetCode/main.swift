@@ -30,3 +30,5 @@ Num266_PalindromePermutation().test()
 Num3_LongestSubstringWithoutRepeatingCharacters().test()
 Num68_TextJustification().test()
 Num482_LicenseKeyFormatting().test()
+
+Num140().test()
