@@ -78,12 +78,91 @@ class Num115 {
           s[i][j] = s[i - 1][j] + s[i - 1][j - 1]
         }
         else {
-        // if not equal, word1有没有最后一个char没有关系
+          // if not equal, word1有没有最后一个char没有关系
           s[i][j] = s[i - 1][j]
         }
       }
     }
 
     return s[word1.count][word2.count]
+  }
+
+  // MARK: Recursion Time Limit Exceeded
+  func numDistinct_recursive(_ s: String, _ t: String) -> Int {
+    return numDistinctHelper(Array(s), Array(t))
+  }
+
+  private func numDistinctHelper(_ s: [Character], _ t: [Character]) -> Int {
+    if s.isEmpty {
+      return 0
+    }
+    if t.isEmpty {
+      return 1 // remove all chars in s
+    }
+    if s[0] == t[0] {
+      return numDistinctHelper([Character](s[1...]), [Character](t[1...])) // if first char matched
+        + numDistinctHelper([Character](s[1...]), t) // if first char is not matched
+    }
+    else {
+      return numDistinctHelper([Character](s[1...]), t)
+    }
+  }
+
+  // MARK: Recursion + Memoization
+  // Still have one test case doesn't pass.
+  struct Input: Equatable, Hashable {
+    let s: [Character]
+    let t: [Character]
+
+//    static func ==(lhs: Input, rhs: Input) -> Bool {
+//      return lhs.s == rhs.s && lhs.t == rhs.t
+//    }
+
+//    func hash(into hasher: inout Hasher) {
+//      hasher.combine(self.s)
+//      hasher.combine(self.t)
+//    }
+  }
+
+  var cache: [Input: Int] = [:]
+
+  func numDistinct_recursive_mem(_ s: String, _ t: String) -> Int {
+    let input = Input(s: Array(s), t: Array(t))
+    return numDistinctHelper(input)
+  }
+
+  private func numDistinctHelper(_ input: Input) -> Int {
+    let s = input.s
+    let t = input.t
+    // Should check t is empty first then check s
+    if t.isEmpty {
+      return 1 // remove all chars in s
+    }
+    if s.isEmpty {
+      return 0
+    }
+
+    if let result = cache[input] {
+      return result
+    }
+
+    if s.firstIndex(of: t[0]) == nil {
+      print("s")
+      return 0
+    }
+
+    let unmatchedInput = Input(s: [Character](s[1...]), t: t)
+    if s[0] == t[0] {
+      let matchedInput = Input(s: [Character](s[1...]), t: [Character](t[1...]))
+      let result = numDistinctHelper(matchedInput) // if first char matched
+        + numDistinctHelper(unmatchedInput) // if first char is not matched
+      cache[input] = result
+      return result
+    }
+    else {
+      let result = numDistinctHelper(unmatchedInput)
+      cache[input] = result
+      return result
+    }
   }
 }

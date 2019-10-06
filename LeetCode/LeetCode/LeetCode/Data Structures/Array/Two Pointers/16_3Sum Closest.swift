@@ -15,6 +15,7 @@
 import Foundation
 
 class Num16_ThreeSumClosest: Solution {
+  // Like 3 sum, but keep recording the closest value.
 	func threeSumClosest(_ nums: [Int], _ target: Int) -> Int {
 		var result: Int = 0
 		guard nums.count > 2 else { return result } // question to ask

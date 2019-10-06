@@ -48,7 +48,7 @@ class Num25 {
       // break the group
       p?.next = nil
       // reverse the group
-      reverseList(lastTail?.next)
+      _ = reverseList(lastTail?.next)
       // p is now the head
       // lastTail?.next is now the tail
       let newTail = lastTail?.next // keep the old head (new tail)

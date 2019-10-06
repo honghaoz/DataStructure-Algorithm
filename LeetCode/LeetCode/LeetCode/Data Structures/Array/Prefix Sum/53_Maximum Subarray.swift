@@ -69,4 +69,44 @@ class Num53 {
   // https://leetcode.com/problems/maximum-subarray/solution/
   // TODO: Greedy
   // TODO: DP
+
+  // MARK: - Prefix sum, just like stock buy and sell
+  func maxSubArray_stock(_ nums: [Int]) -> Int {
+    guard nums.count > 0 else {
+      return 0
+    }
+
+    // [   -2, 1, -3, 4]  // price change
+    // [0, -2, -1, -4, 0] // price
+    var prefixSum: [Int] = Array(repeating: 0, count: nums.count + 1)
+    for i in 1...nums.count {
+      prefixSum[i] = prefixSum[i - 1] +  nums[i - 1]
+    }
+
+    // Use prefix sum as the stock price and find the max profit
+//    var buyIndex = 0
+    var sellIndex = 0
+
+    var lowestPriceIndex = 0
+    var maxProfit = 0
+    for i in 1..<prefixSum.count {
+      let newProfit = prefixSum[i] - prefixSum[lowestPriceIndex]
+      if newProfit > maxProfit {
+//        buyIndex = lowestPriceIndex
+        sellIndex = i
+        maxProfit = newProfit
+      }
+      if prefixSum[i] < prefixSum[lowestPriceIndex] {
+        lowestPriceIndex = i
+      }
+    }
+
+    // if there's no sell, this means all numbers are negative, find the largest number
+    if sellIndex == 0 {
+      return nums.max()!
+    }
+    else {
+      return maxProfit
+    }
+  }
 }

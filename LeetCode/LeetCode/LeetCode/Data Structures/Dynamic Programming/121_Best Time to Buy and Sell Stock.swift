@@ -49,12 +49,12 @@ class Num121 {
     // plus the price change between i and i-1 th day
     for i in 1..<prices.count {
       let priceChange = prices[i] - prices[i - 1]
-      let newPrifit = s[i - 1] + priceChange
-      if newPrifit < 0 {
+      let newProfit = s[i - 1] + priceChange
+      if newProfit < 0 {
         s[i] = 0
       }
       else {
-        s[i] = newPrifit
+        s[i] = newProfit
       }
     }
     
