@@ -56,26 +56,26 @@ class Num8 {
     var newStr = str.trimmingCharacters(in: .whitespaces)
     var isNegative = false
     var result = 0
-    
+
     if newStr.first == "+" || newStr.first == "-" {
       if newStr.first == "-" {
         isNegative = true
       }
       newStr.removeFirst()
     }
-    
-    var arr = [Character]()
+
+    var array = [Character]()
     for c in newStr {
       if "0123456789".contains(c) {
-        arr.append(c)
+        array.append(c)
       } else {
         break
       }
     }
-    guard var double = Double(String(arr)) else {
+    guard var double = Double(String(array)) else {
       return 0
     }
-    
+
     if isNegative {
       double = -double
     }

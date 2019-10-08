@@ -78,7 +78,6 @@ class Num1031 {
 
     // find the max
     var result: Int = Int.min
-    print(L, A.count - M)
     for i in L...(A.count - M) {
       result = max(result, leftMaxSum[i] + rightMaxSum[i])
     }

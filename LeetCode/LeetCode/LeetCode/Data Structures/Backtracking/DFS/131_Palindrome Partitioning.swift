@@ -22,7 +22,28 @@
 import Foundation
 
 class Num131 {
-  // DFS/backtracking
+  // Backtrack standard template
+  func partition_backtrack(_ s: String) -> [[String]] {
+    var results: [[String]] = []
+    partitionHelper([], s, &results)
+    return results
+  }
+
+  private func partitionHelper(_ path: [String], _ restString: String, _ results: inout [[String]]) {
+    if restString.count == 0 {
+      results.append(path)
+      return
+    }
+
+    for i in 1...restString.count {
+      let substring = restString[0..<i]
+      if substring.isPalindrome {
+        partitionHelper(path + [substring], restString[i..<restString.count], &results)
+      }
+    }
+  }
+
+  // DFS recursive
   // Three important steps:
   // 1) choose, choose at the break point
   // 2) explore, explore the rest path after a choose
@@ -30,7 +51,7 @@ class Num131 {
   // https://leetcode.com/problems/palindrome-partitioning/discuss/182307/Java%3A-Backtracking-Template-General-Approach
   func partition(_ s: String) -> [[String]] {
     if s.count == 0 {
-      return [[]] // This critical, for an empty string, we can assum there's empty partition.
+      return [[]] // This critical, for an empty string, we can assume there's empty partition.
     }
 
     var results: [[String]] = []

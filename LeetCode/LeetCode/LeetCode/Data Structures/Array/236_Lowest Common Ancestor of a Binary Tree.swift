@@ -35,6 +35,13 @@
 import Foundation
 
 class Num236 {
+  // 如果有parent pointer：
+  // 从a节点到root的所有点创建一个path array
+  // 从b节点到root也创建一个path array
+  // 那么这个array最后的一个点一定是root节点
+  // 然后用两个指针，从后向前循环，找到第一个分裂点。
+  // 那么这个分裂的地方就是LCA
+
   //
 //  # Definition for a binary tree node.
 //  # class TreeNode(object):

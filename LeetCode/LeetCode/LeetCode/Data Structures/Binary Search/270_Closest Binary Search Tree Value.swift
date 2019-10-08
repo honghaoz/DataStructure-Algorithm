@@ -26,6 +26,8 @@
 
 import Foundation
 
+// 在一个BST中寻找里target值最近的node的值
+
 class Num270 {
   /// TODO: BST solutions
   // https://leetcode.com/problems/closest-binary-search-tree-value/solution/
@@ -39,13 +41,17 @@ class Num270 {
     var closest: Int?
     var p = root
     while p != nil {
+      // 1) update result
       if closest == nil {
         closest = p!.val
       } else {
+        // find a new closer value
         if abs(Double(p!.val) - target) < abs(Double(closest!) - target) {
           closest = p!.val
         }
       }
+
+      // 2) traverse
       if Double(p!.val) < target {
         // go right
         p = p!.right
