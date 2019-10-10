@@ -18,6 +18,9 @@
 //NOTE: input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.
 //
 
+// 给出meeting的时间，问这个人能不能都参加
+// 扫描一遍，如果遇到overlap就不能
+
 import Foundation
 
 class Num252 {

@@ -28,17 +28,19 @@
 //Special thanks to @pbrother for adding this problem and creating all test cases.
 //
 
-// 查看s是否是t的一个subsequence
+// 判断s是否是t的一个subsequence
 
 import Foundation
 
 class Num392 {
+  // MARK: - Two pointers
+  // O(n)
+  // 用两个index，如果相等，两个index都增长，如果不相等，增加t的index
+  // 最后判断s的index是不是已经到了最后一次
+
   /// Binary search
   /// https://leetcode.com/problems/is-subsequence/discuss/87292/Swift-solution-Binary-Search
   // TODO:
-
-  // MARK: - Two pointers
-  // 用两个指针，查询一遍。如果相等，就两个都增加，否则，增加t那个指针。
   func isSubsequence(_ s: String, _ t: String) -> Bool {
     guard s.count <= t.count else {
       return false

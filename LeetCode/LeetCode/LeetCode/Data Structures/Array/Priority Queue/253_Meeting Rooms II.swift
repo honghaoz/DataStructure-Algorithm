@@ -18,6 +18,10 @@
 //NOTE: input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.
 //
 
+// 给出一些meeting的时间，问最多需要多少room
+// 先把时间按照start排序，然后扫描一遍，把end time放进一个priority queue (min)。每次循环，先检查新的start time是否大于start time
+// 如果大于，说明之前的meeting已经结束，先dequeue掉，然后再放入新的end time
+
 import Foundation
 
 class Num253 {

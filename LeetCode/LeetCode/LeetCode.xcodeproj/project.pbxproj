@@ -86,6 +86,12 @@
 		02828B7023248F9E009E117D /* 83_Remove Duplicates from Sorted List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02828B6F23248F9E009E117D /* 83_Remove Duplicates from Sorted List.swift */; };
 		02828B72232491D0009E117D /* 876_Middle of the Linked List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02828B71232491D0009E117D /* 876_Middle of the Linked List.swift */; };
 		02828B7423249567009E117D /* 253_Meeting Rooms II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02828B7323249567009E117D /* 253_Meeting Rooms II.swift */; };
+		0293F1D3234D477400436B83 /* 678_Valid Parenthesis String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0293F1D2234D477400436B83 /* 678_Valid Parenthesis String.swift */; };
+		0293F1D5234E615800436B83 /* 6_ZigZag Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0293F1D4234E615800436B83 /* 6_ZigZag Conversion.swift */; };
+		0293F1D7234E623B00436B83 /* 7_Reverse Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0293F1D6234E623B00436B83 /* 7_Reverse Integer.swift */; };
+		0293F1D9234E664500436B83 /* 9_Palindrome Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0293F1D8234E664500436B83 /* 9_Palindrome Number.swift */; };
+		0293F1DB234FB9E900436B83 /* 759_Employee Free Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0293F1DA234FB9E900436B83 /* 759_Employee Free Time.swift */; };
+		0293F1DD234FC58E00436B83 /* 277_Find the Celebrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0293F1DC234FC58E00436B83 /* 277_Find the Celebrity.swift */; };
 		02974B6523308310003B0FCB /* 1064_Fixed Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02974B6423308310003B0FCB /* 1064_Fixed Point.swift */; };
 		029C76812339855D00D6B6C5 /* 140_Word Break II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C76802339855D00D6B6C5 /* 140_Word Break II.swift */; };
 		029C76832339CCC000D6B6C5 /* 84_Largest Rectangle in Histogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C76822339CCC000D6B6C5 /* 84_Largest Rectangle in Histogram.swift */; };
@@ -276,6 +282,12 @@
 		02828B6F23248F9E009E117D /* 83_Remove Duplicates from Sorted List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "83_Remove Duplicates from Sorted List.swift"; sourceTree = "<group>"; };
 		02828B71232491D0009E117D /* 876_Middle of the Linked List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "876_Middle of the Linked List.swift"; sourceTree = "<group>"; };
 		02828B7323249567009E117D /* 253_Meeting Rooms II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "253_Meeting Rooms II.swift"; sourceTree = "<group>"; };
+		0293F1D2234D477400436B83 /* 678_Valid Parenthesis String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "678_Valid Parenthesis String.swift"; sourceTree = "<group>"; };
+		0293F1D4234E615800436B83 /* 6_ZigZag Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6_ZigZag Conversion.swift"; sourceTree = "<group>"; };
+		0293F1D6234E623B00436B83 /* 7_Reverse Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7_Reverse Integer.swift"; sourceTree = "<group>"; };
+		0293F1D8234E664500436B83 /* 9_Palindrome Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "9_Palindrome Number.swift"; sourceTree = "<group>"; };
+		0293F1DA234FB9E900436B83 /* 759_Employee Free Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "759_Employee Free Time.swift"; sourceTree = "<group>"; };
+		0293F1DC234FC58E00436B83 /* 277_Find the Celebrity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "277_Find the Celebrity.swift"; sourceTree = "<group>"; };
 		02974B6423308310003B0FCB /* 1064_Fixed Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1064_Fixed Point.swift"; sourceTree = "<group>"; };
 		029C76802339855D00D6B6C5 /* 140_Word Break II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "140_Word Break II.swift"; sourceTree = "<group>"; };
 		029C76822339CCC000D6B6C5 /* 84_Largest Rectangle in Histogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "84_Largest Rectangle in Histogram.swift"; sourceTree = "<group>"; };
@@ -416,6 +428,7 @@
 				02AA3025231BA7DB00DBB596 /* Shared.swift */,
 				02433D33234AC66300B963CA /* Heap.swift */,
 				02433D35234AC69500B963CA /* PriorityQueue.swift */,
+				0293F1DC234FC58E00436B83 /* 277_Find the Celebrity.swift */,
 				02433D1F23494CAA00B963CA /* 垃圾题目 */,
 				02433D0723487AAA00B963CA /* Trivial */,
 				02433D1C2349499400B963CA /* 记忆题 - 只需要记住最优解 */,
@@ -549,6 +562,8 @@
 				02433D18234948AF00B963CA /* 412_Fizz Buzz.swift */,
 				02433D2E234A4A0000B963CA /* 191_Number of 1 Bits.swift */,
 				02433D37234AD13300B963CA /* 252_Meeting Rooms.swift */,
+				0293F1D4234E615800436B83 /* 6_ZigZag Conversion.swift */,
+				0293F1D8234E664500436B83 /* 9_Palindrome Number.swift */,
 				02EFCD59234DBBBD0013D087 /* 811_Subdomain Visit Count.swift */,
 			);
 			path = Trivial;
@@ -570,6 +585,7 @@
 			children = (
 				02433D1D23494C9400B963CA /* 8_String to Integer (atoi).swift */,
 				02433D2023494CDA00B963CA /* 707_Design Linked List.swift */,
+				0293F1D6234E623B00436B83 /* 7_Reverse Integer.swift */,
 			);
 			path = "垃圾题目";
 			sourceTree = "<group>";
@@ -586,6 +602,7 @@
 			isa = PBXGroup;
 			children = (
 				02828B7323249567009E117D /* 253_Meeting Rooms II.swift */,
+				0293F1DA234FB9E900436B83 /* 759_Employee Free Time.swift */,
 			);
 			path = "Priority Queue";
 			sourceTree = "<group>";
@@ -633,6 +650,7 @@
 				02B5D5B723447D1900DB6DA5 /* 72_Edit Distance.swift */,
 				02B5D5BF23458AA800DB6DA5 /* 115_Distinct Subsequences.swift */,
 				02433CEC2346AF6C00B963CA /* 97_Interleaving String.swift */,
+				0293F1D2234D477400436B83 /* 678_Valid Parenthesis String.swift */,
 				02EFCD61234FAB460013D087 /* 2维DP */,
 			);
 			path = "Dynamic Programming";
@@ -777,6 +795,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0293F1D9234E664500436B83 /* 9_Palindrome Number.swift in Sources */,
 				024327A51DC8335900F44384 /* 239_Sliding Window Maximum.swift in Sources */,
 				027B47841E621ECE003D2CA6 /* 482_License Key Formatting.swift in Sources */,
 				023868DD1DCC204100DF7B2B /* 266_Palindrome Permutation.swift in Sources */,
@@ -789,6 +808,7 @@
 				024327A31DC825CC00F44384 /* 81_Search in Rotated Sorted Array II.swift in Sources */,
 				02B5D5B32344637500DB6DA5 /* 131_Palindrome Partitioning.swift in Sources */,
 				02433CEF2346CE0B00B963CA /* 11_Container With Most Water.swift in Sources */,
+				0293F1D3234D477400436B83 /* 678_Valid Parenthesis String.swift in Sources */,
 				02FDE0F42331BA000063DE3D /* 104_Maximum Depth of Binary Tree.swift in Sources */,
 				02CE3E27232FF92B0080E8FD /* 4_Median of Two Sorted Arrays.swift in Sources */,
 				02974B6523308310003B0FCB /* 1064_Fixed Point.swift in Sources */,
@@ -844,6 +864,7 @@
 				02ED4EDA231F978A003D4364 /* 21_Merge Two Sorted Lists.swift in Sources */,
 				02FDE0F6233207660063DE3D /* 111_Minimum Depth of Binary Tree.swift in Sources */,
 				02433D132349407E00B963CA /* 186_Reverse Words in a String II.swift in Sources */,
+				0293F1DD234FC58E00436B83 /* 277_Find the Celebrity.swift in Sources */,
 				029C76812339855D00D6B6C5 /* 140_Word Break II.swift in Sources */,
 				02828B5E23246DBC009E117D /* 138_Copy List with Random Pointer.swift in Sources */,
 				02FDE1002333041D0063DE3D /* 1123_Lowest Common Ancestor of Deepest Leaves.swift in Sources */,
@@ -913,7 +934,9 @@
 				02433D0B23487EF600B963CA /* 977_Squares of a Sorted Array.swift in Sources */,
 				023D1EB51DBEFB490027A912 /* 1_Two Sum.swift in Sources */,
 				02CE3E1F232EF3330080E8FD /* 69_Sqrt(x).swift in Sources */,
+				0293F1DB234FB9E900436B83 /* 759_Employee Free Time.swift in Sources */,
 				02B5D5B623447CAC00DB6DA5 /* 1143_Longest Common Subsequence.swift in Sources */,
+				0293F1D7234E623B00436B83 /* 7_Reverse Integer.swift in Sources */,
 				02A8A8D11DCAD4A900CA3EBF /* 28_Implement strStr().swift in Sources */,
 				02CE3E3B23307CEC0080E8FD /* 1150_Check If a Number Is Majority Element in a Sorted Array.swift in Sources */,
 				02F8CA3423375224003B2BFA /* 45_Jump Game II.swift in Sources */,
@@ -935,6 +958,7 @@
 				0254D6111DC1A04D00F4E42F /* 189_Rotate Array.swift in Sources */,
 				02433D2F234A4A0000B963CA /* 191_Number of 1 Bits.swift in Sources */,
 				02A8A8D31DCAD6ED00CA3EBF /* 205_Isomorphic Strings.swift in Sources */,
+				0293F1D5234E615800436B83 /* 6_ZigZag Conversion.swift in Sources */,
 				02FDE11E2335E5360063DE3D /* 120_Triangle.swift in Sources */,
 				02B5D5C023458AA800DB6DA5 /* 115_Distinct Subsequences.swift in Sources */,
 				0254D6791DC2F45700F4E42F /* 48_Rotate Image.swift in Sources */,

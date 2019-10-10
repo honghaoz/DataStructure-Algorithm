@@ -11,7 +11,9 @@
 import Foundation
 
 class Num14_LongestCommonPrefix: Solution {
-
+  // TODO: https://leetcode.com/problems/longest-common-prefix/solution/
+  // 抽空实现这个solution中不同的解决方法
+  
   /// Use the first string as a reference
   /// loop the rest strings to check if the rest strings shares the common prefix
 	func longestCommonPrefix(_ strs: [String]) -> String {
