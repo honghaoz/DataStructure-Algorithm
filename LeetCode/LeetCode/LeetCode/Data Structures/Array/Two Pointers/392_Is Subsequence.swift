@@ -35,8 +35,12 @@ import Foundation
 class Num392 {
   // MARK: - Two pointers
   // O(n)
-  // 用两个indexm，如果相等，两个index都增长，如果不相等，增加t的index
+  // 用两个index，如果相等，两个index都增长，如果不相等，增加t的index
   // 最后判断s的index是不是已经到了最后一次
+
+  /// Binary search
+  /// https://leetcode.com/problems/is-subsequence/discuss/87292/Swift-solution-Binary-Search
+  // TODO:
   func isSubsequence(_ s: String, _ t: String) -> Bool {
     guard s.count <= t.count else {
       return false

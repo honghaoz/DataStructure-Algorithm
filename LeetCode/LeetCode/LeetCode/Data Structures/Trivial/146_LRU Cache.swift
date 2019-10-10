@@ -36,9 +36,11 @@ import Foundation
 class Num146 {
   class LRUCache {
 
+    // 标准的实现方式是用doubly linked list
+    // dict存node，需要调整顺序的话，linked list调整。
     var dict: [Int: Int] = [:]
 
-    // From old to new
+    // From old to new, this needs to use Linked list
     var keys: [Int] = []
 
     let size: Int

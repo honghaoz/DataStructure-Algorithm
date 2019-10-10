@@ -29,7 +29,42 @@ import Foundation
 
 class Num84 {
 
-  
+  // Use stack
+  // O(n)
+  // 基本思路是对于每一个index，向左和向右延伸到不能延伸（直到比当前值小的第一个数）
+  // 用一个单调栈，保持单调性（递增）。那么这个过程就知道每个数比他小的第一个数在哪里。
+  // 这样就可以快速的知道每个index需要求的左边界和右边界，这样就可以算出每个index为中心的最大面积。
+  func largestRectangleArea_stack(_ heights: [Int]) -> Int {
+    if heights.count == 0 {
+      return 0
+    }
+
+    var stack: [Int] = []
+    var result: Int = 0
+    for i in 0...heights.count {
+      let current: Int
+      if i < heights.count {
+        current = heights[i]
+      }
+      else {
+        current = -1
+      }
+      while !stack.isEmpty, current <= heights[stack.last!] {
+        let h = heights[stack.removeLast()]
+        let w: Int
+        if stack.isEmpty {
+          w = i
+        }
+        else {
+          w = i - stack.last! - 1
+        }
+        result = max(result, w * h)
+      }
+      stack.append(i)
+    }
+
+    return result
+  }
 
   // DP, O(n^2)
   // Can be optimized to O(n):
