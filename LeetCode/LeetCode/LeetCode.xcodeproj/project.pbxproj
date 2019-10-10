@@ -433,6 +433,7 @@
 		022274841DB5C12C002F8547 /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				02EFCD62234FABC20013D087 /* Stack */,
 				02433D32234AC1CB00B963CA /* Priority Queue */,
 				02433D012348797F00B963CA /* Two Pointers */,
 				02433D04234879EB00B963CA /* Prefix Sum */,
@@ -480,7 +481,6 @@
 				023868DE1DCC230E00DF7B2B /* 383_Ransom Note.swift */,
 				023868E21DCC42DC00DF7B2B /* 290_Word Pattern.swift */,
 				02128B691DCE84DD002BB4F0 /* 3_Longest Substring Without Repeating Characters.swift */,
-				02D3EF2E1DD0234F005B73CD /* 20_Valid Parentheses.swift */,
 				02FDE11123358C490063DE3D /* 836_Rectangle Overlap.swift */,
 				02FDE11323358FFF0063DE3D /* 492_Construct the Rectangle.swift */,
 				02F8CA3523376701003B2BFA /* 674_Longest Continuous Increasing Subsequence.swift */,
@@ -597,6 +597,14 @@
 				02EFCD5F234FAAFA0013D087 /* 718_Maximum Length of Repeated Subarray.swift */,
 			);
 			path = "2维DP";
+			sourceTree = "<group>";
+		};
+		02EFCD62234FABC20013D087 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				02D3EF2E1DD0234F005B73CD /* 20_Valid Parentheses.swift */,
+			);
+			path = Stack;
 			sourceTree = "<group>";
 		};
 		02FDE1192335C50F0063DE3D /* Dynamic Programming */ = {
