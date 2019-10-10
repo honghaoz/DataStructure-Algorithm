@@ -19,11 +19,14 @@
 //Output: 4
 //
 
+// 求一个matrix中最大的正方形
+
 import Foundation
 
 class Num221 {
   // https://leetcode.com/problems/maximal-square/solution/
 
+  // MARK: - DP 2维
   // DP standard with 4 steps
   func maximalSquare(_ matrix: [[Character]]) -> Int {
     // get matrix size

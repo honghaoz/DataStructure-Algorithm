@@ -19,11 +19,13 @@
 //Output: 6
 //
 
+// 求一个matrix中最大的rectangle
+
 import Foundation
 
 class Num85 {
   // DP, build a state of the max width for each row ends at a index
-  // Then for each elemnt, check the size with each possible height
+  // Then for each element, check the size with each possible height
   func maximalRectangle(_ matrix: [[Character]]) -> Int {
     guard matrix.count > 0 else {
       return 0

@@ -28,6 +28,8 @@
 //Special thanks to @pbrother for adding this problem and creating all test cases.
 //
 
+// 查看s是否是t的一个subsequence
+
 import Foundation
 
 class Num392 {
@@ -35,7 +37,8 @@ class Num392 {
   /// https://leetcode.com/problems/is-subsequence/discuss/87292/Swift-solution-Binary-Search
   // TODO:
 
-  /// Two pointers
+  // MARK: - Two pointers
+  // 用两个指针，查询一遍。如果相等，就两个都增加，否则，增加t那个指针。
   func isSubsequence(_ s: String, _ t: String) -> Bool {
     guard s.count <= t.count else {
       return false
