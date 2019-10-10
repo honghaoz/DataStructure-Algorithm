@@ -28,14 +28,15 @@
 //Special thanks to @pbrother for adding this problem and creating all test cases.
 //
 
+// 判断s是否是t的一个subsequence
+
 import Foundation
 
 class Num392 {
-  /// Binary search
-  /// https://leetcode.com/problems/is-subsequence/discuss/87292/Swift-solution-Binary-Search
-  // TODO:
-
-  /// Two pointers
+  // MARK: - Two pointers
+  // O(n)
+  // 用两个indexm，如果相等，两个index都增长，如果不相等，增加t的index
+  // 最后判断s的index是不是已经到了最后一次
   func isSubsequence(_ s: String, _ t: String) -> Bool {
     guard s.count <= t.count else {
       return false
