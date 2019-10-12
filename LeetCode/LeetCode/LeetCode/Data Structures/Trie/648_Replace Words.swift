@@ -33,7 +33,9 @@ import Foundation
 
 class Num648 {
   // MARK: - Trie
-  func 
+  // The trie can speed up the prefix check. Compared with the process function below,
+  // Instead of creating prefxi string and check agins with roots set,
+  // You can use trie to improve the preformance
   
   // MARK: - Hash
   // process each word in the sentence. For each word, check its prefix aginst the dictionary
