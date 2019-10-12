@@ -92,6 +92,9 @@
 		0293F1D9234E664500436B83 /* 9_Palindrome Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0293F1D8234E664500436B83 /* 9_Palindrome Number.swift */; };
 		0293F1DB234FB9E900436B83 /* 759_Employee Free Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0293F1DA234FB9E900436B83 /* 759_Employee Free Time.swift */; };
 		0293F1DD234FC58E00436B83 /* 277_Find the Celebrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0293F1DC234FC58E00436B83 /* 277_Find the Celebrity.swift */; };
+		0294993E23519F3A00D7D584 /* 419_Battleships in a Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294993D23519F3A00D7D584 /* 419_Battleships in a Board.swift */; };
+		0294994123525B8100D7D584 /* 648_Replace Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294994023525B8100D7D584 /* 648_Replace Words.swift */; };
+		0294994423525C1000D7D584 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0294994323525C1000D7D584 /* Trie.swift */; };
 		02974B6523308310003B0FCB /* 1064_Fixed Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02974B6423308310003B0FCB /* 1064_Fixed Point.swift */; };
 		029C76812339855D00D6B6C5 /* 140_Word Break II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C76802339855D00D6B6C5 /* 140_Word Break II.swift */; };
 		029C76832339CCC000D6B6C5 /* 84_Largest Rectangle in Histogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029C76822339CCC000D6B6C5 /* 84_Largest Rectangle in Histogram.swift */; };
@@ -288,6 +291,9 @@
 		0293F1D8234E664500436B83 /* 9_Palindrome Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "9_Palindrome Number.swift"; sourceTree = "<group>"; };
 		0293F1DA234FB9E900436B83 /* 759_Employee Free Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "759_Employee Free Time.swift"; sourceTree = "<group>"; };
 		0293F1DC234FC58E00436B83 /* 277_Find the Celebrity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "277_Find the Celebrity.swift"; sourceTree = "<group>"; };
+		0294993D23519F3A00D7D584 /* 419_Battleships in a Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "419_Battleships in a Board.swift"; sourceTree = "<group>"; };
+		0294994023525B8100D7D584 /* 648_Replace Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "648_Replace Words.swift"; sourceTree = "<group>"; };
+		0294994323525C1000D7D584 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		02974B6423308310003B0FCB /* 1064_Fixed Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1064_Fixed Point.swift"; sourceTree = "<group>"; };
 		029C76802339855D00D6B6C5 /* 140_Word Break II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "140_Word Break II.swift"; sourceTree = "<group>"; };
 		029C76822339CCC000D6B6C5 /* 84_Largest Rectangle in Histogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "84_Largest Rectangle in Histogram.swift"; sourceTree = "<group>"; };
@@ -428,7 +434,9 @@
 				02AA3025231BA7DB00DBB596 /* Shared.swift */,
 				02433D33234AC66300B963CA /* Heap.swift */,
 				02433D35234AC69500B963CA /* PriorityQueue.swift */,
-				0293F1DC234FC58E00436B83 /* 277_Find the Celebrity.swift */,
+				0294994323525C1000D7D584 /* Trie.swift */,
+				0294994223525B8C00D7D584 /* Trie */,
+				0294993F23525B6C00D7D584 /* Graph */,
 				02433D1F23494CAA00B963CA /* 垃圾题目 */,
 				02433D0723487AAA00B963CA /* Trivial */,
 				02433D1C2349499400B963CA /* 记忆题 - 只需要记住最优解 */,
@@ -576,6 +584,7 @@
 				02433D39234C5E1800B963CA /* 155_Min Stack.swift */,
 				02EFCD5B234DC8AB0013D087 /* 720_Longest Word in Dictionary.swift */,
 				02EFCD5D234EF9150013D087 /* 362_Design Hit Counter.swift */,
+				0294993D23519F3A00D7D584 /* 419_Battleships in a Board.swift */,
 			);
 			path = "记忆题 - 只需要记住最优解";
 			sourceTree = "<group>";
@@ -605,6 +614,22 @@
 				0293F1DA234FB9E900436B83 /* 759_Employee Free Time.swift */,
 			);
 			path = "Priority Queue";
+			sourceTree = "<group>";
+		};
+		0294993F23525B6C00D7D584 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				0293F1DC234FC58E00436B83 /* 277_Find the Celebrity.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		0294994223525B8C00D7D584 /* Trie */ = {
+			isa = PBXGroup;
+			children = (
+				0294994023525B8100D7D584 /* 648_Replace Words.swift */,
+			);
+			path = Trie;
 			sourceTree = "<group>";
 		};
 		02EFCD61234FAB460013D087 /* 2维DP */ = {
@@ -801,6 +826,7 @@
 				02B5D5B32344637500DB6DA5 /* 131_Palindrome Partitioning.swift in Sources */,
 				02433CEF2346CE0B00B963CA /* 11_Container With Most Water.swift in Sources */,
 				0293F1D3234D477400436B83 /* 678_Valid Parenthesis String.swift in Sources */,
+				0294994123525B8100D7D584 /* 648_Replace Words.swift in Sources */,
 				02FDE0F42331BA000063DE3D /* 104_Maximum Depth of Binary Tree.swift in Sources */,
 				02CE3E27232FF92B0080E8FD /* 4_Median of Two Sorted Arrays.swift in Sources */,
 				02974B6523308310003B0FCB /* 1064_Fixed Point.swift in Sources */,
@@ -828,6 +854,7 @@
 				02FDE124233611170063DE3D /* 70_Climbing Stairs.swift in Sources */,
 				02FDE1202335FA7E0063DE3D /* 64_Minimum Path Sum.swift in Sources */,
 				02828B6E23248E57009E117D /* 160_Intersection of Two Linked Lists.swift in Sources */,
+				0294993E23519F3A00D7D584 /* 419_Battleships in a Board.swift in Sources */,
 				024378932321D28900916F49 /* 53_Maximum Subarray.swift in Sources */,
 				02AA3024231B9E8600DBB596 /* 2_Add Two Numbers.swift in Sources */,
 				02FDE11223358C490063DE3D /* 836_Rectangle Overlap.swift in Sources */,
@@ -852,6 +879,7 @@
 				02FDE12F2336BDAC0063DE3D /* 100_Same Tree.swift in Sources */,
 				02A8A8CD1DCAC99000CA3EBF /* 38_Count and Say.swift in Sources */,
 				023868E31DCC42DC00DF7B2B /* 290_Word Pattern.swift in Sources */,
+				0294994423525C1000D7D584 /* Trie.swift in Sources */,
 				02BA97751DB71E450026E6BF /* 219_Contains Duplicate II.swift in Sources */,
 				02ED4EDA231F978A003D4364 /* 21_Merge Two Sorted Lists.swift in Sources */,
 				02FDE0F6233207660063DE3D /* 111_Minimum Depth of Binary Tree.swift in Sources */,

@@ -47,10 +47,12 @@ class Num720 {
     var result: String = ""
     for w in words {
       if isBuiltable(w, dict) {
+        // If new word length is bigger
         if w.count > result.count  {
           result = w
         }
         else if w.count == result.count, w < result {
+          // new word is before the result
           result = w
         }
       }
