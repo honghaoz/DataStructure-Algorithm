@@ -34,11 +34,11 @@ import Foundation
 class Num648 {
   // MARK: - Trie
   // The trie can speed up the prefix check. Compared with the process function below,
-  // Instead of creating prefxi string and check agins with roots set,
-  // You can use trie to improve the preformance
+  // Instead of creating prefix string and check against with roots set,
+  // You can use trie to improve the performance
   
   // MARK: - Hash
-  // process each word in the sentence. For each word, check its prefix aginst the dictionary
+  // process each word in the sentence. For each word, check its prefix against the dictionary
   // O(word counts * each word length)
   func replaceWords(_ dict: [String], _ sentence: String) -> String {
     let roots = Set(dict)

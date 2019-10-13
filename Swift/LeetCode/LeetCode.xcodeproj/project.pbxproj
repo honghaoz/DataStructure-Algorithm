@@ -207,7 +207,6 @@
 		02128B6B1DCE90B4002BB4F0 /* 68_Text Justification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "68_Text Justification.swift"; sourceTree = "<group>"; };
 		022274771DB5BB86002F8547 /* LeetCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		0222747A1DB5BB86002F8547 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		022274811DB5BED3002F8547 /* notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = notes.md; sourceTree = "<group>"; };
 		022274851DB5C12C002F8547 /* 228_Summary Ranges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "228_Summary Ranges.swift"; sourceTree = "<group>"; };
 		022274871DB5D473002F8547 /* 169_Majority Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "169_Majority Element.swift"; sourceTree = "<group>"; };
 		02247B232320D1CE00262D79 /* 686_Repeated String Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "686_Repeated String Match.swift"; sourceTree = "<group>"; };
@@ -405,7 +404,6 @@
 			children = (
 				022274791DB5BB86002F8547 /* LeetCode */,
 				022274781DB5BB86002F8547 /* Products */,
-				022274811DB5BED3002F8547 /* notes.md */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
