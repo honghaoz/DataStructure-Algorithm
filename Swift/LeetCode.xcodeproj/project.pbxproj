@@ -128,6 +128,10 @@
 		02CD80202353F92300EC4173 /* 448_Find All Numbers Disappeared in an Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD801F2353F92300EC4173 /* 448_Find All Numbers Disappeared in an Array.swift */; };
 		02CD80222353FC2100EC4173 /* 242_Valid Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD80212353FC2100EC4173 /* 242_Valid Anagram.swift */; };
 		02CD80242353FE0F00EC4173 /* 13_Roman to Integer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD80232353FE0F00EC4173 /* 13_Roman to Integer.swift */; };
+		02CD8026235425D500EC4173 /* 122_Best Time to Buy and Sell Stock II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD8025235425D500EC4173 /* 122_Best Time to Buy and Sell Stock II.swift */; };
+		02CD8028235428EB00EC4173 /* 733_Flood Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD8027235428EB00EC4173 /* 733_Flood Fill.swift */; };
+		02CD802A2354306300EC4173 /* 530_Minimum Absolute Difference in BST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD80292354306300EC4173 /* 530_Minimum Absolute Difference in BST.swift */; };
+		02CD802C2354323900EC4173 /* 387_First Unique Character in a String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD802B2354323900EC4173 /* 387_First Unique Character in a String.swift */; };
 		02CE3E1F232EF3330080E8FD /* 69_Sqrt(x).swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE3E1E232EF3330080E8FD /* 69_Sqrt(x).swift */; };
 		02CE3E21232EF6C40080E8FD /* 167_Two Sum II - Input array is sorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE3E20232EF6C40080E8FD /* 167_Two Sum II - Input array is sorted.swift */; };
 		02CE3E23232EF86C0080E8FD /* 278_First Bad Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE3E22232EF86C0080E8FD /* 278_First Bad Version.swift */; };
@@ -336,6 +340,10 @@
 		02CD801F2353F92300EC4173 /* 448_Find All Numbers Disappeared in an Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "448_Find All Numbers Disappeared in an Array.swift"; sourceTree = "<group>"; };
 		02CD80212353FC2100EC4173 /* 242_Valid Anagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "242_Valid Anagram.swift"; sourceTree = "<group>"; };
 		02CD80232353FE0F00EC4173 /* 13_Roman to Integer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "13_Roman to Integer.swift"; sourceTree = "<group>"; };
+		02CD8025235425D500EC4173 /* 122_Best Time to Buy and Sell Stock II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "122_Best Time to Buy and Sell Stock II.swift"; sourceTree = "<group>"; };
+		02CD8027235428EB00EC4173 /* 733_Flood Fill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "733_Flood Fill.swift"; sourceTree = "<group>"; };
+		02CD80292354306300EC4173 /* 530_Minimum Absolute Difference in BST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "530_Minimum Absolute Difference in BST.swift"; sourceTree = "<group>"; };
+		02CD802B2354323900EC4173 /* 387_First Unique Character in a String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "387_First Unique Character in a String.swift"; sourceTree = "<group>"; };
 		02CE3E1E232EF3330080E8FD /* 69_Sqrt(x).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "69_Sqrt(x).swift"; sourceTree = "<group>"; };
 		02CE3E20232EF6C40080E8FD /* 167_Two Sum II - Input array is sorted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "167_Two Sum II - Input array is sorted.swift"; sourceTree = "<group>"; };
 		02CE3E22232EF86C0080E8FD /* 278_First Bad Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "278_First Bad Version.swift"; sourceTree = "<group>"; };
@@ -580,6 +588,9 @@
 				02EFCD59234DBBBD0013D087 /* 811_Subdomain Visit Count.swift */,
 				027B72402352AFB5000DFC73 /* 339_Nested List Weight Sum.swift */,
 				02CD801D2353F4E800EC4173 /* 258_Add Digits.swift */,
+				02CD8025235425D500EC4173 /* 122_Best Time to Buy and Sell Stock II.swift */,
+				02CD8027235428EB00EC4173 /* 733_Flood Fill.swift */,
+				02CD802B2354323900EC4173 /* 387_First Unique Character in a String.swift */,
 			);
 			path = "Trivial - 不需要看的题目";
 			sourceTree = "<group>";
@@ -597,6 +608,7 @@
 				02CD801F2353F92300EC4173 /* 448_Find All Numbers Disappeared in an Array.swift */,
 				02CD80212353FC2100EC4173 /* 242_Valid Anagram.swift */,
 				02CD80232353FE0F00EC4173 /* 13_Roman to Integer.swift */,
+				02CD80292354306300EC4173 /* 530_Minimum Absolute Difference in BST.swift */,
 			);
 			path = "记忆题 - 只需要记住最优解";
 			sourceTree = "<group>";
@@ -884,6 +896,7 @@
 				02FDE1222336076E0063DE3D /* 62_Unique Paths.swift in Sources */,
 				022274881DB5D473002F8547 /* 169_Majority Element.swift in Sources */,
 				0235B4DC1DC6C1C20097F5F3 /* 59_Spiral Matrix II.swift in Sources */,
+				02CD8026235425D500EC4173 /* 122_Best Time to Buy and Sell Stock II.swift in Sources */,
 				02433D38234AD13300B963CA /* 252_Meeting Rooms.swift in Sources */,
 				02433D2D234A476100B963CA /* 40_Combination Sum II.swift in Sources */,
 				02F8CA3A23388936003B2BFA /* 139_Word Break.swift in Sources */,
@@ -1002,6 +1015,7 @@
 				0293F1DB234FB9E900436B83 /* 759_Employee Free Time.swift in Sources */,
 				02B5D5B623447CAC00DB6DA5 /* 1143_Longest Common Subsequence.swift in Sources */,
 				0293F1D7234E623B00436B83 /* 7_Reverse Integer.swift in Sources */,
+				02CD802C2354323900EC4173 /* 387_First Unique Character in a String.swift in Sources */,
 				02A8A8D11DCAD4A900CA3EBF /* 28_Implement strStr().swift in Sources */,
 				02CE3E3B23307CEC0080E8FD /* 1150_Check If a Number Is Majority Element in a Sorted Array.swift in Sources */,
 				02F8CA3423375224003B2BFA /* 45_Jump Game II.swift in Sources */,
@@ -1012,6 +1026,7 @@
 				0243788B2320E91600916F49 /* 771_Jewels and Stones.swift in Sources */,
 				02128B6C1DCE90B4002BB4F0 /* 68_Text Justification.swift in Sources */,
 				02433D152349438200B963CA /* 151_Reverse Words in a String.swift in Sources */,
+				02CD8028235428EB00EC4173 /* 733_Flood Fill.swift in Sources */,
 				02CE3E3323301B510080E8FD /* 374_Guess Number Higher or Lower.swift in Sources */,
 				02CD80222353FC2100EC4173 /* 242_Valid Anagram.swift in Sources */,
 				02CE3E21232EF6C40080E8FD /* 167_Two Sum II - Input array is sorted.swift in Sources */,
@@ -1022,6 +1037,7 @@
 				02F6B7A11DC04DD800FF2A47 /* 16_3Sum Closest.swift in Sources */,
 				02828B6623248122009E117D /* 148_Sort List.swift in Sources */,
 				0254D6111DC1A04D00F4E42F /* 189_Rotate Array.swift in Sources */,
+				02CD802A2354306300EC4173 /* 530_Minimum Absolute Difference in BST.swift in Sources */,
 				02433D2F234A4A0000B963CA /* 191_Number of 1 Bits.swift in Sources */,
 				02A8A8D31DCAD6ED00CA3EBF /* 205_Isomorphic Strings.swift in Sources */,
 				0293F1D5234E615800436B83 /* 6_ZigZag Conversion.swift in Sources */,
