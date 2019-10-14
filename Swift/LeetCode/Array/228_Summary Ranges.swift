@@ -15,8 +15,10 @@
 //   Output: ["0","2->4","6","8->9"]
 //   Explanation: 2,3,4 form a continuous range; 8,9 form a continuous range.
 
+// 一个有序数组，把连续的数字用一个range表示
+
 class Num228_SummaryRanges {
-  // Common way: scan from left to right, build results in progress
+  // MARK: - Common way: scan from left to right, build results in progress
   func summaryRanges(_ nums: [Int]) -> [String] {
     guard nums.count > 1 else { return nums.map { return "\($0)" } }
     var results: [String] = []
@@ -54,7 +56,7 @@ class Num228_SummaryRanges {
     return results
   }
 
-  // Common way2: scan from left to right, use i for start and j for end.
+  // MARK: - Common way2: scan from left to right, use i for start and j for end.
   func summaryRanges_standard(_ nums: [Int]) -> [String] {
     guard nums.count > 0 else { return [] }
     var i = 0
@@ -126,7 +128,7 @@ class Num228_SummaryRanges {
           res.append(lastArray)
           return res
         } else {
-          // append new ararys
+          // append new arrays
           res.append([currentNum])
           return res
         }
