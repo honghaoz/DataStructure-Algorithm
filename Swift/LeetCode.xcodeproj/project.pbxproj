@@ -132,6 +132,7 @@
 		02CD8028235428EB00EC4173 /* 733_Flood Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD8027235428EB00EC4173 /* 733_Flood Fill.swift */; };
 		02CD802A2354306300EC4173 /* 530_Minimum Absolute Difference in BST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD80292354306300EC4173 /* 530_Minimum Absolute Difference in BST.swift */; };
 		02CD802C2354323900EC4173 /* 387_First Unique Character in a String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD802B2354323900EC4173 /* 387_First Unique Character in a String.swift */; };
+		02CD80882356F0B600EC4173 /* 63_Unique Paths II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD80872356F0B600EC4173 /* 63_Unique Paths II.swift */; };
 		02CE3E1F232EF3330080E8FD /* 69_Sqrt(x).swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE3E1E232EF3330080E8FD /* 69_Sqrt(x).swift */; };
 		02CE3E21232EF6C40080E8FD /* 167_Two Sum II - Input array is sorted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE3E20232EF6C40080E8FD /* 167_Two Sum II - Input array is sorted.swift */; };
 		02CE3E23232EF86C0080E8FD /* 278_First Bad Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE3E22232EF86C0080E8FD /* 278_First Bad Version.swift */; };
@@ -344,6 +345,7 @@
 		02CD8027235428EB00EC4173 /* 733_Flood Fill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "733_Flood Fill.swift"; sourceTree = "<group>"; };
 		02CD80292354306300EC4173 /* 530_Minimum Absolute Difference in BST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "530_Minimum Absolute Difference in BST.swift"; sourceTree = "<group>"; };
 		02CD802B2354323900EC4173 /* 387_First Unique Character in a String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "387_First Unique Character in a String.swift"; sourceTree = "<group>"; };
+		02CD80872356F0B600EC4173 /* 63_Unique Paths II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "63_Unique Paths II.swift"; sourceTree = "<group>"; };
 		02CE3E1E232EF3330080E8FD /* 69_Sqrt(x).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "69_Sqrt(x).swift"; sourceTree = "<group>"; };
 		02CE3E20232EF6C40080E8FD /* 167_Two Sum II - Input array is sorted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "167_Two Sum II - Input array is sorted.swift"; sourceTree = "<group>"; };
 		02CE3E22232EF86C0080E8FD /* 278_First Bad Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "278_First Bad Version.swift"; sourceTree = "<group>"; };
@@ -460,9 +462,9 @@
 				0294993F23525B6C00D7D584 /* Graph */,
 				0294994223525B8C00D7D584 /* Trie */,
 				02FDE11A2335D1540063DE3D /* Binary Search */,
+				02CD80862356E5F000EC4173 /* Divide and Conquer */,
 				02433D012348797F00B963CA /* Two Pointers */,
 				02433D04234879EB00B963CA /* Prefix Sum */,
-				02433D2423497E9600B963CA /* Prefix Postfix Max Min */,
 				02433CF623478EB800B963CA /* Backtracking */,
 				02FDE1192335C50F0063DE3D /* Dynamic Programming */,
 			);
@@ -473,7 +475,6 @@
 			isa = PBXGroup;
 			children = (
 				022274851DB5C12C002F8547 /* 228_Summary Ranges.swift */,
-				022274871DB5D473002F8547 /* 169_Majority Element.swift */,
 				02BA976E1DB710F70026E6BF /* 349_Intersection of Two Arrays.swift */,
 				02BA97701DB7135D0026E6BF /* 350_Intersection of Two Arrays II.swift */,
 				02BA97721DB717C60026E6BF /* 217_Contains Duplicate.swift */,
@@ -560,9 +561,9 @@
 		02433D04234879EB00B963CA /* Prefix Sum */ = {
 			isa = PBXGroup;
 			children = (
-				024378922321D28900916F49 /* 53_Maximum Subarray.swift */,
 				02433CFF234836F900B963CA /* 1031_Maximum Sum of Two Non-Overlapping Subarrays.swift */,
 				02433D252349887A00B963CA /* 560_Subarray Sum Equals K.swift */,
+				02433D2423497E9600B963CA /* Prefix Postfix Max Min */,
 			);
 			path = "Prefix Sum";
 			sourceTree = "<group>";
@@ -609,6 +610,7 @@
 				02CD80212353FC2100EC4173 /* 242_Valid Anagram.swift */,
 				02CD80232353FE0F00EC4173 /* 13_Roman to Integer.swift */,
 				02CD80292354306300EC4173 /* 530_Minimum Absolute Difference in BST.swift */,
+				022274871DB5D473002F8547 /* 169_Majority Element.swift */,
 			);
 			path = "记忆题 - 只需要记住最优解";
 			sourceTree = "<group>";
@@ -670,6 +672,14 @@
 			path = Trie;
 			sourceTree = "<group>";
 		};
+		02CD80862356E5F000EC4173 /* Divide and Conquer */ = {
+			isa = PBXGroup;
+			children = (
+				024378922321D28900916F49 /* 53_Maximum Subarray.swift */,
+			);
+			path = "Divide and Conquer";
+			sourceTree = "<group>";
+		};
 		02EFCD61234FAB460013D087 /* 2维DP */ = {
 			isa = PBXGroup;
 			children = (
@@ -693,6 +703,7 @@
 				02FDE11D2335E5360063DE3D /* 120_Triangle.swift */,
 				02FDE11F2335FA7E0063DE3D /* 64_Minimum Path Sum.swift */,
 				02FDE1212336076E0063DE3D /* 62_Unique Paths.swift */,
+				02CD80872356F0B600EC4173 /* 63_Unique Paths II.swift */,
 				02FDE123233611170063DE3D /* 70_Climbing Stairs.swift */,
 				02FDE10D233562FC0063DE3D /* 221_Maximal Square.swift */,
 				02FDE10F233581520063DE3D /* 85_Maximal Rectangle.swift */,
@@ -964,6 +975,7 @@
 				02FDE10623333D920063DE3D /* 113_Path Sum II.swift in Sources */,
 				027B72392352A4F5000DFC73 /* TreeNode.swift in Sources */,
 				02EFCD5A234DBBBD0013D087 /* 811_Subdomain Visit Count.swift in Sources */,
+				02CD80882356F0B600EC4173 /* 63_Unique Paths II.swift in Sources */,
 				02FDE0F02331A3DE0063DE3D /* 144_Binary Tree Preorder Traversal.swift in Sources */,
 				02433D1E23494C9400B963CA /* 8_String to Integer (atoi).swift in Sources */,
 				02433CF523478B1500B963CA /* 784_Letter Case Permutation.swift in Sources */,

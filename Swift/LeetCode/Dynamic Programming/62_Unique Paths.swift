@@ -31,6 +31,8 @@
 //Output: 28
 //
 
+// 机器人从左上角出发，到右下角。求多少条不同的路径。
+
 import Foundation
 
 class Num62 {
