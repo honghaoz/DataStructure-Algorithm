@@ -27,7 +27,7 @@
 import Foundation
 
 class Num69 {
-  // Use binary search to find the result
+  // Use binary search to find the result in the range 1...x - 1
   func mySqrt(_ x: Int) -> Int {
     guard x > 1 else {
       return x
