@@ -25,9 +25,56 @@
 //Output: -1
 //
 
+// 在一个rotated sorted array中找数字
+
 import Foundation
 
 class Num33 {
+  // MARK: - Binary search
+  // 切除可以确认丢掉的那半边
+  func search2(_ nums: [Int], _ target: Int) -> Int {
+    guard nums.count > 0 else { return -1 }
+    var start = 0
+    var end = nums.count - 1
+    while start + 1 < end {
+      let mid = start + (end - start) / 2
+      if nums[mid] == target {
+        return mid
+      }
+
+      // Cut first part
+      if nums[start] < nums[mid] {
+        if nums[start] <= target && target <= nums[mid] {
+          // 可以确保target在左区间
+          end = mid
+        }
+        else {
+          // 剩下的情况不细分
+          start = mid
+        }
+      }
+        // Cut second part
+      else {
+        if nums[mid] <= target && target <= nums[end] {
+          start = mid
+        }
+        else {
+          end = mid
+        }
+      }
+    }
+
+    if nums[start] == target {
+      return start
+    }
+
+    if nums[end] == target {
+      return end
+    }
+
+    return -1
+  }
+
   // Binary search
   func search(_ nums: [Int], _ target: Int) -> Int {
     guard nums.count > 0 else { return -1 }
@@ -165,45 +212,4 @@ class Num33 {
   // }
 
   // [ ]
-
-  func search2(_ nums: [Int], _ target: Int) -> Int {
-    guard nums.count > 0 else { return -1 }
-    var start = 0
-    var end = nums.count - 1
-    while start + 1 < end {
-      let mid = start + (end - start) / 2
-      if nums[mid] == target {
-        return mid
-      }
-
-      // Cut first part
-      if nums[start] < nums[mid] {
-        if nums[start] <= target && target <= nums[mid] {
-          end = mid
-        }
-        else {
-          start = mid
-        }
-      }
-        // Cut second part
-      else {
-        if nums[mid] <= target && target <= nums[end] {
-          start = mid
-        }
-        else {
-          end = mid
-        }
-      }
-    }
-
-    if nums[start] == target {
-      return start
-    }
-
-    if nums[end] == target {
-      return end
-    }
-
-    return -1
-  }
 }

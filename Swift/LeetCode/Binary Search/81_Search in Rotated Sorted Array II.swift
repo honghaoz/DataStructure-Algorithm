@@ -19,16 +19,16 @@ import Foundation
 class Num81_SearchinRotatedSortedArrayII: Solution {
   func search(_ nums: [Int], _ target: Int) -> Bool {
     guard nums.count > 0 else { return false }
-
+    
     var left = 0
     var right = nums.count - 1
-
-    // Cut trailing, this is beacuse when nums[left] == nums[mid], we can safly
+    
+    // Cut trailing, this is because when nums[left] == nums[mid], we can safely
     // move the left pointer
     while left < right && nums[right] == nums[left] && right >= 0 {
       right -= 1
     }
-
+    
     while left + 1 < right {
       let mid = left + (right - left) / 2
       if nums[left] == nums[mid] { // this is true because the trailing is cut.
@@ -49,19 +49,19 @@ class Num81_SearchinRotatedSortedArrayII: Solution {
         }
       }
     }
-
+    
     if nums[left] == target {
       return true
     }
-
+    
     if nums[right] == target {
       return true
     }
-
+    
     return false
   }
-
+  
   func test() {
-
+    
   }
 }

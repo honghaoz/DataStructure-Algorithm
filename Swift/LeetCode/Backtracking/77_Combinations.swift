@@ -34,7 +34,7 @@ class Num77 {
     return results
   }
 
-  ///
+  /// startNum + n -> the rest numbers available to choose
   private func combineHelper(_ chosen: [Int], _ startNum: Int, _ n: Int, _ k: Int, _ results: inout [[Int]]) {
     if chosen.count == k {
       results.append(chosen)
