@@ -30,6 +30,11 @@
 import Foundation
 
 class Num232 {
+  // MARK: - 用两个stack
+  // Push - O(1) per operation.
+  // Pop - Amortized O(1) per operation.
+  // 正常的stack接受新的数字，当空白的时候，记录front
+  // 反向的stack存的是反过来的数字，当pop的时候，如果反向stack有，则直接返回。否则，把正常stack中的数字倒腾过来。
   class MyQueue {
 
     private var stack: [Int] = [] // stores the incoming values

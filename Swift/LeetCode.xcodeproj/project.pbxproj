@@ -168,6 +168,10 @@
 		02CE3E3B23307CEC0080E8FD /* 1150_Check If a Number Is Majority Element in a Sorted Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE3E3A23307CEC0080E8FD /* 1150_Check If a Number Is Majority Element in a Sorted Array.swift */; };
 		02CE3E3D2330807D0080E8FD /* 852_Peak Index in a Mountain Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE3E3C2330807D0080E8FD /* 852_Peak Index in a Mountain Array.swift */; };
 		02D3EF2F1DD0234F005B73CD /* 20_Valid Parentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D3EF2E1DD0234F005B73CD /* 20_Valid Parentheses.swift */; };
+		02E641D0235A81BA002C4044 /* 256_Paint House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641CF235A81BA002C4044 /* 256_Paint House.swift */; };
+		02E641D2235A825C002C4044 /* 243_Shortest Word Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641D1235A825C002C4044 /* 243_Shortest Word Distance.swift */; };
+		02E641D4235A87EB002C4044 /* 244_Shortest Word Distance II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641D3235A87EB002C4044 /* 244_Shortest Word Distance II.swift */; };
+		02E641D7235A8C4E002C4044 /* 364_Nested List Weight Sum II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641D6235A8C4E002C4044 /* 364_Nested List Weight Sum II.swift */; };
 		02ED4EDA231F978A003D4364 /* 21_Merge Two Sorted Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED4ED9231F978A003D4364 /* 21_Merge Two Sorted Lists.swift */; };
 		02ED4EDF23207CF9003D4364 /* 475_Heaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED4EDE23207CF9003D4364 /* 475_Heaters.swift */; };
 		02EFCD58234DB45F0013D087 /* 5_Longest Palindromic Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFCD57234DB45F0013D087 /* 5_Longest Palindromic Substring.swift */; };
@@ -399,6 +403,10 @@
 		02CE3E3A23307CEC0080E8FD /* 1150_Check If a Number Is Majority Element in a Sorted Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1150_Check If a Number Is Majority Element in a Sorted Array.swift"; sourceTree = "<group>"; };
 		02CE3E3C2330807D0080E8FD /* 852_Peak Index in a Mountain Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "852_Peak Index in a Mountain Array.swift"; sourceTree = "<group>"; };
 		02D3EF2E1DD0234F005B73CD /* 20_Valid Parentheses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "20_Valid Parentheses.swift"; sourceTree = "<group>"; };
+		02E641CF235A81BA002C4044 /* 256_Paint House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "256_Paint House.swift"; sourceTree = "<group>"; };
+		02E641D1235A825C002C4044 /* 243_Shortest Word Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "243_Shortest Word Distance.swift"; sourceTree = "<group>"; };
+		02E641D3235A87EB002C4044 /* 244_Shortest Word Distance II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "244_Shortest Word Distance II.swift"; sourceTree = "<group>"; };
+		02E641D6235A8C4E002C4044 /* 364_Nested List Weight Sum II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "364_Nested List Weight Sum II.swift"; sourceTree = "<group>"; };
 		02ED4ED9231F978A003D4364 /* 21_Merge Two Sorted Lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21_Merge Two Sorted Lists.swift"; sourceTree = "<group>"; };
 		02ED4EDE23207CF9003D4364 /* 475_Heaters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 475_Heaters.swift; sourceTree = "<group>"; };
 		02EFCD57234DB45F0013D087 /* 5_Longest Palindromic Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5_Longest Palindromic Substring.swift"; sourceTree = "<group>"; };
@@ -502,6 +510,7 @@
 				02433D012348797F00B963CA /* Two Pointers */,
 				02433D04234879EB00B963CA /* Prefix Sum */,
 				02433CF623478EB800B963CA /* Backtracking */,
+				02E641D5235A8C2A002C4044 /* DFS */,
 				02FDE1192335C50F0063DE3D /* Dynamic Programming */,
 			);
 			path = LeetCode;
@@ -592,6 +601,8 @@
 				02433D022348799600B963CA /* 75_Sort Colors.swift */,
 				02433D0A23487EF600B963CA /* 977_Squares of a Sorted Array.swift */,
 				02CD80A32359059E00EC4173 /* 443_String Compression.swift */,
+				02E641D1235A825C002C4044 /* 243_Shortest Word Distance.swift */,
+				02E641D3235A87EB002C4044 /* 244_Shortest Word Distance II.swift */,
 			);
 			path = "Two Pointers";
 			sourceTree = "<group>";
@@ -627,7 +638,6 @@
 				0293F1D4234E615800436B83 /* 6_ZigZag Conversion.swift */,
 				0293F1D8234E664500436B83 /* 9_Palindrome Number.swift */,
 				02EFCD59234DBBBD0013D087 /* 811_Subdomain Visit Count.swift */,
-				027B72402352AFB5000DFC73 /* 339_Nested List Weight Sum.swift */,
 				02CD801D2353F4E800EC4173 /* 258_Add Digits.swift */,
 				02CD8025235425D500EC4173 /* 122_Best Time to Buy and Sell Stock II.swift */,
 				02CD8027235428EB00EC4173 /* 733_Flood Fill.swift */,
@@ -728,6 +738,15 @@
 			path = "Divide and Conquer";
 			sourceTree = "<group>";
 		};
+		02E641D5235A8C2A002C4044 /* DFS */ = {
+			isa = PBXGroup;
+			children = (
+				027B72402352AFB5000DFC73 /* 339_Nested List Weight Sum.swift */,
+				02E641D6235A8C4E002C4044 /* 364_Nested List Weight Sum II.swift */,
+			);
+			path = DFS;
+			sourceTree = "<group>";
+		};
 		02EFCD61234FAB460013D087 /* 2维DP */ = {
 			isa = PBXGroup;
 			children = (
@@ -773,6 +792,7 @@
 				02B5D5BF23458AA800DB6DA5 /* 115_Distinct Subsequences.swift */,
 				02433CEC2346AF6C00B963CA /* 97_Interleaving String.swift */,
 				0293F1D2234D477400436B83 /* 678_Valid Parenthesis String.swift */,
+				02E641CF235A81BA002C4044 /* 256_Paint House.swift */,
 				02EFCD61234FAB460013D087 /* 2维DP */,
 			);
 			path = "Dynamic Programming";
@@ -934,6 +954,7 @@
 				02FDE1352336CE9F0063DE3D /* 572_Subtree of Another Tree.swift in Sources */,
 				02FDE11823359C840063DE3D /* 937_Reorder Data in Log Files.swift in Sources */,
 				02433D1B2349497F00B963CA /* 202_Happy Number.swift in Sources */,
+				02E641D4235A87EB002C4044 /* 244_Shortest Word Distance II.swift in Sources */,
 				027B723F2352AF3B000DFC73 /* 463_Island Perimeter.swift in Sources */,
 				023868E11DCC3A9D00DF7B2B /* 14_Longest Common Prefix.swift in Sources */,
 				02433D19234948AF00B963CA /* 412_Fizz Buzz.swift in Sources */,
@@ -993,6 +1014,7 @@
 				02CE3E312330167A0080E8FD /* 441_Arranging Coins.swift in Sources */,
 				02CD808E2357BB4A00EC4173 /* 796_Rotate String.swift in Sources */,
 				02FDE116233591C50063DE3D /* 933_Number of Recent Calls.swift in Sources */,
+				02E641D2235A825C002C4044 /* 243_Shortest Word Distance.swift in Sources */,
 				02FDE1312336C2B40063DE3D /* 543_Diameter of Binary Tree.swift in Sources */,
 				02FDE0FE2332F5050063DE3D /* 236_Lowest Common Ancestor of a Binary Tree.swift in Sources */,
 				02B5D5B823447D1900DB6DA5 /* 72_Edit Distance.swift in Sources */,
@@ -1093,6 +1115,7 @@
 				02433D0B23487EF600B963CA /* 977_Squares of a Sorted Array.swift in Sources */,
 				023D1EB51DBEFB490027A912 /* 1_Two Sum.swift in Sources */,
 				02CE3E1F232EF3330080E8FD /* 69_Sqrt(x).swift in Sources */,
+				02E641D0235A81BA002C4044 /* 256_Paint House.swift in Sources */,
 				0293F1DB234FB9E900436B83 /* 759_Employee Free Time.swift in Sources */,
 				02B5D5B623447CAC00DB6DA5 /* 1143_Longest Common Subsequence.swift in Sources */,
 				0293F1D7234E623B00436B83 /* 7_Reverse Integer.swift in Sources */,
@@ -1122,6 +1145,7 @@
 				02433D2F234A4A0000B963CA /* 191_Number of 1 Bits.swift in Sources */,
 				02A8A8D31DCAD6ED00CA3EBF /* 205_Isomorphic Strings.swift in Sources */,
 				0293F1D5234E615800436B83 /* 6_ZigZag Conversion.swift in Sources */,
+				02E641D7235A8C4E002C4044 /* 364_Nested List Weight Sum II.swift in Sources */,
 				02FDE11E2335E5360063DE3D /* 120_Triangle.swift in Sources */,
 				02B5D5C023458AA800DB6DA5 /* 115_Distinct Subsequences.swift in Sources */,
 				02CD80922357C39A00EC4173 /* 257_Binary Tree Paths.swift in Sources */,
