@@ -172,6 +172,9 @@
 		02E641D2235A825C002C4044 /* 243_Shortest Word Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641D1235A825C002C4044 /* 243_Shortest Word Distance.swift */; };
 		02E641D4235A87EB002C4044 /* 244_Shortest Word Distance II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641D3235A87EB002C4044 /* 244_Shortest Word Distance II.swift */; };
 		02E641D7235A8C4E002C4044 /* 364_Nested List Weight Sum II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641D6235A8C4E002C4044 /* 364_Nested List Weight Sum II.swift */; };
+		02E641D9235ABE97002C4044 /* 170_Two Sum III - Data structure design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641D8235ABE97002C4044 /* 170_Two Sum III - Data structure design.swift */; };
+		02E641DB235AD44D002C4044 /* 272_Closest Binary Search Tree Value II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641DA235AD44D002C4044 /* 272_Closest Binary Search Tree Value II.swift */; };
+		02E641DD235C3124002C4044 /* 716_Max Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641DC235C3124002C4044 /* 716_Max Stack.swift */; };
 		02ED4EDA231F978A003D4364 /* 21_Merge Two Sorted Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED4ED9231F978A003D4364 /* 21_Merge Two Sorted Lists.swift */; };
 		02ED4EDF23207CF9003D4364 /* 475_Heaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED4EDE23207CF9003D4364 /* 475_Heaters.swift */; };
 		02EFCD58234DB45F0013D087 /* 5_Longest Palindromic Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFCD57234DB45F0013D087 /* 5_Longest Palindromic Substring.swift */; };
@@ -407,6 +410,9 @@
 		02E641D1235A825C002C4044 /* 243_Shortest Word Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "243_Shortest Word Distance.swift"; sourceTree = "<group>"; };
 		02E641D3235A87EB002C4044 /* 244_Shortest Word Distance II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "244_Shortest Word Distance II.swift"; sourceTree = "<group>"; };
 		02E641D6235A8C4E002C4044 /* 364_Nested List Weight Sum II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "364_Nested List Weight Sum II.swift"; sourceTree = "<group>"; };
+		02E641D8235ABE97002C4044 /* 170_Two Sum III - Data structure design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "170_Two Sum III - Data structure design.swift"; sourceTree = "<group>"; };
+		02E641DA235AD44D002C4044 /* 272_Closest Binary Search Tree Value II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "272_Closest Binary Search Tree Value II.swift"; sourceTree = "<group>"; };
+		02E641DC235C3124002C4044 /* 716_Max Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "716_Max Stack.swift"; sourceTree = "<group>"; };
 		02ED4ED9231F978A003D4364 /* 21_Merge Two Sorted Lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21_Merge Two Sorted Lists.swift"; sourceTree = "<group>"; };
 		02ED4EDE23207CF9003D4364 /* 475_Heaters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 475_Heaters.swift; sourceTree = "<group>"; };
 		02EFCD57234DB45F0013D087 /* 5_Longest Palindromic Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5_Longest Palindromic Substring.swift"; sourceTree = "<group>"; };
@@ -644,6 +650,7 @@
 				02CD802B2354323900EC4173 /* 387_First Unique Character in a String.swift */,
 				02CD808F2357BF4E00EC4173 /* 118_Pascal's Triangle.swift */,
 				02CD80932357C74700EC4173 /* 119_Pascal's Triangle II.swift */,
+				02E641D8235ABE97002C4044 /* 170_Two Sum III - Data structure design.swift */,
 			);
 			path = "Trivial - 不需要看的题目";
 			sourceTree = "<group>";
@@ -669,6 +676,7 @@
 				02CD80AB235972E600EC4173 /* 225_Implement Stack using Queues.swift */,
 				02CD80A12358437900EC4173 /* 190_Reverse Bits.swift */,
 				02CD80A92359717C00EC4173 /* 204_Count Primes.swift */,
+				02E641DC235C3124002C4044 /* 716_Max Stack.swift */,
 			);
 			path = "记忆题 - 只需要记住最优解";
 			sourceTree = "<group>";
@@ -802,7 +810,6 @@
 			isa = PBXGroup;
 			children = (
 				02CE3E1E232EF3330080E8FD /* 69_Sqrt(x).swift */,
-				02CE3E2C233011760080E8FD /* 270_Closest Binary Search Tree Value.swift */,
 				02CE3E24232EF9610080E8FD /* 704_Binary Search.swift */,
 				02CE3E20232EF6C40080E8FD /* 167_Two Sum II - Input array is sorted.swift */,
 				02CE3E22232EF86C0080E8FD /* 278_First Bad Version.swift */,
@@ -881,6 +888,8 @@
 				02FDE1322336C9810063DE3D /* 101_Symmetric Tree.swift */,
 				02FDE1342336CE9F0063DE3D /* 572_Subtree of Another Tree.swift */,
 				02CD80912357C39A00EC4173 /* 257_Binary Tree Paths.swift */,
+				02CE3E2C233011760080E8FD /* 270_Closest Binary Search Tree Value.swift */,
+				02E641DA235AD44D002C4044 /* 272_Closest Binary Search Tree Value II.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -992,6 +1001,7 @@
 				02433D38234AD13300B963CA /* 252_Meeting Rooms.swift in Sources */,
 				02433D2D234A476100B963CA /* 40_Combination Sum II.swift in Sources */,
 				02F8CA3A23388936003B2BFA /* 139_Word Break.swift in Sources */,
+				02E641DD235C3124002C4044 /* 716_Max Stack.swift in Sources */,
 				02828B72232491D0009E117D /* 876_Middle of the Linked List.swift in Sources */,
 				02433D0F23493CC200B963CA /* 509_Fibonacci Number.swift in Sources */,
 				02FDE124233611170063DE3D /* 70_Climbing Stairs.swift in Sources */,
@@ -1066,6 +1076,7 @@
 				02CD80AC235972E600EC4173 /* 225_Implement Stack using Queues.swift in Sources */,
 				02433D1E23494C9400B963CA /* 8_String to Integer (atoi).swift in Sources */,
 				02433CF523478B1500B963CA /* 784_Letter Case Permutation.swift in Sources */,
+				02E641DB235AD44D002C4044 /* 272_Closest Binary Search Tree Value II.swift in Sources */,
 				02AA304B231CEF9300DBB596 /* 929_Unique Email Addresses.swift in Sources */,
 				02CD80242353FE0F00EC4173 /* 13_Roman to Integer.swift in Sources */,
 				02CE3E25232EF9610080E8FD /* 704_Binary Search.swift in Sources */,
@@ -1146,6 +1157,7 @@
 				02A8A8D31DCAD6ED00CA3EBF /* 205_Isomorphic Strings.swift in Sources */,
 				0293F1D5234E615800436B83 /* 6_ZigZag Conversion.swift in Sources */,
 				02E641D7235A8C4E002C4044 /* 364_Nested List Weight Sum II.swift in Sources */,
+				02E641D9235ABE97002C4044 /* 170_Two Sum III - Data structure design.swift in Sources */,
 				02FDE11E2335E5360063DE3D /* 120_Triangle.swift in Sources */,
 				02B5D5C023458AA800DB6DA5 /* 115_Distinct Subsequences.swift in Sources */,
 				02CD80922357C39A00EC4173 /* 257_Binary Tree Paths.swift in Sources */,

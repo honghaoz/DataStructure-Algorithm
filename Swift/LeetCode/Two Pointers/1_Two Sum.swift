@@ -16,6 +16,7 @@
 import Foundation
 
 class Num1_TwoSum: Solution {
+  // MARK: - Brute force
   // O(n^2)
   func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
     for i in 0..<nums.count {
@@ -31,6 +32,7 @@ class Num1_TwoSum: Solution {
     return []
   }
 
+  // MARK: - Hash
   func twoSum1(_ nums: [Int], _ target: Int) -> [Int] {
     var numToIndex: [Int : Int] = [:]
     for i in 0..<nums.count {
