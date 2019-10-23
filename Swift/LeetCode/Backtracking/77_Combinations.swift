@@ -21,6 +21,9 @@
 //]
 //
 
+// 给出可选数字的范围和需要选的数字
+// 选出所有的组合
+
 import Foundation
 
 class Num77 {
@@ -34,7 +37,7 @@ class Num77 {
     return results
   }
 
-  /// startNum + n -> the rest numbers available to choose
+  /// 用startNum 和 n 来获取 the rest numbers available to choose
   private func combineHelper(_ chosen: [Int], _ startNum: Int, _ n: Int, _ k: Int, _ results: inout [[Int]]) {
     if chosen.count == k {
       results.append(chosen)

@@ -22,49 +22,38 @@
 //S will consist only of letters or digits.
 //
 
-// 简单题，很直观
+// 给一个字符串，将其中的letter换成大小case，然后生成全部可能的string
 
 import Foundation
 
 class Num784 {
-  // Recrusive
+  // MARK: - Recrusive
+  // 对于每个char，取出可能的大小case，然后和剩下的substring[1...]组合成最终的结果
   func letterCasePermutation(_ s: String) -> [String] {
     if s.count == 0 {
       return [""]
     }
 
-    // result stores the permutation of the first char
-    var result: [String] = []
+    // possibleCases stores the permutation of the first char
+    var firstCharPermutation: [String] = []
 
     let first = s[0]
-    if first.isAlpha {
-      result = [first.uppercased(), first.lowercased()]
+    if Character(first).isLetter {
+      firstCharPermutation = [first.uppercased(), first.lowercased()]
     }
     else {
-      result = [first]
+      firstCharPermutation = [first]
     }
 
     let rest = letterCasePermutation(s.count == 1 ? "" : s[1..<s.count])
-    // needs to add result to each item in the rest
+
+    // needs to add the first char's possible cases to the rest permutations
     return rest.flatMap { string -> [String] in
       var array: [String] = []
-      array.append(result[0] + string)
-      if result.count > 1 {
-        array.append(result[1] + string)
+      for perm in firstCharPermutation {
+        array.append(perm + string)
       }
       return array
     }
-  }
-}
-
-private extension String {
-  var isAlpha: Bool {
-    return ("a" <= self && self <= "z") || ("A" <= self && self <= "Z")
-  }
-  var isLowercased: Bool {
-    return ("a" <= self && self <= "z")
-  }
-  var isUppercased: Bool {
-    return ("A" <= self && self <= "Z")
   }
 }

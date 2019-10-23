@@ -20,6 +20,8 @@
 //Follow up: Recursive solution is trivial, could you do it iteratively?
 //
 
+// Related question: 1038_Binary Search Tree to Greater Sum Tree
+
 import Foundation
 
 class Num94 {
@@ -34,6 +36,7 @@ class Num94 {
   }
 
   // For iterative way, basically we need to use the stack to simulate the process of the operating system (call stack)
+  // [记忆] 斜着逐行扫描
   func inorderTraversal_iterative(_ root: TreeNode?) -> [Int] {
     if root == nil {
       return []

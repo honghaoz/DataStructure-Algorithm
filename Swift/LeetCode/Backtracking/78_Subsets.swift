@@ -25,6 +25,8 @@
 //]
 //
 
+// 求子集，每个元素可选，可不选
+
 import Foundation
 
 class Num78 {
@@ -36,7 +38,7 @@ class Num78 {
   }
 
   func subsets_backtrackHelper(_ path: [Int], _ numsToSelect: [Int], _ result: inout [[Int]]) {
-    result.append(path)
+    result.append(path) // 每个path都要记录
     if numsToSelect.count == 0 {
       return
     }
@@ -46,7 +48,8 @@ class Num78 {
     }
   }
 
-  // MARK: - 另一种recursive
+  // MARK: - 另一种recursive，这个好理解
+  // 第一个数字可选，可不选，那么就结合剩下的数字的subsets来求出全部解
   func subsets(_ nums: [Int]) -> [[Int]] {
     return subsetsHelper(nums)
   }

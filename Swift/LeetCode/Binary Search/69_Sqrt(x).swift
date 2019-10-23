@@ -24,6 +24,8 @@
 //
 // Tag: Binary search
 
+// 求sqrt(x)
+
 import Foundation
 
 class Num69 {

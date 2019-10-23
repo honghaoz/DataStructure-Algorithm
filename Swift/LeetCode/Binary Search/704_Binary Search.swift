@@ -28,16 +28,20 @@
 //The value of each element in nums will be in the range [-9999, 9999].
 //
 
+// 标准的二分法查找
+
 import Foundation
 
 class Num704 {
   // standard binary search
   func search(_ nums: [Int], _ target: Int) -> Int {
-      guard nums.count > 0 else {
-        return -1
-      }
+    guard nums.count > 0 else {
+      return -1
+    }
+
     var start = 0
     var end = nums.count - 1
+
     while start + 1 < end {
       let mid = start + (end - start) / 2
       if nums[mid] < target {
@@ -50,6 +54,7 @@ class Num704 {
         return mid
       }
     }
+
     if nums[start] == target {
       return start
     }
@@ -59,5 +64,6 @@ class Num704 {
     else {
       return -1
     }
+
   }
 }

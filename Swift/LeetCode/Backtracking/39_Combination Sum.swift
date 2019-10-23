@@ -32,14 +32,49 @@
 //]
 //
 
+// 给一些可以选择的数字和一个target，求出所有能sum == target的所有组合，每个数字可以重复选择
+
 import Foundation
 
 class Num39 {
-  // Backtrack
-  // Sorted, excludes the candidates less than (<) the chosen value
+  // MARK: - Backtrack Sorted
+  // excludes the candidates less than (<) the chosen value。这样就不需要sorted了
+  // 如果sorted的话，在exclude的时候会方便一些
+  func combinationSum_sorted(_ candidates: [Int], _ target: Int) -> [[Int]] {
+    var results: [[Int]] = []
+    combinationSumHelper_sorted([], candidates.sorted(), target, &results)
+    return results
+  }
+
+  private func combinationSumHelper_sorted(_ chosen: [Int], _ candidates: [Int], _ target: Int, _ results: inout [[Int]]) {
+    // bad target, no possible solution
+    if target < 0 {
+      return
+    }
+    // found a solution, save it
+    if target == 0 {
+      results.append(chosen)
+      return
+    }
+
+    // Since candidates are sorted
+    // should remove candidates less than the new value to choose, this is to avoid duplicated solution
+    // same value could be chosen unlimited times
+    for i in 0..<candidates.count {
+      if i > 0, candidates[i] == candidates[i - 1] {
+        continue
+      }
+      let toChoose = candidates[i]
+      combinationSumHelper_sorted(chosen + [toChoose], Array(candidates[i...]), target - toChoose, &results)
+    }
+  }
+
+  // MARK: - Backtrack
+  // excludes the candidates less than (<) the chosen value。这样就不需要sorted了
+  // 如果sorted的话，在exclude的时候会方便一些
   func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]] {
     var results: [[Int]] = []
-    combinationSumHelper([], candidates.sorted(), target, &results)
+    combinationSumHelper([], candidates, target, &results)
     return results
   }
   
@@ -53,9 +88,10 @@ class Num39 {
       return
     }
 
-    // Since candidates are sorted
-    // should remove candidates less than the new value to choose, this is to avoid duplicated solution
+    // should remove candidates less than or equal the new value to choose, this is to avoid duplicated solution
     // same value could be chosen unlimited times
+    //
+    // Why includes equal? Because the same number can be used multiple times
     for i in 0..<candidates.count {
       let toChoose = candidates[i]
       combinationSumHelper(chosen + [toChoose], candidates.excluded(lessThan: toChoose), target - toChoose, &results)

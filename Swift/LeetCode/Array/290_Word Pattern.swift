@@ -18,6 +18,8 @@
 //Notes:
 //You may assume pattern contains only lowercase letters, and str contains lowercase letters separated by a single space.
 
+// Related: 890_Find and Replace Pattern
+
 import Foundation
 
 class Num290_WordPattern: Solution {
@@ -57,22 +59,26 @@ class Num290_WordPattern: Solution {
   private func normalizedPattern(_ string: String) -> String {
     var pattern: [Character] = []
 
-    // The beginning char, which is a
+    // The next pattern char, begin with 'a'
     var char: Character = "a"
+
     // a map from original char to the pattern char
     var map: [Character: Character] = [:]
+
+    // build the pattern
     for c in string {
       // if found a replacement pattern char, add the replacement to the result pattern
-      if let replacment = map[c] {
-        pattern.append(replacment)
+      if let replacement = map[c] {
+        pattern.append(replacement)
       }
       // this s a new char, record the map and use the new pattern char
       else {
-        pattern.append(char)
+        pattern.append(char) // use the next pattern char
         map[c] = char
 
+        // prepare for the next pattern char
         // a -> b ...
-        char = Character(UnicodeScalar(char.asciiValue! + 1))
+        char = Character(Unicode.Scalar(char.asciiValue! + 1))
       }
     }
     return String(pattern)

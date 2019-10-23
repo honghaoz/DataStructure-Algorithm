@@ -5,7 +5,6 @@
 // Copyright © 2019 Honghaoz. All rights reserved.
 //
 // Description:
-// 寻找一个dividing point，左边的所有元素<=右边的所有元素
 //
 // Given an array A, partition it into two (contiguous) subarrays left and right so that:
 //
@@ -35,11 +34,14 @@
 //It is guaranteed there is at least one way to partition A as described.
 //
 
+// 寻找一个dividing line，左边的所有元素<=右边的所有元素
+// 找到一个缝隙，使左边的元素都 <= 右边的元素
+
 import Foundation
 
 class Num915 {
-  // 看左向右扫描，保留最大值
-  // 看右向左扫描，保留最小值
+  // 看左向右扫描，保留最大值（左边数组保留最大值）
+  // 看右向左扫描，保留最小值（右边数组保留最小值）
   // 然后再从左到右扫描，寻找第一个符合条件的point
   func partitionDisjoint(_ A: [Int]) -> Int {
     // stores the max element from 0...index
@@ -59,7 +61,7 @@ class Num915 {
       rightMin[i] = _rightMin
     }
 
-    // fidn the break point
+    // find the break point
     for i in 0..<(A.count - 1) {
       // left is 0...i
       if leftMax[i] <= rightMin[i + 1] {

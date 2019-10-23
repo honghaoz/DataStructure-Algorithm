@@ -56,4 +56,20 @@ class Num191 {
 //
 //      return count
 //
+
+  // MARK: - Shift the mask and count the bits
+  // 000100000000000000000000000000000001 & number
+  // 000100000000000000000000000000000010 & number
+//  public int hammingWeight(int n) {
+//      int bits = 0;
+//      int mask = 1;
+  // 移动32位，每次检查一遍是否有1
+//      for (int i = 0; i < 32; i++) {
+//          if ((n & mask) != 0) {
+//              bits++;
+//          }
+//          mask <<= 1;
+//      }
+//      return bits;
+//  }
 }

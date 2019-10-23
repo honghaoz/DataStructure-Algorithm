@@ -28,7 +28,7 @@
 //Special thanks to @pbrother for adding this problem and creating all test cases.
 //
 
-// 判断s是否是t的一个subsequence
+// 判断s是否是t的一个subsequence（不是subarray）
 
 import Foundation
 
@@ -37,10 +37,6 @@ class Num392 {
   // O(n)
   // 用两个index，如果相等，两个index都增长，如果不相等，增加t的index
   // 最后判断s的index是不是已经到了最后一次
-
-  /// Binary search
-  /// https://leetcode.com/problems/is-subsequence/discuss/87292/Swift-solution-Binary-Search
-  // TODO:
   func isSubsequence(_ s: String, _ t: String) -> Bool {
     guard s.count <= t.count else {
       return false
@@ -62,10 +58,27 @@ class Num392 {
         pt += 1
       }
     }
+
+    // 如果s全部被扫描，说明有subsequence
     if ps == s.count {
       return true
     } else {
       return false
     }
   }
+
+  // MARK: - 如果有很多s需要查询
+  /// Binary search
+  /// https://leetcode.com/problems/is-subsequence/discuss/87292/Swift-solution-Binary-Search
+  /// https://leetcode.com/problems/is-subsequence/discuss/87302/Binary-search-solution-for-follow-up-with-detailed-comments
+//  Binary search:
+//
+//  record the indexes for each character in t, if s[i] matches t[j], then s[i+1] should match a character in t with index bigger than j. This can be reduced to find the first element larger than a value in an sorted array (find upper bound), which can be achieved using binary search.
+//  Trie:
+//
+//  For example, if s1 has been matched, s1[last char] matches t[j]. Now, s2 comes, if s1 is a prefix of s2, i.e., s1 == s2.substr[0, i-1], we can start match s2 from s2[i], right?
+//  So, the idea is to create a Trie for all string that have been matched so far. At a node, we record the position in t which matches this char represented by the node. Now, for an incoming string s, we first search the longest prefix in the Trie, find the matching position of the last prefix-char in t, say j. Then, we can start matching the first non-prefix-char of s from j+1.
+//  Now, if we have done the preprocessing as stated in the binary search approach, we can be even faster.
+  // TODO:
+
 }

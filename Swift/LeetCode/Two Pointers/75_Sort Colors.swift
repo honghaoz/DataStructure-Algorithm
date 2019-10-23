@@ -22,6 +22,9 @@
 //Could you come up with a one-pass algorithm using only constant space?
 //
 
+// 给出一个数组，只包含012，要求sort in place
+// 这是一个典型的partition成三块区域的算法
+
 import Foundation
 
 class Num75 {
@@ -34,13 +37,13 @@ class Num75 {
     //      p q
     // [0,0,1,1,2,2]
     //      i
-    var p = 0 // nums[<p] is 0
-    var q = nums.count - 1 // nums[>q] is 2
+    var p = 0 // nums[<p] is, p指着第一个不是0的数字
+    var q = nums.count - 1 // nums[>q] is 2，q指着第一个不是2的数字
     var i = 0 // the running index
     while i <= q  {
       if nums[i] == 0 {
         // swap and move p
-        (nums[p], nums[i]) = (nums[i], nums[p])
+        nums.swapAt(p, i) // 因为p指着的数字是第一个不为0的数字，换一下，p就可以+1了
         p += 1
         i += 1 // since i could == q, needs to move i
       }
@@ -50,7 +53,7 @@ class Num75 {
       }
       else {
         // swap and move q
-        (nums[q], nums[i]) = (nums[i], nums[q])
+        nums.swapAt(q, i)
         q -= 1
         // shouldn't move i, sine you don't know if nums[i] is 0 or 1
         // if it's 1, you should check again

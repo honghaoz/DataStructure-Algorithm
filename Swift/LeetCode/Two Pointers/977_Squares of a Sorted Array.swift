@@ -26,6 +26,9 @@
 //A is sorted in non-decreasing order.
 //
 
+// 给出一个非递减（递增，可能重复）的数组，可以包含负数
+// 求出每个数字squars的数组，并且也是sorted
+
 import Foundation
 
 class Num977 {

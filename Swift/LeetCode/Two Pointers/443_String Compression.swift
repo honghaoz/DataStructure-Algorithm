@@ -61,6 +61,7 @@
 //1 <= len(chars) <= 1000.
 //
 
+// 压缩字母，连续的char用这个char和重复的数字个数表示
 // 把连续的char用数字代替，单个char不用处理。超过10个数字，添加两个chars
 
 import Foundation

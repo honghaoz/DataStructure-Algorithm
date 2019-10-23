@@ -18,6 +18,9 @@
 //]
 //
 
+// 给出一些可能重复的数字，求可能的排列
+// 这种情况下需要skip相同的数字，用一个visited dict
+
 import Foundation
 
 class Num47 {

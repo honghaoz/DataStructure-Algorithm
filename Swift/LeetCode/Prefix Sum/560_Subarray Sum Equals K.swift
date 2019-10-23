@@ -17,6 +17,9 @@
 //The range of numbers in the array is [-1000, 1000] and the range of the integer k is [-1e7, 1e7].
 //
 
+// 给出一个数组和一个目标K
+// 找出所有的subarray，这些subarray的和是K
+
 import Foundation
 
 class Num560 {
@@ -26,7 +29,7 @@ class Num560 {
     // numberOfPrefixSum[2] means the occurrence of prefix sum that is 2
     // this indicates how many subarrays (starts from 0) that sum is 2
     var numberOfPrefixSum: [Int: Int] = [:]
-    // initialize with [0: 1], because for an empty subarray, the sum is 1
+    // initialize with [0: 1], because for an empty subarray, the sum is 0, 出现了一次
     numberOfPrefixSum[0] = 1
 
     // scan from left to right

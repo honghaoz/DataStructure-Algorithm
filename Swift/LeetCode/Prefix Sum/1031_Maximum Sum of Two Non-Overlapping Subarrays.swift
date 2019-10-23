@@ -38,15 +38,25 @@
 //0 <= A[i] <= 1000
 //
 
+// 给出一个正数array和两个长度
+// 找出两个non-overlapping的subarray，使他们的和最大
+
 import Foundation
 
 class Num1031 {
+  // MARK: - Prefix Sum
   // for each dividing point, find the left side sum and right side sum
+  // 想象为切割，切割成两段，然后求这两段(L, M)和(M, L)两种情况的最大值
+  // 只能是左边L或者右边是L，分两种情况求最大值
+  // 求最大值可以优化，不用存所有的max
 
   /// To find the max of either Left subarray has the length of L and right subarray has the length of R
   /// or
   /// The left subarray has the length of R and right subarray has the length of L
   func maxSumTwoNoOverlap(_ A: [Int], _ L: Int, _ M: Int) -> Int {
+    if L == M {
+      return maxSumTwoNoOverlapHelper(A, L, M)
+    }
     return max(maxSumTwoNoOverlapHelper(A, L, M), maxSumTwoNoOverlapHelper(A, M, L))
   }
 
@@ -86,7 +96,7 @@ class Num1031 {
 }
 
 private extension Array where Element == Int {
-  /// get the value in the array of 0.
+  /// Get value at index i, returns 0 if the index is invalid
   func value(_ i: Int) -> Int {
     guard 0 <= i, i < self.count else {
       return 0

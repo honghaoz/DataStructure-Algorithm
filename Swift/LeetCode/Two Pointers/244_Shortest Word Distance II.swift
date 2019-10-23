@@ -18,13 +18,17 @@
 //You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
 //
 
+// 之前那个题目是一次function call，找一次
+// 这个题目是设计一个class，function会被call很多次
 // 找两个word的最小距离，但是需要初始化一下
 // 就是找两个Int array中最小的差值
 
 import Foundation
 
 class Num244 {
+  // MARK: - Two Indices
   class WordDistance {
+    // 每个单词对应的indice list
     var wordIndices: [String: [Int]] = [:]
     init(_ words: [String]) {
       for i in 0..<words.count {
@@ -32,6 +36,8 @@ class Num244 {
       }
     }
 
+    // 在两个数组中找最小的差值，用双index，每次循环update最小差值
+    // 然后增加小的那个index
     func shortest(_ word1: String, _ word2: String) -> Int {
       let indices1 = wordIndices[word1]!
       let indices2 = wordIndices[word2]!

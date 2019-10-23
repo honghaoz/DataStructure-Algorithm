@@ -32,12 +32,14 @@ class Num53 {
     }
     
     let mid = (left + right) / 2
-    let maxLeft = maxSubArrayHelper(nums, left, mid)
-    let maxRight = maxSubArrayHelper(nums, mid, right)
-    let maxMid = maxSubArrayMid(nums, left, right, mid)
+    let maxLeft = maxSubArrayHelper(nums, left, mid) // 如果subarray在左半边
+    let maxRight = maxSubArrayHelper(nums, mid, right) // 如果subarray在右半边
+    let maxMid = maxSubArrayMid(nums, left, right, mid) // 如果subarray跨越了左半边和右半边
     return max(maxLeft, maxRight, maxMid)
   }
-  
+
+  // 找出最大的subarray，这个subarray须要包含mid index
+  // 从中间像两边扩散，分别找最大值
   private func maxSubArrayMid(_ nums: [Int], _ left: Int, _ right: Int, _ mid: Int) -> Int {
     guard left < right else {
       return 0

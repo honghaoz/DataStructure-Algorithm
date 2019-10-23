@@ -36,13 +36,14 @@
 //Each element nums[i] will be an integer in the range [-1000, 1000].
 //
 
-// 找到一个点，这个点左边的所有值的sum和右边的所有值的sum
+// 找到一个点，这个点左边的所有值的sum和右边的所有值的sum（不包含这个点本身）
 
 import Foundation
 
 class Num724 {
-  // MARK: - Prefix sum
-  // 只要有一个leftSum就好了，rightSum可以用sum - leftSum
+  // MARK: - Prefix Sum
+  // 先求出sum，然后在求leftSum的时候，rightSum = sum - leftSum - num[i]
+  // 那么循环过程中就可以找到leftSum == rightSum的时候
   func pivotIndex(_ nums: [Int]) -> Int {
     var sum = 0
     var leftSum = 0
@@ -51,7 +52,8 @@ class Num724 {
     }
 
     for i in 0..<nums.count {
-      if leftSum == sum - leftSum - nums[i] {
+      let rightSum = sum - leftSum - nums[i]
+      if leftSum == rightSum {
         return i
       }
       leftSum += nums[i]

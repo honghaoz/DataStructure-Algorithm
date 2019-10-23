@@ -23,6 +23,9 @@
 //]
 //
 
+// 给出一堆可能含重复的数字，求出所有subset，不包含重复结果
+// 需要sort，这样使一样的的数字相邻。并用visited来skip
+
 import Foundation
 
 class Num90 {

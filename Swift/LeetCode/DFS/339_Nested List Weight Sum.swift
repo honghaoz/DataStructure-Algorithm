@@ -22,6 +22,7 @@
 //
 
 // 计算一个nest array的加权sum
+// 更深的一层有更高的权重
 
 import Foundation
 
@@ -49,27 +50,27 @@ class Num339 {
    * }
    */
 
-//  func depthSum(_ nestedList: [NestedInteger]) -> Int {
-//    return depthSumHelper(nestedList, 1)
-//  }
-//
-//  /// Compute the sum for the nestedList with depth information, the depth should begin from 1
-//  private func depthSumHelper(_ nestedList: [NestedInteger], _ depth: Int) -> Int {
-//    guard depth >= 1 else {
-//      return 0
-//    }
-//    var sum: Int = 0
-//    for item in nestedList {
-//      if item.isInteger() {
-//        // just add the integer with the depth
-//        sum += item.getInteger() * depth
-//      }
-//      else {
-//        // call this function recursivly with bigger depth (+1)
-//        let list = item.getList()
-//        sum += depthSumHelper(list, depth + 1)
-//      }
-//    }
-//    return sum
-//  }
+  func depthSum(_ nestedList: [NestedInteger]) -> Int {
+    return depthSumHelper(nestedList, 1)
+  }
+
+  /// Compute the sum for the nestedList with depth information, the depth should begin from 1
+  private func depthSumHelper(_ nestedList: [NestedInteger], _ depth: Int) -> Int {
+    guard depth >= 1 else {
+      return 0
+    }
+    var sum: Int = 0
+    for item in nestedList {
+      if item.isInteger() {
+        // just add the integer with the depth
+        sum += item.getInteger() * depth
+      }
+      else {
+        // call this function recursivly with bigger depth (+1)
+        let list = item.getList()
+        sum += depthSumHelper(list, depth + 1)
+      }
+    }
+    return sum
+  }
 }

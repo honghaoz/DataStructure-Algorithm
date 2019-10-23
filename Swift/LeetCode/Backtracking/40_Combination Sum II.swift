@@ -33,10 +33,15 @@
 //]
 //
 
+// 给一些一定量的数字和一个target，求出所有能sum == target的所有组合
+// 数字可能会有重复，每个数字只能用一次
+
 import Foundation
 
 class Num40 {
-  // Backtrack
+  // MARK: - Backtrack
+  // 上一个题是每个选过的element还可以再选
+  // 这个题是选过的就不能再选了
   // Sorted, skip same value, only chose candidates after the index
   func combinationSum2(_ candidates: [Int], _ target: Int) -> [[Int]] {
     var results: [[Int]] = []
@@ -45,11 +50,13 @@ class Num40 {
   }
 
   private func combinationSum2Helper(_ chosen: [Int], _ candidates: [Int], _ target: Int, _ results: inout [[Int]]) {
-    if target == 0 {
-      results.append(chosen)
+    if target < 0 {
       return
     }
-    if target < 0 {
+    // Must check target == 0 before checking the candidates
+    // This makes sure any good results are recorded
+    if target == 0 {
+      results.append(chosen)
       return
     }
     if candidates.count == 0 {
@@ -57,24 +64,12 @@ class Num40 {
     }
 
     for i in 0..<candidates.count {
+      // skips duplicates
       if i > 0, candidates[i] == candidates[i - 1] {
         continue
       }
       let toChoose = candidates[i]
-      combinationSum2Helper(chosen + [toChoose], candidates.exludedBefore(i + 1), target - toChoose, &results)
+      combinationSum2Helper(chosen + [toChoose], Array(candidates[(i + 1)...]), target - toChoose, &results)
     }
   }
 }
-
-private extension Array where Element == Int {
-  func exludedBefore(_ i: Int) -> [Int] {
-    var result: [Int] = []
-    for j in 0..<self.count {
-      if j >= i {
-        result.append(self[j])
-      }
-    }
-    return result
-  }
-}
-

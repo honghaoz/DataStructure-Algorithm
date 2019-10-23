@@ -18,13 +18,71 @@
 //[-1, -1, 2]
 //]
 
+// 给出一个数组，求三个数字之和等于0，找出所有的结果
+
 import Foundation
 
 class Num15_ThreeSum: Solution {
+  // MARK: - 固定一个左边数字，然后剩下的求2sum（双指针）
+  // https://leetcode.com/problems/3sum/discuss/7498/Python-solution-with-detailed-explanation
+  func threeSum2(_ nums: [Int]) -> [[Int]] {
+    // 必须至少有3个数字，否则没有结果
+    guard nums.count >= 3 else { return [] }
+
+    // 必须排序，不然无法做到跳过重复的数字，也不知道双指针移动的方向
+    let nums = nums.sorted()
+    var res: [[Int]] = []
+
+    var i = 0 // 左边的固定数字
+    while i < nums.count - 2 { // 给j, k留位置
+      let target = 0 - nums[i] // 2sum需要求的target
+      // j, k 左右夹逼
+      var j = i + 1
+      var k = nums.count - 1
+      while j < k {
+        if nums[j] + nums[k] == target {
+          // 找到目标
+          res.append([nums[i], nums[j], nums[k]])
+          j += 1 // 右移，跳过重复
+          while j < k && nums[j] == nums[j - 1] {
+            j += 1
+          }
+          k -= 1 // 左移，跳过重复
+          while j < k && nums[k] == nums[k + 1] {
+            k -= 1
+          }
+        }
+        else if nums[j] + nums[k] < target {
+          // 小于目标值，左移j
+          j += 1
+          while j < k && nums[j] == nums[j - 1] {
+            j += 1
+          }
+        }
+        else {
+          // 大于目标值，右移k
+          k -= 1
+          while j < k && nums[k] == nums[k + 1] {
+            k -= 1
+          }
+        }
+      }
+
+      // 移动固定点，跳过重复
+      i += 1
+      while i < nums.count - 2 && nums[i] == nums[i - 1] {
+        i += 1
+      }
+    }
+    return res
+  }
+
   func threeSum(_ nums: [Int]) -> [[Int]] {
     var results: [[Int]] = []
+    // 必须至少有3个数字，否则没有结果
     guard nums.count >= 3 else { return results }
 
+    // 必须排序，不然无法做到跳过重复的数字
     let nums = nums.sorted()
 
     let target = 0
@@ -65,47 +123,6 @@ class Num15_ThreeSum: Solution {
     }
 
     return results
-  }
-
-  // https://leetcode.com/problems/3sum/discuss/7498/Python-solution-with-detailed-explanation
-  func threeSum2(_ nums: [Int]) -> [[Int]] {
-    guard nums.count >= 3 else { return [] }
-    var res: [[Int]] = []
-    let nums = nums.sorted()
-    var i = 0
-    while i < nums.count - 2 {
-      let target = 0 - nums[i]
-      var j = i + 1
-      var k = nums.count - 1
-      while j < k {
-        if nums[j] + nums[k] == target {
-          res.append([nums[i], nums[j], nums[k]])
-          j += 1
-          while j < k && nums[j] == nums[j - 1] {
-            j += 1
-          }
-          k -= 1
-          while j < k && nums[k] == nums[k + 1] {
-            k -= 1
-          }
-        } else if nums[j] + nums[k] < target {
-          j += 1
-          while j < k && nums[j] == nums[j - 1] {
-            j += 1
-          }
-        } else {
-          k -= 1
-          while j < k && nums[k] == nums[k + 1] {
-            k -= 1
-          }
-        }
-      }
-      i += 1
-      while i < nums.count - 2 && nums[i] == nums[i - 1] {
-        i += 1
-      }
-    }
-    return res
   }
 
   func test() {

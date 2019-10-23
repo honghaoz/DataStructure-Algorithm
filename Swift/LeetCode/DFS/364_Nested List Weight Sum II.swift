@@ -24,6 +24,7 @@
 //
 
 // 还是nested int array，但是这次是deepest leaf是weight 0，root的weight是height
+// 更深的一层有更低的权重
 
 import Foundation
 
@@ -52,31 +53,31 @@ class Num364 {
    * }
    */
 
-//  func depthSumInverse(_ nestedList: [NestedInteger]) -> Int {
-//    var queue: [NestedInteger] = nestedList
-//    var prevSum = 0
-//    var sum = 0
-//
-//    // 层层剥离
-//    while !queue.isEmpty {
-//      let list = queue
-//      queue = []
-//      var levelSum = 0 // the sum for this level
-//      for e in list {
-//        if e.isInteger() {
-//          levelSum += e.getInteger()
-//        }
-//        else {
-//          queue += e.getList()
-//        }
-//      }
-//
-//      prevSum = levelSum + prevSum
-//      sum += prevSum
-//    }
-//
-//    return sum
-//  }
+  func depthSumInverse(_ nestedList: [NestedInteger]) -> Int {
+    var queue: [NestedInteger] = nestedList
+    var prevSum = 0
+    var sum = 0
+
+    // 层层剥离
+    while !queue.isEmpty {
+      let list = queue
+      queue = []
+      var levelSum = 0 // the sum for this level
+      for e in list {
+        if e.isInteger() {
+          levelSum += e.getInteger()
+        }
+        else {
+          queue += e.getList()
+        }
+      }
+
+      prevSum = levelSum + prevSum
+      sum += prevSum
+    }
+
+    return sum
+  }
 
   // 那么root层的sum就会被重复加height次
   // MARK: - DFS: find the height and use the height to compute the sum

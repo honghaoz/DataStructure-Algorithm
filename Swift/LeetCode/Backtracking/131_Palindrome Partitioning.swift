@@ -19,10 +19,15 @@
 //]
 //
 
+// 找一个string中找出全部palindrome partition
+
 import Foundation
 
 class Num131 {
-  // Backtrack standard template
+  // MARK: - Backtrack Standard Template
+  // 因为是partition，就是看切割点在哪里，所以就顺序找分割点
+  // 如果招到一个合适的分割点，就把当前的substring存在path里，然后找剩下的partition
+  // 只要没有string可以分割了
   func partition_backtrack(_ s: String) -> [[String]] {
     var results: [[String]] = []
     partitionHelper([], s, &results)

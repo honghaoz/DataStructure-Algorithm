@@ -24,7 +24,8 @@
 import Foundation
 
 class Num243 {
-  // MARK: - two indices
+  // MARK: - Two Indices
+  // 从左到右记录word1和word2的index，每次循环更新这两个index之间最短的距离
   func shortestDistance(_ words: [String], _ word1: String, _ word2: String) -> Int {
     var word1Index = -1
     var word2Index = -1

@@ -21,6 +21,8 @@
 //]
 //
 
+// 给几个不重复的数字，求排列，顺序matters
+
 import Foundation
 
 class Num46 {
@@ -29,6 +31,7 @@ class Num46 {
   // MARK: - 好理解
   // 下面这个permuteHelper是一个经典的搜索算法，比较好理解
   // 但是创造numbers to select会造成效率低下，时间和空间都浪费
+  // 就是从可选的数字中按先后顺序选一遍
   func permute(_ nums: [Int]) -> [[Int]] {
     return permuteHelper([], nums)
   }
@@ -67,6 +70,8 @@ class Num46 {
       return [path]
     }
 
+    // 为了优化效率，就用nums做inplace的转换
+    // 选择一个数字，然后把这个数字挪到最前面，相当于临时创建了一个number to choose，找完这种情况的结果后再恢复（backtrack）
     var result: [[Int]] = []
     for i in position..<nums.count {
       // for each number (the branch point), choose and find the possible results via this path

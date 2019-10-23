@@ -18,6 +18,9 @@
 //]
 //
 
+// 给出需要有几对括号
+// 求出所有可能的结果
+
 import Foundation
 
 class Num22 {
@@ -35,6 +38,7 @@ class Num22 {
   /// - Parameter results: The results array.
   private func generateParenthesis(_ str: String, _ left: Int, _ right: Int, _ results: inout [String]) {
     // it's not possible to have more ")" to add
+    // 只可能有更多的右括弧，不可能有更多的左括弧
     guard left <= right else {
       return
     }
