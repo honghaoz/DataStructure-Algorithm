@@ -15,11 +15,13 @@
 //Follow up:
 //Could you solve it with constant space complexity? (Note: The output array does not count as extra space for the purpose of space complexity analysis.)
 
+// 给出一个数组，求出除了self的乘积的数组
+
 import Foundation
 
 class Num238_ProductOfArrayExceptSelf: Solution {
   /// Build two arrays:
-  ///   1) the product of left elements, excpet self
+  ///   1) the product of left elements, except self
   ///   2) the product of right elements,
   ///   3) product of these two arrays
   func productExceptSelf_readable(_ nums: [Int]) -> [Int] {
@@ -38,7 +40,7 @@ class Num238_ProductOfArrayExceptSelf: Solution {
     }
     rightProduct = rightProduct.reversed()
 
-    /// multiple two arries
+    /// multiple two arrys
     return zip(leftProduct, rightProduct).map { $0.0 * $0.1 }
   }
 
@@ -62,7 +64,7 @@ class Num238_ProductOfArrayExceptSelf: Solution {
   /// Solution 2:
   /// Reduce the space complexity
   /// One idea is to just compute the result on the fly
-  /// scan the elemtn from left to right, but you can keep the two running product, one for the left side, one for the right side
+  /// scan the element from left to right, but you can keep the two running product, one for the left side, one for the right side
   /// Then you can build the result.
 	
 	func test() {

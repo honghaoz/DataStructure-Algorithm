@@ -31,6 +31,9 @@
 //
 //
 
+// 实现一个LRU cache，access过的key要放在最前，保持一个size
+// 当size超过的时候，老的key要被删掉
+
 import Foundation
 
 class Num146 {

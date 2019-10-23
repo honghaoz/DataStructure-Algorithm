@@ -25,9 +25,58 @@
 //The median is (2 + 3)/2 = 2.5
 //
 
+// 找出两个sorted array中的median
+// 实际上把题目转换成找出两个array的kth largest value
+
 import Foundation
 
 class Num4 {
+  // MARK: - Find the Kth largest
+  // https://www.jiuzhang.com/solution/median-of-two-sorted-arrays
+//  public class Solution {
+//      public double findMedianSortedArrays(int A[], int B[]) {
+//          int n = A.length + B.length;
+//
+//          if (n % 2 == 0) {
+//              return (
+//                  findKth(A, 0, B, 0, n / 2) +
+//                  findKth(A, 0, B, 0, n / 2 + 1)
+//              ) / 2.0;
+//          }
+//
+//          return findKth(A, 0, B, 0, n / 2 + 1);
+//      }
+//
+//      // find kth number of two sorted array
+//      public static int findKth(int[] A, int startOfA,
+//                                int[] B, int startOfB,
+//                                int k){
+//          if (startOfA >= A.length) {
+//              return B[startOfB + k - 1];
+//          }
+//          if (startOfB >= B.length) {
+//              return A[startOfA + k - 1];
+//          }
+//
+//          if (k == 1) {
+//              return Math.min(A[startOfA], B[startOfB]);
+//          }
+//
+//          int halfKthOfA = startOfA + k / 2 - 1 < A.length
+//              ? A[startOfA + k / 2 - 1]
+//              : Integer.MAX_VALUE;
+//          int halfKthOfB = startOfB + k / 2 - 1 < B.length
+//              ? B[startOfB + k / 2 - 1]
+//              : Integer.MAX_VALUE;
+//
+//          if (halfKthOfA < halfKthOfB) {
+//              return findKth(A, startOfA + k / 2, B, startOfB, k - k / 2);
+//          } else {
+//              return findKth(A, startOfA, B, startOfB + k / 2, k - k / 2);
+//          }
+//      }
+//  }
+
   // O(lg(m + n) solution: https://medium.com/@hazemu/finding-the-median-of-2-sorted-arrays-in-logarithmic-time-1d3f2ecbeb46
   
   // O(m + n) solution

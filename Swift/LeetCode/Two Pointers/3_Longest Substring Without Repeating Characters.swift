@@ -20,7 +20,7 @@
 import Foundation
 
 class Num3_LongestSubstringWithoutRepeatingCharacters: Solution {
-  // Standard sliding window, move left by 1 or right by 1
+  // MARK: - Standard sliding window, move left by 1 or right by 1
   func lengthOfLongestSubstring_slidingWindow(_ s: String) -> Int {
     guard s.isEmpty == false else { return 0 }
     var i = 0

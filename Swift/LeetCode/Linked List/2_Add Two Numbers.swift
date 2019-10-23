@@ -11,9 +11,32 @@
 //Output: 7 -> 0 -> 8
 //Explanation: 342 + 465 = 807.
 
+// 逆向表示的数字，相加，用carry来保存进位
+
 import Foundation
 
 class Num2_AddTwoNumbers {
+  // MARK: - 两个pointer用 || 
+  func addTwoNumbers2(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+    let res = ListNode(0)
+    var p: ListNode? = res
+    var p1: ListNode? = l1
+    var p2: ListNode? = l2
+    var carry: Int = 0
+    while p1 != nil || p2 != nil {
+      let sum = (p1?.val ?? 0) + (p2?.val ?? 0) + carry
+      p!.next = ListNode(sum % 10)
+      p = p!.next
+      carry = sum / 10
+      p1 = p1?.next
+      p2 = p2?.next
+    }
+    if carry > 0 {
+      p!.next = ListNode(carry)
+    }
+    return res.next
+  }
+
   func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
     let res = ListNode(0)
     var p = res
@@ -51,26 +74,6 @@ class Num2_AddTwoNumbers {
     }
     if let last = carry {
       p.next = ListNode(last)
-    }
-    return res.next
-  }
-
-  func addTwoNumbers2(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-    let res = ListNode(0)
-    var p: ListNode? = res
-    var p1: ListNode? = l1
-    var p2: ListNode? = l2
-    var carry: Int = 0
-    while p1 != nil || p2 != nil {
-      let sum = (p1?.val ?? 0) + (p2?.val ?? 0) + carry
-      p!.next = ListNode(sum % 10)
-      p = p!.next
-      carry = sum / 10
-      p1 = p1?.next
-      p2 = p2?.next
-    }
-    if carry > 0 {
-      p!.next = ListNode(carry)
     }
     return res.next
   }

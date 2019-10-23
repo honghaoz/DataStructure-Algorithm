@@ -32,17 +32,17 @@ class Num252 {
     if intervals.count == 1 {
       return true
     }
-
+    
     let intervals = intervals.sorted {
       $0[0] < $1[0]
     }
-
-      for i in 0..<(intervals.count - 1) {
-        if intervals[i][1] > intervals[i + 1][0] {
-          return false
-        }
+    
+    for i in 0..<(intervals.count - 1) {
+      if intervals[i][1] > intervals[i + 1][0] {
+        return false
       }
-
+    }
+    
     return true
   }
 }
