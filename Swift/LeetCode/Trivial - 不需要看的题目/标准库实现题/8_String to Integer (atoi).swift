@@ -48,15 +48,18 @@
 //             Thefore INT_MIN (−231) is returned.
 //
 
+// 实现string to int
+// 消除space，其余飞数字和+/-号符号都是bad char，需要返回0
+// 值考虑其中的数字，还有+/-号
+
 import Foundation
 
 class Num8 {
-  // 垃圾题目，不用做。
   func myAtoi(_ str: String) -> Int {
+    // 消除空白
     var newStr = str.trimmingCharacters(in: .whitespaces)
-    var isNegative = false
-    var result = 0
 
+    var isNegative = false
     if newStr.first == "+" || newStr.first == "-" {
       if newStr.first == "-" {
         isNegative = true
@@ -72,6 +75,7 @@ class Num8 {
         break
       }
     }
+
     guard var double = Double(String(array)) else {
       return 0
     }
@@ -79,6 +83,8 @@ class Num8 {
     if isNegative {
       double = -double
     }
+
+    var result = 0
     if double > Double(Int32.max) {
       result = Int(Int32.max)
     } else if double < Double(Int32.min) {

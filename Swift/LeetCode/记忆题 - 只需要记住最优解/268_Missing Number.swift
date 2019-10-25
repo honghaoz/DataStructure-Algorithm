@@ -19,11 +19,21 @@
 //Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?
 //
 
+// 给出1-n的数字，但是其中缺1个，乱序状态。
+// 找出这个missing number
+
 import Foundation
 
 class Num268 {
   // MARK: - Sort and find the first gap
+  // O(n log n)
+  // O(1)
+
   // MARK: - Set and iterate
+  // 通过数组大小，我们可以退出全部值的范围
+  // 然后可以循环一遍找到这个missing number
+  // O(n)
+
   // MARK: - Bit manipulation
 
   // MARK: - Gauss's Formula

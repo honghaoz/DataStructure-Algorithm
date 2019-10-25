@@ -16,6 +16,7 @@
 //Could you solve it with constant space complexity? (Note: The output array does not count as extra space for the purpose of space complexity analysis.)
 
 // 给出一个数组，求出除了self的乘积的数组
+// Prefix Product
 
 import Foundation
 

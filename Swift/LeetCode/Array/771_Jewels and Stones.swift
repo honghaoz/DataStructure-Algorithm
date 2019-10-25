@@ -23,6 +23,9 @@
 //The characters in J are distinct.
 //
 
+// 告诉你那种char是珠宝，然后给你一堆石头
+// 求出这些石头中有多少个是珠宝
+
 import Foundation
 
 class Num771 {

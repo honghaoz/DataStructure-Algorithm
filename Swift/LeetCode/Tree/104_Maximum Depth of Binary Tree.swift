@@ -26,17 +26,17 @@
 import Foundation
 
 class Num104 {
-  // Recurisve way
+  // MARK: - Recursive way
   func maxDepth(_ root: TreeNode?) -> Int {
-      if root == nil {
-        return 0
-      }
+    if root == nil {
+      return 0
+    }
     let leftMax = maxDepth(root?.left)
     let rightMax = maxDepth(root?.right)
     return max(leftMax, rightMax) + 1
   }
 
-  /// DFS with stack
+  // MARK: - DFS with stack
   func maxDepth_iterative(_ root: TreeNode?) -> Int {
     guard root != nil else {
       return 0
@@ -67,7 +67,7 @@ class Num104 {
     return result
   }
 
-  // BFS with queue
+  // MARK: - BFS with queue
   func maxDepth_iterative2(_ root: TreeNode?) -> Int {
     guard root != nil else {
       return 0

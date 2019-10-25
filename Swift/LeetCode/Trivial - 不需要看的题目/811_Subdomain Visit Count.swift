@@ -64,7 +64,7 @@ class Num811 {
       let subdomainComponents = address.split(separator: ".")
       for i in 0..<subdomainComponents.count {
         let subdomain = subdomainComponents[i..<subdomainComponents.count].joined(separator: ".")
-        record[subdomain] = (record[subdomain] ?? 0) + count
+        record[subdomain] = record[subdomain, default: 0] + count
       }
     }
 

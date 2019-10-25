@@ -38,6 +38,8 @@
 //Output: false
 //
 
+// 比较两个tree相同
+
 import Foundation
 
 class Num100 {

@@ -43,7 +43,7 @@ class Num146 {
     // dict存node，需要调整顺序的话，linked list调整。
     var dict: [Int: Int] = [:]
 
-    // From old to new, this needs to use Linked list
+    // From old to new, this needs to use doubly Linked list
     var keys: [Int] = []
 
     let size: Int

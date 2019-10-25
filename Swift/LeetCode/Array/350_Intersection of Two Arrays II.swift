@@ -13,33 +13,14 @@
 // What if nums1's size is small compared to nums2's size? Which algorithm is better?
 // What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
 
+// 求两个array相交的数字，重复的数字也要算
+
 import Foundation
 
 class Num350_IntersectionOfTwoArraysII: Solution {
-  /// Straightforward solution, two loops, if equal, record and remove.
-  func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
-    var mutableNums1 = nums1
-    var mutableNums2 = nums2
-    var results: [Int] = []
-
-    var i = 0
-    while i < mutableNums1.count {
-      for j in 0 ..< mutableNums2.count {
-        if mutableNums1[i] == mutableNums2[j] {
-          results.append(mutableNums1[i])
-          mutableNums1.remove(at: i)
-          mutableNums2.remove(at: j)
-          i -= 1
-          break
-        }
-      }
-      i += 1
-    }
-
-    return results
-  }
-
-  /// Sort and use two pointers
+  // MARK: - Sort and use two pointers
+  // O(nlogn + mlogm)
+  // O(1)
   func sorted(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
     let nums1 = nums1.sorted()
     let nums2 = nums2.sorted()
@@ -62,7 +43,9 @@ class Num350_IntersectionOfTwoArraysII: Solution {
     return res
   }
 
-  /// Record nums1 frequency, check nums2 and record result.
+  // MARK: - Record nums1 frequency, check nums2 and record result.
+  // O(n + m)
+  // O(min(n, m))
   func dict(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
     var nums1Dict: [Int: Int] = [:]
     for n in nums1 {
@@ -84,6 +67,30 @@ class Num350_IntersectionOfTwoArraysII: Solution {
       }
     }
     return res
+  }
+
+  // MARK: - Straightforward solution, two loops, if equal, record and remove.
+  // O(n^2)
+  func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+    var mutableNums1 = nums1
+    var mutableNums2 = nums2
+    var results: [Int] = []
+
+    var i = 0
+    while i < mutableNums1.count {
+      for j in 0 ..< mutableNums2.count {
+        if mutableNums1[i] == mutableNums2[j] {
+          results.append(mutableNums1[i])
+          mutableNums1.remove(at: i)
+          mutableNums2.remove(at: j)
+          i -= 1
+          break
+        }
+      }
+      i += 1
+    }
+
+    return results
   }
 
   func test() {

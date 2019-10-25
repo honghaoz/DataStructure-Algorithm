@@ -16,17 +16,17 @@ class Num36_ValidSudoku: Solution {
   func isValidSudoku(_ board: [[Character]]) -> Bool {
     return checkRow(board) && checkColumn(board) && checkBlock(board)
   }
-
+  
   private func checkRow(_ board: [[Character]]) -> Bool {
     for row in board {
       if haveDuplicates(row.compactMap({ Int(String($0)) })) {
         return false
       }
     }
-
+    
     return true
   }
-
+  
   private func checkColumn(_ board: [[Character]]) -> Bool {
     for j in 0..<9 {
       var col: [Int] = []
@@ -41,7 +41,7 @@ class Num36_ValidSudoku: Solution {
     }
     return true
   }
-
+  
   private func checkBlock(_ board: [[Character]]) -> Bool {
     // for each big block
     for i in 0..<3 {
@@ -61,7 +61,7 @@ class Num36_ValidSudoku: Solution {
     }
     return true
   }
-
+  
   private func haveDuplicates(_ nums: [Int]) -> Bool {
     guard nums.count > 0 else { return false }
     var check = Set<Int>()
@@ -71,11 +71,11 @@ class Num36_ValidSudoku: Solution {
         return true
       }
     }
-
+    
     return false
   }
-
+  
   func test() {
-
+    
   }
 }
