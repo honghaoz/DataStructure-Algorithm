@@ -79,6 +79,9 @@
 		0266701823614FBC00CF609E /* 12_Integer to Roman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266701723614FBC00CF609E /* 12_Integer to Roman.swift */; };
 		0266701A2361537E00CF609E /* 49_Group Anagrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026670192361537E00CF609E /* 49_Group Anagrams.swift */; };
 		0266701D23617DB700CF609E /* 229_Majority Element II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266701C23617DB700CF609E /* 229_Majority Element II.swift */; };
+		026670322366A56700CF609E /* 297_Serialize and Deserialize Binary Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026670312366A56700CF609E /* 297_Serialize and Deserialize Binary Tree.swift */; };
+		026670342366BEA600CF609E /* 581_Shortest Unsorted Continuous Subarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026670332366BEA600CF609E /* 581_Shortest Unsorted Continuous Subarray.swift */; };
+		026670362366C38E00CF609E /* 697_Degree of an Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026670352366C38E00CF609E /* 697_Degree of an Array.swift */; };
 		0273493F23443BCB00EBB279 /* 132_Palindrome Partitioning II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273493E23443BCB00EBB279 /* 132_Palindrome Partitioning II.swift */; };
 		027B47841E621ECE003D2CA6 /* 482_License Key Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B47831E621ECE003D2CA6 /* 482_License Key Formatting.swift */; };
 		027B72372352A4E6000DFC73 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B72362352A4E6000DFC73 /* ListNode.swift */; };
@@ -336,6 +339,9 @@
 		0266701723614FBC00CF609E /* 12_Integer to Roman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "12_Integer to Roman.swift"; sourceTree = "<group>"; };
 		026670192361537E00CF609E /* 49_Group Anagrams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "49_Group Anagrams.swift"; sourceTree = "<group>"; };
 		0266701C23617DB700CF609E /* 229_Majority Element II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "229_Majority Element II.swift"; sourceTree = "<group>"; };
+		026670312366A56700CF609E /* 297_Serialize and Deserialize Binary Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "297_Serialize and Deserialize Binary Tree.swift"; sourceTree = "<group>"; };
+		026670332366BEA600CF609E /* 581_Shortest Unsorted Continuous Subarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "581_Shortest Unsorted Continuous Subarray.swift"; sourceTree = "<group>"; };
+		026670352366C38E00CF609E /* 697_Degree of an Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "697_Degree of an Array.swift"; sourceTree = "<group>"; };
 		0273493E23443BCB00EBB279 /* 132_Palindrome Partitioning II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "132_Palindrome Partitioning II.swift"; sourceTree = "<group>"; };
 		027B47831E621ECE003D2CA6 /* 482_License Key Formatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "482_License Key Formatting.swift"; sourceTree = "<group>"; };
 		027B72362352A4E6000DFC73 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
@@ -604,6 +610,7 @@
 				02F8CA3523376701003B2BFA /* 674_Longest Continuous Increasing Subsequence.swift */,
 				024327A41DC8335900F44384 /* 239_Sliding Window Maximum.swift */,
 				023868E01DCC3A9D00DF7B2B /* 14_Longest Common Prefix.swift */,
+				026670352366C38E00CF609E /* 697_Degree of an Array.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -715,6 +722,7 @@
 				02E641DC235C3124002C4044 /* 716_Max Stack.swift */,
 				02E641DE235C3756002C4044 /* 561_Array Partition I.swift */,
 				02E641EA235D1473002C4044 /* 986_Interval List Intersections.swift */,
+				026670332366BEA600CF609E /* 581_Shortest Unsorted Continuous Subarray.swift */,
 			);
 			path = "记忆题 - 只需要记住最优解";
 			sourceTree = "<group>";
@@ -965,6 +973,7 @@
 				02FDE0FB2332F43E0063DE3D /* 235_Lowest Common Ancestor of a Binary Search Tree.swift */,
 				02FDE0FD2332F5050063DE3D /* 236_Lowest Common Ancestor of a Binary Tree.swift */,
 				02FDE0FF2333041D0063DE3D /* 1123_Lowest Common Ancestor of Deepest Leaves.swift */,
+				026670312366A56700CF609E /* 297_Serialize and Deserialize Binary Tree.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -1125,6 +1134,7 @@
 				02433D132349407E00B963CA /* 186_Reverse Words in a String II.swift in Sources */,
 				0293F1DD234FC58E00436B83 /* 277_Find the Celebrity.swift in Sources */,
 				029C76812339855D00D6B6C5 /* 140_Word Break II.swift in Sources */,
+				026670362366C38E00CF609E /* 697_Degree of an Array.swift in Sources */,
 				02828B5E23246DBC009E117D /* 138_Copy List with Random Pointer.swift in Sources */,
 				02FDE1002333041D0063DE3D /* 1123_Lowest Common Ancestor of Deepest Leaves.swift in Sources */,
 				02FDE11423358FFF0063DE3D /* 492_Construct the Rectangle.swift in Sources */,
@@ -1239,6 +1249,7 @@
 				02ED4EDF23207CF9003D4364 /* 475_Heaters.swift in Sources */,
 				02F6B7A11DC04DD800FF2A47 /* 16_3Sum Closest.swift in Sources */,
 				02828B6623248122009E117D /* 148_Sort List.swift in Sources */,
+				026670322366A56700CF609E /* 297_Serialize and Deserialize Binary Tree.swift in Sources */,
 				02E641EF235D1BC5002C4044 /* 973_K Closest Points to Origin.swift in Sources */,
 				0254D6111DC1A04D00F4E42F /* 189_Rotate Array.swift in Sources */,
 				02667013236102C200CF609E /* 56_Merge Intervals.swift in Sources */,
@@ -1265,6 +1276,7 @@
 				02433CED2346AF6C00B963CA /* 97_Interleaving String.swift in Sources */,
 				02433D0D2349165C00B963CA /* 231_Power of Two.swift in Sources */,
 				02CD8096235817E600EC4173 /* 232_Implement Queue using Stacks.swift in Sources */,
+				026670342366BEA600CF609E /* 581_Shortest Unsorted Continuous Subarray.swift in Sources */,
 				02CE3E23232EF86C0080E8FD /* 278_First Bad Version.swift in Sources */,
 				023D1BEE1DB9B70D0027A912 /* 80_Remove Duplicates from Sorted Array II.swift in Sources */,
 				02433CFC2347A27600B963CA /* 47_Permutations II.swift in Sources */,

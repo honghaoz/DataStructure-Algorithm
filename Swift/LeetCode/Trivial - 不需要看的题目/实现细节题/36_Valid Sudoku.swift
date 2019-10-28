@@ -71,7 +71,7 @@ class Num36_ValidSudoku: Solution {
         return true
       }
     }
-    
+
     return false
   }
   

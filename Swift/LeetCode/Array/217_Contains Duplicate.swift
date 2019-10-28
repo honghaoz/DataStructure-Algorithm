@@ -14,6 +14,9 @@
 // Input: [1,1,1,3,3,4,3,2,4,2]
 // Output: true
 
+// 数组的应该包含1 - nums.count
+// 求是否有duplicate
+
 import Foundation
 
 class Num217_ContainsDuplicate: Solution {

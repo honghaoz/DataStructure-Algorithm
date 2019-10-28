@@ -18,6 +18,24 @@
 import Foundation
 
 class Num219_ContainsDuplicate: Solution {
+  // MARK: - Just store the max index of the number.
+  // Then iterate and check if the distance is less than k
+  func numberToIndex(_ nums: [Int], _ k: Int) -> Bool {
+    var numberToMaxIndex: [Int: Int] = [:]
+    for (i, n) in nums.enumerated() {
+      if let existingIndex = numberToMaxIndex[n] {
+        if i - existingIndex <= k {
+          return true
+        }
+        numberToMaxIndex[n] = i
+      } else {
+        numberToMaxIndex[n] = i
+      }
+    }
+    return false
+  }
+
+  // MARK: - ???
   func containsNearbyDuplicate(_ nums: [Int], _ k: Int) -> Bool {
     // The gap is <= k, thus the max count is k+1
     if nums.count <= k + 1 {
@@ -39,22 +57,6 @@ class Num219_ContainsDuplicate: Solution {
         hash[number] = existedIndices
       } else {
         hash[number] = [index]
-      }
-    }
-    return false
-  }
-
-  // Just store the max index of the number.
-  func numberToIndex(_ nums: [Int], _ k: Int) -> Bool {
-    var numberToMaxIndex: [Int: Int] = [:]
-    for (i, n) in nums.enumerated() {
-      if let existingIndex = numberToMaxIndex[n] {
-        if i - existingIndex <= k {
-          return true
-        }
-        numberToMaxIndex[n] = i
-      } else {
-        numberToMaxIndex[n] = i
       }
     }
     return false

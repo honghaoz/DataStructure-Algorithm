@@ -66,8 +66,10 @@ class Num72 {
       for j in 1...word2.count {
         // delete: delete the last character in word1
         let deletion = s[i - 1][j] + 1
+
         // insert: insert a new character in word1, this means word1[0...i] should match word2[0...j - 1]
         let insertion = s[i][j - 1] + 1
+
         // replace
         let replace: Int
         if word1[i - 1] == word2[j - 1] {

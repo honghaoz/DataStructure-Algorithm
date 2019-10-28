@@ -117,3 +117,24 @@ class Num300 {
     return length
   }
 }
+
+// Google Interview
+// https://leetcode.com/discuss/interview-question/412366/google-onsite-remove-at-most-k-element-to-make-array-increasing
+//
+//Given an array, please check if we can remove at most one element to make it strictly increasing.
+//
+//Example 1:
+//
+//Input: [1, 2, 3, 7, 5, 6]
+//Output: true
+//Example 2:
+//
+//Input: [1, 2, 3, 7, 8, 4, 5]
+//Output: false
+//Follow-up 1:
+//What if at most 2?
+//
+//Follow-up 2:
+//what if at most k?
+//
+//firstly see K = 1, I focus too much on remove element, but it's just a longest increasing sequence problem.
