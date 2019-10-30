@@ -82,6 +82,8 @@
 		026670322366A56700CF609E /* 297_Serialize and Deserialize Binary Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026670312366A56700CF609E /* 297_Serialize and Deserialize Binary Tree.swift */; };
 		026670342366BEA600CF609E /* 581_Shortest Unsorted Continuous Subarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026670332366BEA600CF609E /* 581_Shortest Unsorted Continuous Subarray.swift */; };
 		026670362366C38E00CF609E /* 697_Degree of an Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026670352366C38E00CF609E /* 697_Degree of an Array.swift */; };
+		026670472369555400CF609E /* 347_Top K Frequent Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026670462369555400CF609E /* 347_Top K Frequent Elements.swift */; };
+		026670492369583400CF609E /* 547_Friend Circles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026670482369583400CF609E /* 547_Friend Circles.swift */; };
 		0273493F23443BCB00EBB279 /* 132_Palindrome Partitioning II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273493E23443BCB00EBB279 /* 132_Palindrome Partitioning II.swift */; };
 		027B47841E621ECE003D2CA6 /* 482_License Key Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B47831E621ECE003D2CA6 /* 482_License Key Formatting.swift */; };
 		027B72372352A4E6000DFC73 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B72362352A4E6000DFC73 /* ListNode.swift */; };
@@ -342,6 +344,8 @@
 		026670312366A56700CF609E /* 297_Serialize and Deserialize Binary Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "297_Serialize and Deserialize Binary Tree.swift"; sourceTree = "<group>"; };
 		026670332366BEA600CF609E /* 581_Shortest Unsorted Continuous Subarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "581_Shortest Unsorted Continuous Subarray.swift"; sourceTree = "<group>"; };
 		026670352366C38E00CF609E /* 697_Degree of an Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "697_Degree of an Array.swift"; sourceTree = "<group>"; };
+		026670462369555400CF609E /* 347_Top K Frequent Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "347_Top K Frequent Elements.swift"; sourceTree = "<group>"; };
+		026670482369583400CF609E /* 547_Friend Circles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "547_Friend Circles.swift"; sourceTree = "<group>"; };
 		0273493E23443BCB00EBB279 /* 132_Palindrome Partitioning II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "132_Palindrome Partitioning II.swift"; sourceTree = "<group>"; };
 		027B47831E621ECE003D2CA6 /* 482_License Key Formatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "482_License Key Formatting.swift"; sourceTree = "<group>"; };
 		027B72362352A4E6000DFC73 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
@@ -553,7 +557,7 @@
 				022274841DB5C12C002F8547 /* Array */,
 				02FDE11B2335D19D0063DE3D /* Linked List */,
 				02EFCD62234FABC20013D087 /* Stack */,
-				02433D32234AC1CB00B963CA /* Priority Queue */,
+				02433D32234AC1CB00B963CA /* Heap & Priority Queue */,
 				02FDE125233698BB0063DE3D /* Tree */,
 				0294993F23525B6C00D7D584 /* Graph */,
 				0294994223525B8C00D7D584 /* Trie */,
@@ -740,13 +744,14 @@
 			path = "标准库实现题";
 			sourceTree = "<group>";
 		};
-		02433D32234AC1CB00B963CA /* Priority Queue */ = {
+		02433D32234AC1CB00B963CA /* Heap & Priority Queue */ = {
 			isa = PBXGroup;
 			children = (
 				02828B7323249567009E117D /* 253_Meeting Rooms II.swift */,
 				0293F1DA234FB9E900436B83 /* 759_Employee Free Time.swift */,
+				026670462369555400CF609E /* 347_Top K Frequent Elements.swift */,
 			);
-			path = "Priority Queue";
+			path = "Heap & Priority Queue";
 			sourceTree = "<group>";
 		};
 		0266701423610FCF00CF609E /* Sliding Window */ = {
@@ -787,6 +792,7 @@
 				0266700E2360D3F300CF609E /* 684_Redundant Connection.swift */,
 				0266700C2360CA6900CF609E /* 200_Number of Islands.swift */,
 				026670102360D6EB00CF609E /* 305_Number of Islands II.swift */,
+				026670482369583400CF609E /* 547_Friend Circles.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -1086,6 +1092,7 @@
 				022274881DB5D473002F8547 /* 169_Majority Element.swift in Sources */,
 				0235B4DC1DC6C1C20097F5F3 /* 59_Spiral Matrix II.swift in Sources */,
 				02CD8026235425D500EC4173 /* 122_Best Time to Buy and Sell Stock II.swift in Sources */,
+				026670492369583400CF609E /* 547_Friend Circles.swift in Sources */,
 				02433D38234AD13300B963CA /* 252_Meeting Rooms.swift in Sources */,
 				0266700F2360D3F300CF609E /* 684_Redundant Connection.swift in Sources */,
 				02433D2D234A476100B963CA /* 40_Combination Sum II.swift in Sources */,
@@ -1148,6 +1155,7 @@
 				0254D60F1DC1972C00F4E42F /* 238_Product of Array Except Self.swift in Sources */,
 				02433D2323497D1300B963CA /* 915_Partition Array into Disjoint Intervals.swift in Sources */,
 				02F6B7A31DC04F3D00FF2A47 /* 18_4Sum.swift in Sources */,
+				026670472369555400CF609E /* 347_Top K Frequent Elements.swift in Sources */,
 				02433D3A234C5E1800B963CA /* 155_Min Stack.swift in Sources */,
 				02FDE110233581520063DE3D /* 85_Maximal Rectangle.swift in Sources */,
 				02A8A8D51DCAD92700CA3EBF /* 344_Reverse String.swift in Sources */,
