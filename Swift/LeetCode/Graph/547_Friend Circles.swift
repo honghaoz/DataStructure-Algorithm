@@ -34,10 +34,16 @@
 //If M[i][j] = 1, then M[j][i] = 1.
 //
 
+// 给出一些student，每个student之间是认识或者不认识的关系
+// 找出有多少个认识的人的group
+// 输入的是一个matrix，1代表某两个index之间是否认识
+
 import Foundation
 
 class Num547 {
   // MARK: - DFS
+  // 其实这个可以理解为好几个tree
+  // 那么对于每一个点，都用DFS来mark整个tree，计算有多少个独立的tree
   func findCircleNum_DFS(_ M: [[Int]]) -> Int {
     let n = M.count
     guard n > 0 else {
