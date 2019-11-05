@@ -36,34 +36,34 @@ class Num155 {
     var stack: [Int] = []
     var minStack: [Int] = []
 
-      /** initialize your data structure here. */
-      init() {
+    /** initialize your data structure here. */
+    init() {
+      
+    }
 
+    func push(_ x: Int) {
+      stack.append(x)
+      if minStack.isEmpty {
+        minStack.append(x)
       }
+      else {
+        let minValue = min(minStack.last!, x)
+        minStack.append(minValue)
+      }
+    }
 
-      func push(_ x: Int) {
-          stack.append(x)
-        if minStack.isEmpty {
-          minStack.append(x)
-        }
-        else {
-          let minValue = min(minStack.last!, x)
-          minStack.append(minValue)
-        }
-      }
+    func pop() {
+      _ = stack.popLast()
+      _ = minStack.popLast()
+    }
 
-      func pop() {
-        _ = stack.popLast()
-        _ = minStack.popLast()
-      }
+    func top() -> Int {
+      return stack.last!
+    }
 
-      func top() -> Int {
-          return stack.last!
-      }
-
-      func getMin() -> Int {
-          return minStack.last!
-      }
+    func getMin() -> Int {
+      return minStack.last!
+    }
   }
 
   /**

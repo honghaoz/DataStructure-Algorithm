@@ -32,7 +32,11 @@
 
 import Foundation
 
+// 找到linked list的中间点
+
 class Num876 {
+
+  // MARK: - 快慢pointer
   func middleNode(_ head: ListNode?) -> ListNode? {
       let root: ListNode? = ListNode(0)
     root?.next = head

@@ -31,6 +31,8 @@
 //Each node's value will be an integer in the range [0, 99].
 //
 
+// 判断一个tree是否所有的点都是同样的值
+
 import Foundation
 
 class Num965 {

@@ -38,6 +38,8 @@
 //NOTE: input types have been changed on June 17, 2019. Please reset to default code definition to get new method signature.
 //
 
+// 给出一堆meeting的时间段，找出空闲时间
+
 import Foundation
 
 class Num759 {

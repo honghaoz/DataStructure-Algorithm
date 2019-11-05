@@ -84,6 +84,7 @@
 		026670362366C38E00CF609E /* 697_Degree of an Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026670352366C38E00CF609E /* 697_Degree of an Array.swift */; };
 		026670472369555400CF609E /* 347_Top K Frequent Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026670462369555400CF609E /* 347_Top K Frequent Elements.swift */; };
 		026670492369583400CF609E /* 547_Friend Circles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026670482369583400CF609E /* 547_Friend Circles.swift */; };
+		0266704B2371458900CF609E /* 224_Basic Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266704A2371458900CF609E /* 224_Basic Calculator.swift */; };
 		0273493F23443BCB00EBB279 /* 132_Palindrome Partitioning II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0273493E23443BCB00EBB279 /* 132_Palindrome Partitioning II.swift */; };
 		027B47841E621ECE003D2CA6 /* 482_License Key Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B47831E621ECE003D2CA6 /* 482_License Key Formatting.swift */; };
 		027B72372352A4E6000DFC73 /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B72362352A4E6000DFC73 /* ListNode.swift */; };
@@ -346,6 +347,7 @@
 		026670352366C38E00CF609E /* 697_Degree of an Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "697_Degree of an Array.swift"; sourceTree = "<group>"; };
 		026670462369555400CF609E /* 347_Top K Frequent Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "347_Top K Frequent Elements.swift"; sourceTree = "<group>"; };
 		026670482369583400CF609E /* 547_Friend Circles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "547_Friend Circles.swift"; sourceTree = "<group>"; };
+		0266704A2371458900CF609E /* 224_Basic Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "224_Basic Calculator.swift"; sourceTree = "<group>"; };
 		0273493E23443BCB00EBB279 /* 132_Palindrome Partitioning II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "132_Palindrome Partitioning II.swift"; sourceTree = "<group>"; };
 		027B47831E621ECE003D2CA6 /* 482_License Key Formatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "482_License Key Formatting.swift"; sourceTree = "<group>"; };
 		027B72362352A4E6000DFC73 /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
@@ -750,6 +752,7 @@
 				02828B7323249567009E117D /* 253_Meeting Rooms II.swift */,
 				0293F1DA234FB9E900436B83 /* 759_Employee Free Time.swift */,
 				026670462369555400CF609E /* 347_Top K Frequent Elements.swift */,
+				0266704A2371458900CF609E /* 224_Basic Calculator.swift */,
 			);
 			path = "Heap & Priority Queue";
 			sourceTree = "<group>";
@@ -1108,6 +1111,7 @@
 				02CD809E23582E9200EC4173 /* 67_Add Binary.swift in Sources */,
 				024378932321D28900916F49 /* 53_Maximum Subarray.swift in Sources */,
 				02AA3024231B9E8600DBB596 /* 2_Add Two Numbers.swift in Sources */,
+				0266704B2371458900CF609E /* 224_Basic Calculator.swift in Sources */,
 				02FDE11223358C490063DE3D /* 836_Rectangle Overlap.swift in Sources */,
 				02A8A8D71DCADF9900CA3EBF /* 345_Reverse Vowels of a String.swift in Sources */,
 				02FDE13C2336FABC0063DE3D /* 121_Best Time to Buy and Sell Stock.swift in Sources */,

@@ -30,6 +30,8 @@
 //Note: The merging process must start from the root nodes of both trees.
 //
 
+// 重叠两个tree，有overlap的节点value求和
+
 import Foundation
 
 class Num617 {

@@ -20,6 +20,8 @@
 //Note: The length of path between two nodes is represented by the number of edges between them.
 //
 
+// 计算一个tree的周长，就是这个tree中最长的路径
+
 import Foundation
 
 class Num543 {

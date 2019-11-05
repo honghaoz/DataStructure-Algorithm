@@ -41,12 +41,14 @@ import Foundation
 class Num110 {
   /// Check with max depth but also return if the branch is balanced.
   func isBalanced(_ root: TreeNode?) -> Bool {
-        return isBalancedHelper(root).0
-    }
+    return isBalancedHelper(root).0
+  }
+
+  /// returns if the tree is balanced and it's depth
   private func isBalancedHelper(_ root: TreeNode?) -> (Bool, Int) {
     if root == nil {
-        return (true, 0)
-      }
+      return (true, 0)
+    }
     let (leftIsBalanced, leftDepth) = isBalancedHelper(root?.left)
     let (rightIsBalanced, rightDepth) = isBalancedHelper(root?.right)
     let isBalanced = leftIsBalanced && rightIsBalanced && abs(leftDepth - rightDepth) <= 1

@@ -34,7 +34,7 @@ class Num68_TextJustification: Solution {
     guard words.count > 0 else { return res }
     var words = words
 
-    // Process words untile it's empty
+    // Process words until it's empty
     while words.isEmpty == false {
       let line = processOneLine(&words, maxWidth)
       res.append(line)
@@ -43,6 +43,7 @@ class Num68_TextJustification: Solution {
     return res
   }
 
+  /// Read as many as word and generate the line of the text
   private func processOneLine(_ words: inout [String], _ maxWidth: Int) -> String {
     guard words.count > 0 else { return "" }
 

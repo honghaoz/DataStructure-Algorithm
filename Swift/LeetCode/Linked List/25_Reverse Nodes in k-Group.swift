@@ -23,6 +23,8 @@
 //You may not alter the values in the list's nodes, only nodes itself may be changed.
 //
 
+// 每K个元素为一组反向
+
 import Foundation
 
 class Num25 {

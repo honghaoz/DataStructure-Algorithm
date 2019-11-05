@@ -36,9 +36,11 @@ class Num347 {
       ($0.key, $0.value)
     }
 
+    // 按照num count来最最大heap
     var heap = Heap(array: numCountTuples, sort: {
       $0.1 > $1.1
     })
+    // 取出k个元素
     var answer: [Int] = []
     for _ in 0..<k {
       if let top = heap.remove() {
