@@ -25,6 +25,8 @@
 //Output: 10
 //
 
+// 给出一堆柱子，找出最大的rect
+
 import Foundation
 
 class Num84 {

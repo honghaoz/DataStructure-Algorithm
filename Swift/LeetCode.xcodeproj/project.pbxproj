@@ -200,6 +200,8 @@
 		02E641EB235D1473002C4044 /* 986_Interval List Intersections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641EA235D1473002C4044 /* 986_Interval List Intersections.swift */; };
 		02E641ED235D14E7002C4044 /* 912_Sort an Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641EC235D14E7002C4044 /* 912_Sort an Array.swift */; };
 		02E641EF235D1BC5002C4044 /* 973_K Closest Points to Origin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641EE235D1BC5002C4044 /* 973_K Closest Points to Origin.swift */; };
+		02E8B7762372A3D80076B925 /* 133_Clone Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E8B7752372A3D80076B925 /* 133_Clone Graph.swift */; };
+		02E8B7782372AE2F0076B925 /* 42_Trapping Rain Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E8B7772372AE2F0076B925 /* 42_Trapping Rain Water.swift */; };
 		02ED4EDA231F978A003D4364 /* 21_Merge Two Sorted Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED4ED9231F978A003D4364 /* 21_Merge Two Sorted Lists.swift */; };
 		02ED4EDF23207CF9003D4364 /* 475_Heaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED4EDE23207CF9003D4364 /* 475_Heaters.swift */; };
 		02EFCD58234DB45F0013D087 /* 5_Longest Palindromic Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFCD57234DB45F0013D087 /* 5_Longest Palindromic Substring.swift */; };
@@ -464,6 +466,8 @@
 		02E641EA235D1473002C4044 /* 986_Interval List Intersections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "986_Interval List Intersections.swift"; sourceTree = "<group>"; };
 		02E641EC235D14E7002C4044 /* 912_Sort an Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "912_Sort an Array.swift"; sourceTree = "<group>"; };
 		02E641EE235D1BC5002C4044 /* 973_K Closest Points to Origin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "973_K Closest Points to Origin.swift"; sourceTree = "<group>"; };
+		02E8B7752372A3D80076B925 /* 133_Clone Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "133_Clone Graph.swift"; sourceTree = "<group>"; };
+		02E8B7772372AE2F0076B925 /* 42_Trapping Rain Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "42_Trapping Rain Water.swift"; sourceTree = "<group>"; };
 		02ED4ED9231F978A003D4364 /* 21_Merge Two Sorted Lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21_Merge Two Sorted Lists.swift"; sourceTree = "<group>"; };
 		02ED4EDE23207CF9003D4364 /* 475_Heaters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 475_Heaters.swift; sourceTree = "<group>"; };
 		02EFCD57234DB45F0013D087 /* 5_Longest Palindromic Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5_Longest Palindromic Substring.swift"; sourceTree = "<group>"; };
@@ -729,6 +733,7 @@
 				02E641DE235C3756002C4044 /* 561_Array Partition I.swift */,
 				02E641EA235D1473002C4044 /* 986_Interval List Intersections.swift */,
 				026670332366BEA600CF609E /* 581_Shortest Unsorted Continuous Subarray.swift */,
+				02E8B7772372AE2F0076B925 /* 42_Trapping Rain Water.swift */,
 			);
 			path = "记忆题 - 只需要记住最优解";
 			sourceTree = "<group>";
@@ -796,6 +801,7 @@
 				0266700C2360CA6900CF609E /* 200_Number of Islands.swift */,
 				026670102360D6EB00CF609E /* 305_Number of Islands II.swift */,
 				026670482369583400CF609E /* 547_Friend Circles.swift */,
+				02E8B7752372A3D80076B925 /* 133_Clone Graph.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -839,6 +845,8 @@
 		02EFCD61234FAB460013D087 /* 2维DP */ = {
 			isa = PBXGroup;
 			children = (
+				02FDE10D233562FC0063DE3D /* 221_Maximal Square.swift */,
+				02FDE10F233581520063DE3D /* 85_Maximal Rectangle.swift */,
 				02EFCD57234DB45F0013D087 /* 5_Longest Palindromic Substring.swift */,
 				02EFCD5F234FAAFA0013D087 /* 718_Maximum Length of Repeated Subarray.swift */,
 			);
@@ -862,8 +870,6 @@
 				02FDE1212336076E0063DE3D /* 62_Unique Paths.swift */,
 				02CD80872356F0B600EC4173 /* 63_Unique Paths II.swift */,
 				02FDE123233611170063DE3D /* 70_Climbing Stairs.swift */,
-				02FDE10D233562FC0063DE3D /* 221_Maximal Square.swift */,
-				02FDE10F233581520063DE3D /* 85_Maximal Rectangle.swift */,
 				029C76822339CCC000D6B6C5 /* 84_Largest Rectangle in Histogram.swift */,
 				02FDE1392336F2350063DE3D /* 746_Min Cost Climbing Stairs.swift */,
 				02FDE13B2336FABC0063DE3D /* 121_Best Time to Buy and Sell Stock.swift */,
@@ -1163,6 +1169,7 @@
 				02433D3A234C5E1800B963CA /* 155_Min Stack.swift in Sources */,
 				02FDE110233581520063DE3D /* 85_Maximal Rectangle.swift in Sources */,
 				02A8A8D51DCAD92700CA3EBF /* 344_Reverse String.swift in Sources */,
+				02E8B7762372A3D80076B925 /* 133_Clone Graph.swift in Sources */,
 				02433D2123494CDA00B963CA /* 707_Design Linked List.swift in Sources */,
 				027B72472352B101000DFC73 /* 136_Single Number.swift in Sources */,
 				02FDE108233350180063DE3D /* 437_Path Sum III.swift in Sources */,
@@ -1292,6 +1299,7 @@
 				02CE3E23232EF86C0080E8FD /* 278_First Bad Version.swift in Sources */,
 				023D1BEE1DB9B70D0027A912 /* 80_Remove Duplicates from Sorted Array II.swift in Sources */,
 				02433CFC2347A27600B963CA /* 47_Permutations II.swift in Sources */,
+				02E8B7782372AE2F0076B925 /* 42_Trapping Rain Water.swift in Sources */,
 				023D1EB31DBEF9660027A912 /* 27_Remove Element.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
