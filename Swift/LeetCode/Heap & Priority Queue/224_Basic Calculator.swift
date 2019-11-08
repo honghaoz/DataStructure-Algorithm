@@ -93,7 +93,7 @@ class Num224 {
 }
 
 extension Character {
-  var isNumber: Bool {
+  private var isNumber: Bool {
     return Character("0").asciiValue! <= asciiValue! && asciiValue! <= Character("9").asciiValue!
   }
 }

@@ -32,6 +32,8 @@
 //exection -> execution (insert 'u')
 //
 
+// 找出最小的edit distance
+
 import Foundation
 
 class Num72 {
@@ -64,6 +66,8 @@ class Num72 {
     // function
     for i in 1...word1.count {
       for j in 1...word2.count {
+        // 按照edit operation的不同，分别计算三种操作需要的最小次数
+        
         // delete: delete the last character in word1
         let deletion = s[i - 1][j] + 1
 

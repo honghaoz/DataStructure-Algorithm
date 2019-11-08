@@ -35,6 +35,8 @@ class Num76 {
     // window is [i..<j]
     var i = 0
     var j = 0
+
+    // answer
     var minSize = Int.max
     var minI = 0
     var minJ = 0
@@ -70,7 +72,7 @@ class Num76 {
         j += 1
         // update charCount dict
         let newChar = s[j - 1]
-        charCount[newChar] = (charCount[newChar] ?? 0) + 1
+        charCount[newChar] = charCount[newChar, default: 0] + 1
       }
     }
 

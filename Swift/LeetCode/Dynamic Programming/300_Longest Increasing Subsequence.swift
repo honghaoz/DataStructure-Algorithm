@@ -39,7 +39,6 @@ class Num300 {
     //     [10, 9, 2, 5, 3, 7, 101, 18]
     // s[i]  1. 1. 1. 2. 2, 3,   4,  4
     // s[i] the longest increasing subsequence ends at index i
-
     var s: [Int] = Array(repeating: 1, count: nums.count)
 
     for i in 1..<nums.count {

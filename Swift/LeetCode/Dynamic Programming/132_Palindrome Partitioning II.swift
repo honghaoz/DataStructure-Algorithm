@@ -71,7 +71,7 @@ class Num132 {
     return s[str.count] - 1
   }
 
-  // MARK: - DP withou isPalindrome check optimization
+  // MARK: - DP without isPalindrome check optimization
   /// Time complexity: O(n^3)
   func minCut_dp2(_ str: String) -> Int {
     guard str.count > 0 else {

@@ -53,12 +53,14 @@ class Num297 {
 //              """ a recursive helper function for the serialize() function."""
 //              # check base case
 //              if root is None:
-//                  string += 'None,'
+//                  return 'None,'
+//                  # string += 'None,'
 //              else:
-//                  string += str(root.val) + ','
-//                  string = rserialize(root.left, string)
-//                  string = rserialize(root.right, string)
-//              return string
+//                  return str(root.val) + ',' + rserialize(root.left, string) + rserialize(root.right, string)
+//                  # string += str(root.val) + ','
+//                  # string = rserialize(root.left, string)
+//                  # string = rserialize(root.right, string)
+//              # return string
 //
 //          return rserialize(root, '')
 //

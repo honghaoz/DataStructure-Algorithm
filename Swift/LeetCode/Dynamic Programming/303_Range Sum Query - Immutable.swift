@@ -33,18 +33,19 @@ class Num303 {
     // sumForIndex[1] == 3
     // sumForIndex[2] == 6
     var sumForIndex: [Int: Int] = [:]
-      init(_ nums: [Int]) {
-          self.nums = nums
-        var sum = 0
-        for i in 0..<nums.count {
-          sum += nums[i]
-          sumForIndex[i] = sum
-        }
+    
+    init(_ nums: [Int]) {
+      self.nums = nums
+      var sum = 0
+      for i in 0..<nums.count {
+        sum += nums[i]
+        sumForIndex[i] = sum
       }
+    }
 
-      func sumRange(_ i: Int, _ j: Int) -> Int {
-          return sumForIndex[j]! - ((i - 1 < 0) ? 0 : sumForIndex[i - 1]!)
-      }
+    func sumRange(_ i: Int, _ j: Int) -> Int {
+      return sumForIndex[j]! - ((i - 1 < 0) ? 0 : sumForIndex[i - 1]!)
+    }
   }
 
   /**

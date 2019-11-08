@@ -55,10 +55,10 @@ class Num937 {
 }
 
 extension Character {
-  var isLetter: Bool {
+  private var isLetter: Bool {
     return Character("a").asciiValue! <= self.asciiValue! && self.asciiValue! <= Character("z").asciiValue!
   }
-  var isNumber: Bool {
+  private var isNumber: Bool {
     return Character("0").asciiValue! <= self.asciiValue! && self.asciiValue! <= Character("9").asciiValue!
   }
 }
