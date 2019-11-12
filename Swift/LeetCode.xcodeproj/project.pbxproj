@@ -202,6 +202,8 @@
 		02E641EF235D1BC5002C4044 /* 973_K Closest Points to Origin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E641EE235D1BC5002C4044 /* 973_K Closest Points to Origin.swift */; };
 		02E8B7762372A3D80076B925 /* 133_Clone Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E8B7752372A3D80076B925 /* 133_Clone Graph.swift */; };
 		02E8B7782372AE2F0076B925 /* 42_Trapping Rain Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E8B7772372AE2F0076B925 /* 42_Trapping Rain Water.swift */; };
+		02E8B7BC2375D5120076B925 /* 215_Kth Largest Element in an Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E8B7BB2375D5120076B925 /* 215_Kth Largest Element in an Array.swift */; };
+		02E8B7F9237A900C0076B925 /* 406_Queue Reconstruction by Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E8B7F8237A900C0076B925 /* 406_Queue Reconstruction by Height.swift */; };
 		02ED4EDA231F978A003D4364 /* 21_Merge Two Sorted Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED4ED9231F978A003D4364 /* 21_Merge Two Sorted Lists.swift */; };
 		02ED4EDF23207CF9003D4364 /* 475_Heaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ED4EDE23207CF9003D4364 /* 475_Heaters.swift */; };
 		02EFCD58234DB45F0013D087 /* 5_Longest Palindromic Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFCD57234DB45F0013D087 /* 5_Longest Palindromic Substring.swift */; };
@@ -468,6 +470,8 @@
 		02E641EE235D1BC5002C4044 /* 973_K Closest Points to Origin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "973_K Closest Points to Origin.swift"; sourceTree = "<group>"; };
 		02E8B7752372A3D80076B925 /* 133_Clone Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "133_Clone Graph.swift"; sourceTree = "<group>"; };
 		02E8B7772372AE2F0076B925 /* 42_Trapping Rain Water.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "42_Trapping Rain Water.swift"; sourceTree = "<group>"; };
+		02E8B7BB2375D5120076B925 /* 215_Kth Largest Element in an Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "215_Kth Largest Element in an Array.swift"; sourceTree = "<group>"; };
+		02E8B7F8237A900C0076B925 /* 406_Queue Reconstruction by Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "406_Queue Reconstruction by Height.swift"; sourceTree = "<group>"; };
 		02ED4ED9231F978A003D4364 /* 21_Merge Two Sorted Lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21_Merge Two Sorted Lists.swift"; sourceTree = "<group>"; };
 		02ED4EDE23207CF9003D4364 /* 475_Heaters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 475_Heaters.swift; sourceTree = "<group>"; };
 		02EFCD57234DB45F0013D087 /* 5_Longest Palindromic Substring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5_Longest Palindromic Substring.swift"; sourceTree = "<group>"; };
@@ -621,6 +625,7 @@
 				024327A41DC8335900F44384 /* 239_Sliding Window Maximum.swift */,
 				023868E01DCC3A9D00DF7B2B /* 14_Longest Common Prefix.swift */,
 				026670352366C38E00CF609E /* 697_Degree of an Array.swift */,
+				02E8B7F8237A900C0076B925 /* 406_Queue Reconstruction by Height.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -758,6 +763,7 @@
 				0293F1DA234FB9E900436B83 /* 759_Employee Free Time.swift */,
 				026670462369555400CF609E /* 347_Top K Frequent Elements.swift */,
 				0266704A2371458900CF609E /* 224_Basic Calculator.swift */,
+				02E8B7BB2375D5120076B925 /* 215_Kth Largest Element in an Array.swift */,
 			);
 			path = "Heap & Priority Queue";
 			sourceTree = "<group>";
@@ -1086,6 +1092,7 @@
 				02FDE1332336C9810063DE3D /* 101_Symmetric Tree.swift in Sources */,
 				0266701D23617DB700CF609E /* 229_Majority Element II.swift in Sources */,
 				02FDE14023370B980063DE3D /* 303_Range Sum Query - Immutable.swift in Sources */,
+				02E8B7BC2375D5120076B925 /* 215_Kth Largest Element in an Array.swift in Sources */,
 				02FDE10C233430DA0063DE3D /* 938_Range Sum of BST.swift in Sources */,
 				02E641E4235CFEA5002C4044 /* 165_Compare Version Numbers.swift in Sources */,
 				02CD808C2357B7A600EC4173 /* 268_Missing Number.swift in Sources */,
@@ -1253,6 +1260,7 @@
 				02F8CA3423375224003B2BFA /* 45_Jump Game II.swift in Sources */,
 				029C76D5233BDDCD00D6B6C5 /* 877_Stone Game.swift in Sources */,
 				02FDE127233698DD0063DE3D /* 617_Merge Two Binary Trees.swift in Sources */,
+				02E8B7F9237A900C0076B925 /* 406_Queue Reconstruction by Height.swift in Sources */,
 				02433D2B234A42BF00B963CA /* 77_Combinations.swift in Sources */,
 				02CE3E392330254C0080E8FD /* 392_Is Subsequence.swift in Sources */,
 				0243788B2320E91600916F49 /* 771_Jewels and Stones.swift in Sources */,

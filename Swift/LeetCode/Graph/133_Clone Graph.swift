@@ -51,7 +51,7 @@ class Num133 {
 //          # Dictionary to save the visited node and it's respective clone
 //          # as key and value respectively. This helps to avoid cycles.
 //          self.visited = {}
-//
+//      # cloneGraph 返回的是node的clone。visited包含的是original -> clone。
 //      def cloneGraph(self, node):
 //          """
 //          :type node: Node

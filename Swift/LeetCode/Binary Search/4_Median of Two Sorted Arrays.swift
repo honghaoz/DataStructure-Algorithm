@@ -118,4 +118,55 @@ class Num4 {
       return Double(nums[nums.count / 2])
     }
   }
+
+  // MARK: - Find the median number
+  func medianOfSortedArrays(_ array1: [Int], _ array2: [Int]) -> Int? {
+    if array1.isEmpty, array2.isEmpty {
+      return nil
+    }
+    else if array1.isEmpty {
+      return array2[array2.count / 2]
+    }
+    else if array2.isEmpty {
+      return array1[array1.count / 2]
+    }
+
+    var index1 = 0
+    var index2 = 0
+    // 1
+    // 2 3 4
+
+    // 4
+    // 1 3 5 7 9
+    // 2 4 6 8  // 9 - >4
+    //
+    // 1 3 5 7
+    // 2 4 6 8 // 8 -> 4
+    var dropCount = (array1.count + array2.count) / 2
+    while dropCount > 0 {
+      if array1[index1] < array2[index2] {
+        index1 += 1
+        if index1 >= array1.count {
+          return array2[index2 + dropCount - 1]
+        }
+      }
+      else {
+        index2 += 1
+        if index2 >= array2.count {
+          return array1[index1 + dropCount - 1]
+        }
+      }
+      dropCount -= 1
+    }
+
+    if index1 < array1.count, index2 < array2.count {
+      return min(array1[index1], array2[index2])
+    }
+    else if index1 >= array1.count {
+      return array2[index2]
+    }
+    else {
+      return array1[index1]
+    }
+  }
 }
