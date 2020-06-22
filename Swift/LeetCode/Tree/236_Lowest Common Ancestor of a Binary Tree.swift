@@ -35,6 +35,9 @@
 import Foundation
 
 class Num236 {
+  // 找出两条path的length diff，然后把长的那个path先走diff的步数，然后一起
+  // 向上找，找到第一个不同的点
+  
   // 如果有parent pointer：
   // 从a节点到root的所有点创建一个path array
   // 从b节点到root也创建一个path array
